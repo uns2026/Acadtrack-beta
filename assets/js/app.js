@@ -119,10 +119,10 @@
         
         // Prototype dashboard redirection map
         const dashboardMap = {
-          student: "/p/student-dashboard.html",
-          teacher: "/p/teacher-dashboard.html",
-          admin: "/p/dept-admin-dashboard.html",
-          'platform-admin': "/p/platform-admin-dashboard.html"
+          student: "/student-dashboard",
+          teacher: "/teacher-dashboard",
+          admin: "/dept-admin-dashboard",
+          'platform-admin': "/platform-admin-dashboard"
         };
         
         if (window.location.pathname.includes('-dashboard') || window.location.pathname.includes('/p/')) {
