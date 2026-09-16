@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Platform Presentation - AcadTrack</title>
+<meta name="description" content="A guided presentation of the AcadTrack platform."/>
+<meta name="author" content="AcadTrack"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="canonical" href="/p/platform-presentation.html"/>
+<meta property="og:title" content="Platform Presentation - AcadTrack"/>
+<meta property="og:description" content="A guided presentation of the AcadTrack platform."/>
+<meta property="og:url" content="/p/platform-presentation.html"/>
+<meta property="og:site_name" content="AcadTrack"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Platform Presentation - AcadTrack"/>
+<meta name="twitter:description" content="A guided presentation of the AcadTrack platform."/>
+<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs"/>
+<link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../assets/css/theme.css"/>
+</head>
+
+<body class="">
+<a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-section section" id="header"><div class="widget Header" id="Header1"><a class="brand" href="/"><img alt="AcadTrack" src="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs" loading="eager"/></a></div></div>
+
+      <div class="nav-desktop-section section" id="desktop-navigation"><div class="widget HTML" id="HTML21"><nav class="nav-desktop" aria-label="Main navigation">
+<style>
+.nav-desktop { display: none; }
+@media (min-width: 1070px) { 
+  .nav-desktop { display: flex; align-items: center; gap: var(--space-lg); flex-shrink: 0; } 
+}
+.nav-link { font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); position: relative; padding: 0.25rem 0; cursor: pointer; }
+.nav-link:hover { color: var(--text); } 
+.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: var(--primary); transition: width var(--transition); } 
+.nav-link:hover::after { width: 100%; }
+.nav-btn-saas { background-color: var(--primary); color: white !important; padding: 0.5rem 1rem; border-radius: var(--radius-sm); font-weight: 600; font-size: 0.8125rem; transition: background var(--transition); }
+.nav-btn-saas:hover { background-color: var(--primary-hover); }
+
+/* Desktop Navigation Demo Dropdown Style System */
+.nav-item-demo { position: relative; display: inline-block; }
+.demo-role-dropdown-desktop {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  width: 340px;
+  background: var(--card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+.nav-item-demo.active .demo-role-dropdown-desktop {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.demo-role-dropdown-desktop::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: var(--card);
+  border-top: 1px solid var(--border-light);
+  border-left: 1px solid var(--border-light);
+}
+.demo-role-header { padding: 0.5rem 1rem; font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; color: var(--text-light); border-bottom: 1px solid var(--border-light); margin-bottom: 0.25rem; letter-spacing: 0.05em; }
+.demo-role-option { display: flex; flex-direction: column; gap: 2px; padding: 0.75rem 1rem; transition: background 0.2s; cursor: pointer; }
+.demo-role-option:hover { background-color: var(--bg-warm); }
+.demo-role-option.active { background-color: var(--bg-cool); border-left: 4px solid var(--primary); }
+.demo-role-title { font-weight: 700; font-size: 0.8125rem; color: var(--text); display: flex; align-items: center; gap: 0.5rem; }
+.demo-role-desc { font-size: 0.6875rem; color: var(--text-secondary); margin-left: 1.5rem; }
+.exit-demo-option { display: none; border-top: 1px solid var(--border-light); margin-top: 0.25rem; padding-top: 0.75rem; }
+.exit-demo-option.visible { display: flex !important; }
+.nav-item-demo.active #demoChevron {
+  transform: rotate(180deg);
+}
+</style>
+
+<a class="nav-link" href="/"><span data-lang="en">Home</span><span data-lang="fr">Accueil</span><span data-lang="ar">الرئيسية</span></a>
+<a class="nav-link" href="/p/features.html"><span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+<a class="nav-link" href="/p/about.html"><span data-lang="en">About</span><span data-lang="fr">À propos</span><span data-lang="ar">حول</span></a>
+<a class="nav-link" href="/p/contact.html"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span><span data-lang="ar">اتصل بنا</span></a>
+
+<!-- Integrated Main Header Demo Selector Dropdown -->
+<div class="nav-item-demo" id="demoNavContainer">
+  <a class="nav-link" href="#" id="demoBtnDesktop" onclick="return false;" style="display: flex; align-items: center; gap: 4px;">
+    <i class="fa-solid fa-flask" id="demoActiveIcon" style="font-size: 0.8125rem;" style="font-family: 'Cairo', sans-serif;"></i>
+    <span id="demoActiveLabel" style="font-family: 'Cairo', sans-serif;">
+      <span id="demoActiveLabelMobile" >العرض</span>
+    </span>
+    <i class="fa-solid fa-chevron-down" id="demoChevron" style="font-size: 0.75rem; transition: transform 0.2s;"></i>
+  </a>
+  <div class="demo-role-dropdown-desktop" id="demoRoleDropdownDesktop">
+    <div class="demo-role-header">
+      <span data-lang="en">Select Demo Profile</span>
+      <span data-lang="fr">Sélectionner un Profil Démo</span>
+      <span data-lang="ar">اختر ملف العرض</span>
+    </div>
+    <div class="demo-role-option" data-demo-role="student" onclick="selectSaaSRole('student')">
+      <span class="demo-role-title"><i class="fa-solid fa-graduation-cap" style="color:var(--primary)"></i> <span data-lang="en">Psychology Student</span><span data-lang="fr">Étudiant en Psychologie</span><span data-lang="ar">طالب علم النفس</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="fr">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="ar">عماد عزيزي (سنة 3) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="teacher" onclick="selectSaaSRole('teacher')">
+      <span class="demo-role-title"><i class="fa-solid fa-chalkboard-user" style="color:#10b981"></i> <span data-lang="en">Psychology Professor</span><span data-lang="fr">Enseignant en Psychologie</span><span data-lang="ar">أستاذ علم النفس</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="fr">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="ar">أ.د. زكية شنة (بروفيسور) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="admin" onclick="selectSaaSRole('admin')">
+      <span class="demo-role-title"><i class="fa-solid fa-user-tie" style="color:#f59e0b"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="fr">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="ar">د. عمار شوشان (أستاذ محاضر أ) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="platform-admin" onclick="selectSaaSRole('platform-admin')">
+      <span class="demo-role-title"><i class="fa-solid fa-server" style="color:#6366f1"></i> <span data-lang="en">Platform Super Admin</span><span data-lang="fr">Super Admin Plateforme</span><span data-lang="ar">مدير النظام</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Mr. Uns MAHMOUDI • Developer</span>
+        <span data-lang="fr">M. Uns MAHMOUDI • Développeur</span>
+        <span data-lang="ar">أ. يونس محمودي • مطور البرمجية</span>
+      </span>
+    </div>
+    <div class="demo-role-option exit-demo-option" onclick="selectSaaSRole('guest')">
+      <span class="demo-role-title" style="color:#ef4444;"><i class="fa-solid fa-circle-xmark"></i> <span data-lang="en">Exit Demo Mode</span><span data-lang="fr">Quitter le Mode Démo</span><span data-lang="ar">الخروج من وضع العرض</span></span>
+      <span class="demo-role-desc" data-lang="en">Reset to original guest state</span>
+      <span class="demo-role-desc" data-lang="fr">Réinitialiser à l'état invité</span>
+      <span class="demo-role-desc" data-lang="ar">إعادة تعيين إلى وضع الزائر</span>
+    </div>
+  </div>
+</div>
+
+<a class="nav-link only-logged-out" href="/p/login.html" style="margin-left: 1rem;"><span data-lang="en">Login</span><span data-lang="fr">Connexion</span><span data-lang="ar">تسجيل الدخول</span></a>
+<a class="nav-btn-saas only-logged-out" href="/p/signup.html"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+</nav></div></div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </button>
+
+      <div class="header-actions">
+        <div class="header-notif-section section" id="header-notifications"><div class="widget HTML" id="HTML34"><div class="notif-toggle only-logged-into-header">
+<style>
+.notif-toggle { display: block; position: relative; }
+
+.notif-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.notif-btn:hover {
+  background-color: var(--bg-warm);
+  border-color: var(--text-light);
+}
+
+.notif-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.125rem;
+  height: 1.125rem;
+  padding: 0 4px;
+  border-radius: 9999px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  border: 2px solid var(--bg);
+}
+
+.notif-dropdown {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: 0;
+  width: 320px;
+  background-color: var(--card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.notif-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.notif-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 14px;
+  width: 12px;
+  height: 12px;
+  background: var(--card);
+  border-top: 1px solid var(--border-light);
+  border-left: 1px solid var(--border-light);
+  transform: rotate(45deg);
+}
+
+.notif-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-light);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.notif-body {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.notif-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  transition: background 0.2s, opacity 0.2s;
+  text-align: left;
+}
+
+.notif-item:hover {
+  background-color: var(--bg-warm);
+}
+
+.notif-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--bg-cool);
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.notif-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.notif-item-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.notif-item-time {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.mark-read-btn {
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: opacity 0.2s;
+}
+
+.mark-read-btn.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.notif-item.read {
+  opacity: 0.65;
+}
+
+@media (max-width: 1070px) {
+  .notif-toggle.only-logged-into-header {
+    display: none !important;
+  }
+}
+</style>
+
+<div class="notif-toggle only-logged-into-header">
+  <button class="notif-btn" id="notifBtnDesktop" aria-label="Notifications">
+    <i class="fa-solid fa-bell"></i>
+    <span class="notif-badge" id="notifCountBadge">3</span>
+  </button>
+
+  <div class="notif-dropdown" id="notifDropdownDesktop">
+    <div class="notif-header">
+      <span>Notifications</span>
+      <span class="mark-read-btn" id="markAllReadBtn">Mark all read</span>
+    </div>
+
+    <div class="notif-body">
+
+      <!-- Guest -->
+      <div class="state-guest">
+        <div class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              Welcome to AcadTrack!
+            </span>
+
+            <span data-lang="en">
+              Select a demo role from the "Demo" menu to view dynamic academic notifications.
+            </span>
+
+            <span class="notif-item-title" data-lang="fr">
+              Bienvenue sur AcadTrack!
+            </span>
+
+            <span data-lang="fr">
+              Sélectionnez un rôle démo dans le menu "Démo" pour afficher les notifications académiques dynamiques.
+            </span>
+
+            <span class="notif-item-title" data-lang="ar">
+              مرحبًا بك في AcadTrack!
+            </span>
+
+            <span data-lang="ar">
+              اختر دورًا تجريبيًا من قائمة "العرض" لمشاهدة الإشعارات الأكاديمية التفاعلية.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student -->
+      <div class="state-student">
+
+        <a href="#results" class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              New Grade Published
+            </span>
+
+            <span data-lang="en">
+              Your Clinical Psychology result has been released.
+            </span>
+
+            <span class="notif-item-time">
+              10m ago
+            </span>
+          </div>
+        </a>
+
+        <a href="#attendance" class="notif-item">
+          <div class="notif-item-icon" style="color:#ef4444;">
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              Absence Alert
+            </span>
+
+            <span data-lang="en">
+              An absence has been recorded in Research Methodology.
+            </span>
+
+            <span class="notif-item-time">
+              2h ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Teacher -->
+      <div class="state-teacher">
+
+        <a href="#submissions" class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-file-arrow-up"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title">
+              New Assignment Submission
+            </span>
+
+            <span>
+              Student Imad AZIZI submitted his Clinical Psychology report.
+            </span>
+
+            <span class="notif-item-time">
+              5m ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Admin -->
+      <div class="state-admin state-platform-admin">
+
+        <a href="#approvals" class="notif-item">
+          <div class="notif-item-icon" style="color:var(--primary);">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title">
+              New Instructor Verification
+            </span>
+
+            <span>
+              Pr. Zakia CHENNA submitted subscription verification data.
+            </span>
+
+            <span class="notif-item-time">
+              30m ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+
+  const notifBtn = document.getElementById('notifBtnDesktop');
+  const notifDropdown = document.getElementById('notifDropdownDesktop');
+  const notifBadge = document.getElementById('notifCountBadge');
+  const markAllReadBtn = document.getElementById('markAllReadBtn');
+
+  const STORAGE_KEY = 'acadtrack_notifications_read';
+
+  // Toggle dropdown
+  function toggleDropdown(e) {
+    e.stopPropagation();
+    notifDropdown.classList.toggle('active');
+  }
+
+  // Apply read state UI
+  function applyReadState() {
+
+    const isRead = localStorage.getItem(STORAGE_KEY) === 'true';
+
+    if (isRead) {
+
+      // Hide badge
+      if (notifBadge) {
+        notifBadge.style.display = 'none';
+      }
+
+      // Fade notifications
+      document.querySelectorAll('.notif-item').forEach(item => {
+        item.classList.add('read');
+      });
+
+      // Disable button
+      if (markAllReadBtn) {
+        markAllReadBtn.textContent = 'All read';
+        markAllReadBtn.classList.add('disabled');
+      }
+
+    } else {
+
+      if (notifBadge) {
+        notifBadge.style.display = 'inline-flex';
+      }
+
+      document.querySelectorAll('.notif-item').forEach(item => {
+        item.classList.remove('read');
+      });
+
+      if (markAllReadBtn) {
+        markAllReadBtn.textContent = 'Mark all read';
+        markAllReadBtn.classList.remove('disabled');
+      }
+    }
+  }
+
+  // Mark notifications as read
+  function markAllAsRead() {
+
+    localStorage.setItem(STORAGE_KEY, 'true');
+
+    applyReadState();
+  }
+
+  // Open / Close
+  if (notifBtn) {
+    notifBtn.addEventListener('click', toggleDropdown);
+  }
+
+  // Mark read click
+  if (markAllReadBtn) {
+    markAllReadBtn.addEventListener('click', markAllAsRead);
+  }
+
+  // Close outside click
+  document.addEventListener('click', function (e) {
+
+    if (
+      notifDropdown &&
+      !notifDropdown.contains(e.target) &&
+      !notifBtn.contains(e.target)
+    ) {
+      notifDropdown.classList.remove('active');
+    }
+  });
+
+  // Prevent dropdown click close
+  notifDropdown.addEventListener('click', function (e) {
+    e.stopPropagation();
+  });
+
+  // Restore saved state
+  applyReadState();
+
+})();
+</script>
+</div></div></div>
+
+        <div class="header-lang-section section" id="header-language"><div class="widget HTML" id="HTML33"><div class="lang-toggle lang-desktop-only">
+<style>
+.lang-toggle { position: relative; }
+.lang-btn { display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; background: none; border: 1px solid var(--border); border-radius: 9999px; cursor: pointer; overflow: hidden; transition: background 0.2s; }
+.lang-btn:hover { background-color: var(--bg-warm); border-color: var(--text-light); }
+.lang-btn img { width: 2.25rem; height: 2.25rem; border-radius: 50%; object-fit: cover; }
+.lang-dropdown { position: absolute; top: calc(100% + 0.75rem); right: 0; width: 180px; background: var(--card); border: 1px solid var(--border-light); border-radius: var(--radius); box-shadow: var(--shadow-lg); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 100; overflow: hidden; }
+.lang-dropdown::before { content: ''; position: absolute; top: -6px; right: 10px; width: 12px; height: 12px; background: var(--card); border-top: 1px solid var(--border-light); border-left: 1px solid var(--border-light); transform: rotate(45deg); }
+.lang-dropdown.active { opacity: 1; visibility: visible; transform: translateY(0); }
+.lang-option { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; color: var(--text-secondary); font-size: 0.875rem; font-weight: 500; transition: background 0.2s; text-align: left; }
+.lang-option:hover { background-color: var(--bg-warm); color: var(--primary); } .lang-option img { width: 1.25rem; height: 1.25rem; border-radius: 50%; object-fit: cover; }
+@media (min-width: 1070px) { .lang-mobile-only { display: none !important; } }
+@media (max-width: 1070px) { .lang-desktop-only { display: none !important; } }
+</style>
+
+<!-- Default Language Configuration: change this value to 'en', 'fr', or 'ar' to set your default language portal-wide -->
+<span id="defaultLangConfig" style="display:none;">ar</span>
+
+<button class="lang-btn" id="langToggleDesktop" aria-label="Change Language">
+  <img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN" id="activeFlagDesktop" class="active-lang-flag"/>
+</button>
+<div class="lang-dropdown" id="langDropdownDesktop">
+  <a href="#" onclick="setLanguage('en'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN"/> <span data-lang="en">English</span><span data-lang="fr">Anglais</span><span data-lang="ar">الإنجليزية</span></a>
+  <a href="#" onclick="setLanguage('fr'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/fr.svg" alt="FR"/> <span data-lang="en">French</span><span data-lang="fr">Français</span><span data-lang="ar">الفرنسية</span></a>
+  <a href="#" onclick="setLanguage('ar'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/dz.svg" alt="AR"/> <span data-lang="en">Arabic</span><span data-lang="fr">Arabe</span><span data-lang="ar">العربية</span></a>
+</div>
+
+<script>
+  function setLanguage(lang) {
+    applyLanguage(lang);
+  }
+  function registerLangToggler() {
+    var langToggleDesktop = document.getElementById('langToggleDesktop');
+    var langDropdownDesktop = document.getElementById('langDropdownDesktop');
+    if (langToggleDesktop && langDropdownDesktop) {
+      langToggleDesktop.removeEventListener('click', handleLangClick);
+      langToggleDesktop.addEventListener('click', handleLangClick);
+    }
+  }
+  window.addEventListener('load', registerLangToggler);
+  document.addEventListener('DOMSubtreeModified', registerLangToggler);
+</script>
+</div></div></div>
+
+        <button class="user-toggle" id="userToggle" aria-label="User menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+      </div>
+
+      <div class="desktop-user-menu-section section" id="desktop-user-menu"><div class="widget HTML" id="HTML23"><div class="user-dropdown" id="userDropdown">
+<style>
+  .user-dropdown { 
+    position: absolute; 
+    top: calc(100% + 0.75rem); 
+    right: 0; 
+    width: 260px; 
+    background-color: var(--card); 
+    border: 1px solid var(--border-light); 
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow-lg); 
+    padding: var(--space-md); 
+    opacity: 0; 
+    visibility: hidden; 
+    transform: translateY(-10px); 
+    transition: all 0.2s ease; 
+    z-index: 100; 
+    /* Dynamic viewport height constraint to support smaller screens */
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  .user-dropdown::-webkit-scrollbar { width: 6px; }
+  .user-dropdown::-webkit-scrollbar-track { background: var(--bg-warm); }
+  .user-dropdown::-webkit-scrollbar-thumb { background-color: var(--border); border-radius: 999px; }
+
+  .user-dropdown::before { content: ''; position: absolute; top: -6px; right: 10px; width: 12px; height: 12px; background-color: var(--card); border-top: 1px solid var(--border-light); border-left: 1px solid var(--border-light); transform: rotate(45deg); }
+  .user-dropdown.active { opacity: 1; visibility: visible; transform: translateY(0); }
+  @media (max-width: 767px) { .user-dropdown { display: none !important; } }
+  .user-profile-header { margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+  .user-greeting { font-size: 0.875rem; color: var(--text-secondary); } 
+  .user-name { font-size: 1.125rem; font-weight: 700; color: var(--text); margin-top: 0.25rem; }
+  .user-profile-actions { display: flex; gap: var(--space-xs); margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+  .btn-sm { padding: 0.5rem 1rem; font-size: 0.8125rem; flex: 1; justify-content: center; border-radius: 0.5rem; } 
+  .btn-outline { background-color: transparent; color: var(--primary); border: 1px solid var(--primary); } 
+  .btn-outline:hover { background-color: var(--primary); color: white; }
+  .user-profile-nav { display: flex; flex-direction: column; gap: var(--space-xs); } 
+  .user-profile-nav a { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) 0; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); transition: color var(--transition); } 
+  .user-profile-nav a i { width: 1.25rem; text-align: center; }
+  .user-profile-nav a:hover { color: var(--primary); }
+  .saas-subtext { font-size: 0.75rem; font-weight: 600; color: var(--primary); text-transform: uppercase; margin-top: 2px; letter-spacing: 0.05em; }
+
+  /* New custom styling targeting the logout buttons */
+  .user-profile-nav a[href="#logout"] {
+    background-color: #dc2626 !important;
+    color: #ffffff !important;
+    border: 1px solid #dc2626 !important;
+    transition: all 0.2s ease !important;
+  }
+  .user-profile-nav a[href="#logout"]:hover {
+    background-color: #ffffff !important;
+    color: #dc2626 !important;
+    border: 1px solid #dc2626 !important;
+  }
+</style>
+
+<!-- 1. GUEST DROP DOWN -->
+<div class="state-guest">
+  <div class="user-profile-header">
+    <div class="user-name">
+      <span data-lang="en">Welcome to AcadTrack</span>
+      <span data-lang="fr">Bienvenue sur AcadTrack</span>
+      <span data-lang="ar">مرحبًا بك في AcadTrack</span>
+    </div>
+    <div class="user-greeting">
+      <span data-lang="en">Login to access your dashboard</span>
+      <span data-lang="fr">Connectez-vous pour accéder au tableau de bord</span>
+      <span data-lang="ar">سجل الدخول للوصول إلى لوحة التحكم</span>
+    </div>
+  </div>
+  <div class="user-profile-actions" style="flex-direction: column; gap: 0.5rem;">
+    <a href="/p/login.html" class="btn btn-sm" style="width:100%;"><i class="fa-solid fa-right-to-bracket"></i> <span data-lang="en">Login</span><span data-lang="fr">Connexion</span><span data-lang="ar">تسجيل الدخول</span></a>
+    <a href="/p/signup.html" class="btn btn-sm btn-outline" style="width:100%;"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+    <a href="#googlesignup" class="btn btn-sm btn-outline" style="width:100%;"><i class="fa-brands fa-google"></i> <span data-lang="en">Continue with Google</span><span data-lang="fr">Continuer avec Google</span><span data-lang="ar">المتابعة باستخدام Google</span></a>
+  </div>
+  <div class="saas-subtext" style="margin-bottom: 0.5rem;">
+    <span data-lang="en">Quick Access</span>
+    <span data-lang="fr">Accès rapide</span>
+    <span data-lang="ar">وصول سريع</span>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/features.html"><i class="fa-solid fa-star"></i> <span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+    <a href="/p/about.html"><i class="fa-solid fa-circle-info"></i> <span data-lang="en">About Platform</span><span data-lang="fr">À propos de la plateforme</span><span data-lang="ar">حول المنصة</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-question-circle"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+  </nav>
+</div>
+
+<!-- 2. STUDENT DROP DOWN -->
+<div class="state-student">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name studentName">
+      <span data-lang="en">Imad AZIZI</span>
+      <span data-lang="fr">Imad AZIZI</span>
+      <span data-lang="ar">عماد عزيزي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-graduation-cap"></i> <span data-lang="en">Student</span><span data-lang="fr">Étudiant</span><span data-lang="ar">طالب</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/student-dashboard.html"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/p/student-profile.html"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/p/student-modules.html"><i class="fa-solid fa-book"></i> <span data-lang="en">Modules</span><span data-lang="fr">Modules</span><span data-lang="ar">المواد الدراسية</span></a>
+    <a href="/p/student-schedule.html"><i class="fa-solid fa-calendar-days"></i> <span data-lang="en">Schedule</span><span data-lang="fr">Emploi du temps</span><span data-lang="ar">جدول الحصص</span></a>
+    <a href="/p/student-grades.html"><i class="fa-solid fa-square-poll-vertical"></i> <span data-lang="en">Grades &amp; Results</span><span data-lang="fr">Notes &amp; Résultats</span><span data-lang="ar">النقاط والنتائج</span></a>
+    <a href="/p/student-messages.html"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/p/student-reports.html"><i class="fa-solid fa-chart-pie"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="/p/student-settings.html"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 3. TEACHER DROP DOWN -->
+<div class="state-teacher">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Pr. Zakia CHENNA</span>
+      <span data-lang="fr">Pr. Zakia CHENNA</span>
+      <span data-lang="ar">أ.د. زكية شنة</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-chalkboard-user"></i> <span data-lang="en">Professor</span><span data-lang="fr">Enseignant</span><span data-lang="ar">أستاذ</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/teacher-dashboard.html"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/p/teacher-profile.html"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/p/teacher-sessions.html"><i class="fa-solid fa-clock"></i> <span data-lang="en">My Sessions</span><span data-lang="fr">Mes Sessions</span><span data-lang="ar">حصصي الدراسية</span></a>
+    <a href="/p/teacher-messages.html"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/p/teacher-reports.html"><i class="fa-solid fa-chart-bar"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="#settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="#appearance"><i class="fa-solid fa-palette"></i> <span data-lang="en">Appearance</span><span data-lang="fr">Apparence</span><span data-lang="ar">المظهر</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 4. ADMINISTRATION DROP DOWN -->
+<div class="state-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="fr">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="ar">د. عمار شوشان</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-user-tie"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/dept-admin-dashboard.html"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/p/dept-admin-profile.html"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/p/dept-admin-analytics.html"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/p/dept-admin-users.html"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/p/dept-admin-departments.html"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/p/dept-admin-reports.html"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/p/dept-admin-monitoring.html"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/p/dept-admin-activity-logs.html"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/p/dept-admin-messages.html"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/p/dept-admin-settings.html"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 5. PLATFORM ADMIN DROP DOWN -->
+<div class="state-platform-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Mr. Uns MAHMOUDI</span>
+      <span data-lang="fr">M. Uns MAHMOUDI</span>
+      <span data-lang="ar">أ. أنس محمودي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-server"></i> <span data-lang="en">Platform Admin</span><span data-lang="fr">Admin Plateforme</span><span data-lang="ar">مدير النظام</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/platform-admin-dashboard.html"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="#profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/p/dept-admin-analytics.html"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/p/dept-admin-users.html"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/p/dept-admin-departments.html"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/p/dept-admin-reports.html"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/p/dept-admin-monitoring.html"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/p/dept-admin-activity-logs.html"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/p/dept-admin-messages.html"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/p/dept-admin-settings.html"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+</div></div></div>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+
+  <div class="mobile-nav-section section" id="mobile-navigation"><div class="widget HTML" id="HTML22"><nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+<style>
+.mobile-nav { position: fixed; inset: var(--header-height) 0 0 0; background-color: var(--bg); padding: var(--space-lg); flex-direction: column; gap: 0; z-index: 40; border-top: 1px solid var(--border-light); transform: translateX(-100%); opacity: 0; visibility: hidden; transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s 0.35s; overflow-y: auto; }
+.mobile-nav.active { transform: translateX(0); opacity: 1; visibility: visible; transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s 0s; display: flex; }
+.mobile-nav a { font-size: 1.125rem; font-weight: 500; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light); color: var(--text); transform: translateX(-20px); opacity: 0; transition: color var(--transition), transform 0.35s ease, opacity 0.35s ease; }
+.mobile-nav.active a { transform: translateX(0); opacity: 1; } 
+.mobile-nav.active a:nth-child(1) { transition-delay: 0.08s; } 
+.mobile-nav.active a:nth-child(2) { transition-delay: 0.14s; } 
+.mobile-nav.active a:nth-child(3) { transition-delay: 0.2s; } 
+.mobile-nav.active a:nth-child(4) { transition-delay: 0.26s; }
+.mobile-nav a:hover { color: var(--primary); }
+</style>
+<a href="/"><span data-lang="en">Home</span><span data-lang="fr">Accueil</span><span data-lang="ar">الرئيسية</span></a>
+<a href="#features"><span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+<a href="/p/about.html"><span data-lang="en">About</span><span data-lang="fr">À propos</span><span data-lang="ar">حول</span></a>
+<a href="/p/contact.html"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span><span data-lang="ar">اتصل بنا</span></a>
+
+<!-- Mobile Navigation Language Selector Accordion (Mobile View Only) -->
+<div style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-light);">
+  <div class="menu-accordion-header">
+    <span style="font-size:1.125rem;font-weight:500;color:var(--text);display:flex;align-items:center;gap:var(--space-sm);">
+      <i class="fa-solid fa-globe" style="width: 1.25rem;"></i> 
+      <span data-lang="en">Language</span><span data-lang="fr">Langue</span><span data-lang="ar">اللغة</span>
+    </span>
+    <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+  </div>
+  <div class="menu-accordion-content" id="langAccordMobile" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+    <a href="#" onclick="setLanguage('en'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>English</span>
+    </a>
+    <a href="#" onclick="setLanguage('fr'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/fr.svg" alt="FR" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>Français</span>
+    </a>
+    <a href="#" onclick="setLanguage('ar'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/dz.svg" alt="AR" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>العربية</span>
+    </a>
+  </div>
+</div>
+
+<!-- Mobile Navigation Demo Selector Accordion -->
+<div style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-light);">
+  <div class="menu-accordion-header">
+    <span style="font-size:1.125rem;font-weight:500;color:var(--text);display:flex;align-items:center;gap:var(--space-sm);">
+      <i class="fa-solid fa-flask" id="demoActiveIconMobile" style="width: 1.25rem;"></i> 
+      <span id="demoActiveLabelMobile"  style="font-family: 'Cairo', sans-serif;">
+       <span id="demoActiveLabelMobile" style="font-family: 'Cairo', sans-serif;">العرض</span>
+      </span>
+    </span>
+    <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+  </div>
+  <div class="menu-accordion-content" id="demoAccordMobile" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+    <div class="demo-role-option" onclick="selectSaaSRole('student')" id="demoOptMobileStudent" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-graduation-cap" style="color:var(--primary); margin-right: 8px;"></i> <span data-lang="en">Psychology Student</span><span data-lang="fr">Étudiant en Psychologie</span><span data-lang="ar">طالب علم النفس</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="fr">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="ar">عماد عزيزي (سنة 3) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('teacher')" id="demoOptMobileTeacher" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-chalkboard-user" style="color:#10b981; margin-right: 8px;"></i> <span data-lang="en">Psychology Professor</span><span data-lang="fr">Enseignant en Psychologie</span><span data-lang="ar">أستاذ علم النفس</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="fr">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="ar">أ.د. زكية شنة (بروفيسور) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('admin')" id="demoOptMobileAdmin" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-user-tie" style="color:#f59e0b; margin-right: 8px;"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="fr">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="ar">د. عمار شوشان (أستاذ محاضر أ) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('platform-admin')" id="demoOptMobilePlatform" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-server" style="color:#6366f1; margin-right: 8px;"></i> <span data-lang="en">Platform Super Admin</span><span data-lang="fr">Super Admin Plateforme</span><span data-lang="ar">مدير النظام</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Mr. Uns MAHMOUDI • Developer</span>
+        <span data-lang="fr">M. Uns MAHMOUDI • Développeur</span>
+        <span data-lang="ar">أ. يونس محمودي • مطور البرمجية</span>
+      </span>
+    </div>
+    <div class="demo-role-option exit-demo-option" onclick="selectSaaSRole('guest')" id="demoOptMobileExit" style="padding: 0.5rem 0; border-top:1px solid var(--border-light); margin-top:0.5rem;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700; color:#ef4444;"><i class="fa-solid fa-circle-xmark" style="margin-right: 8px;"></i> <span data-lang="en">Exit Demo Mode</span><span data-lang="fr">Quitter le Mode Démo</span><span data-lang="ar">الخروج من وضع العرض</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="en">Reset to original guest state</span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="fr">Réinitialiser à l'état invité</span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="ar">إعادة تعيين إلى وضع الزائر</span>
+    </div>
+  </div>
+</div>
+</nav></div></div>
+
+  <div class="user-sidebar-overlay" id="userSidebarOverlay"></div>
+
+  <div class="mobile-user-sidebar-section section" id="mobile-user-sidebar"><div class="widget HTML" id="HTML24"><aside class="user-sidebar" id="userSidebar">
+<style>
+.user-sidebar { display: none; }
+@media (max-width: 767px) { 
+  .user-sidebar { display: flex; flex-direction: column; position: fixed; top: var(--header-height); right: 0; bottom: 0; width: 300px; max-width: 85vw; background-color: var(--bg); z-index: 45; box-shadow: -4px 0 15px rgba(0,0,0,0.1); transform: translateX(100%); transition: transform 0.35s ease; overflow-y: auto; padding: var(--space-lg); } 
+  .user-sidebar.active { transform: translateX(0); } 
+}
+.user-profile-header { margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+.user-greeting { font-size: 0.875rem; color: var(--text-secondary); } 
+.user-name { font-size: 1.125rem; font-weight: 700; color: var(--text); margin-top: 0.25rem; }
+.user-profile-actions { display: flex; gap: var(--space-xs); margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.8125rem; flex: 1; justify-content: center; border-radius: 0.5rem; } 
+.btn-outline { background-color: transparent; color: var(--primary); border: 1px solid var(--primary); } 
+.btn-outline:hover { background-color: var(--primary); color: white; }
+.user-profile-nav { display: flex; flex-direction: column; gap: var(--space-xs); } 
+.user-profile-nav a { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) 0; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); transition: color var(--transition); } 
+.user-profile-nav a i { width: 1.25rem; text-align: center; }
+.user-profile-nav a:hover { color: var(--primary); }
+.saas-subtext { font-size: 0.75rem; font-weight: 600; color: var(--primary); text-transform: uppercase; margin-top: 2px; letter-spacing: 0.05em; }
+
+/* New custom styling targeting the logout buttons */
+.user-profile-nav a[href="#logout"] {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border: 1px solid #dc2626 !important;
+  transition: all 0.2s ease !important;
+}
+.user-profile-nav a[href="#logout"]:hover {
+  background-color: #ffffff !important;
+  color: #dc2626 !important;
+  border: 1px solid #dc2626 !important;
+}
+</style>
+
+<!-- 1. GUEST USER SIDEBAR -->
+<div class="state-guest">
+  <div class="user-profile-header">
+    <div class="user-name">Welcome to AcadTrack</div>
+    <div class="user-greeting">Login to access your dashboard</div>
+  </div>
+  <div class="user-profile-actions" style="flex-direction: column; gap: 0.5rem;">
+    <a href="/p/login.html" class="btn btn-sm" style="width:100%;"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+    <a href="/p/signup.html" class="btn btn-sm btn-outline" style="width:100%;"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+    <a href="#googlesignup" class="btn btn-sm btn-outline" style="width:100%;"><i class="fa-brands fa-google"></i> Google Sign up</a>
+  </div>
+  <div class="saas-subtext" style="margin-bottom: 0.5rem;">Quick Access</div>
+  <nav class="user-profile-nav">
+    <a href="/p/features.html"><i class="fa-solid fa-star"></i> <span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+    <a href="/p/about.html"><i class="fa-solid fa-circle-info"></i> <span data-lang="en">About Platform</span><span data-lang="fr">À propos de la plateforme</span><span data-lang="ar">حول المنصة</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-question-circle"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+  </nav>
+</div>
+
+<!-- 2. STUDENT USER SIDEBAR -->
+<div class="state-student">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Imad AZIZI</span>
+      <span data-lang="fr">Imad AZIZI</span>
+      <span data-lang="ar">عماد عزيزي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-graduation-cap"></i> <span data-lang="en">Student</span><span data-lang="fr">Étudiant</span><span data-lang="ar">طالب</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/student-dashboard.html"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/p/student-profile.html"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/p/student-modules.html"><i class="fa-solid fa-book"></i> <span data-lang="en">Modules</span><span data-lang="fr">Modules</span><span data-lang="ar">المواد الدراسية</span></a>
+    <a href="/p/student-schedule.html"><i class="fa-solid fa-calendar-days"></i> <span data-lang="en">Schedule</span><span data-lang="fr">Emploi du temps</span><span data-lang="ar">جدول الحصص</span></a>
+    <a href="/p/student-grades.html"><i class="fa-solid fa-square-poll-vertical"></i> <span data-lang="en">Grades &amp; Results</span><span data-lang="fr">Notes &amp; Résultats</span><span data-lang="ar">النقاط والنتائج</span></a>
+    
+    <!-- Mobile Notification Bell integration inside the User Sidebar Menu -->
+    <div style="padding: 0.25rem 0;">
+      <div class="menu-accordion-header">
+        <span style="font-size:0.875rem;font-weight:500;color:var(--text-secondary);display:flex;align-items:center;gap:var(--space-sm);"><i class="fa-solid fa-bell"></i> <span data-lang="en">Notifications</span><span data-lang="fr">Notifications</span><span data-lang="ar">الإشعارات</span> <span style="background:#ef4444;color:white;font-size:0.65rem;font-weight:700;padding:2px 6px;border-radius:99px;margin-left:4px;">2</span></span>
+        <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+      </div>
+      <div class="menu-accordion-content" id="notifAccordStudent" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+        <a href="/p/student-grades.html" style="font-size:0.8125rem;"><i class="fa-solid fa-graduation-cap"></i> Database systems result released</a>
+        <a href="#absences" style="font-size:0.8125rem;color:#ef4444;"><i class="fa-solid fa-triangle-exclamation"></i> Network security absence logged</a>
+      </div>
+    </div>
+
+    <a href="/p/student-messages.html"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/p/student-reports.html"><i class="fa-solid fa-chart-pie"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="/p/student-settings.html"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 3. TEACHER USER SIDEBAR -->
+<div class="state-teacher">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Pr. Zakia CHENNA</span>
+      <span data-lang="fr">Pr. Zakia CHENNA</span>
+      <span data-lang="ar">أ.د. زكية شنة</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-chalkboard-user"></i> <span data-lang="en">Professor</span><span data-lang="fr">Enseignant</span><span data-lang="ar">أستاذ</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/teacher-dashboard.html"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/p/teacher-profile.html"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/p/teacher-sessions.html"><i class="fa-solid fa-clock"></i> <span data-lang="en">My Sessions</span><span data-lang="fr">Mes Sessions</span><span data-lang="ar">حصصي الدراسية</span></a>
+
+    <!-- Mobile Notification Bell integration inside the User Sidebar Menu -->
+    <div style="padding: 0.25rem 0;">
+      <div class="menu-accordion-header">
+        <span style="font-size:0.875rem;font-weight:500;color:var(--text-secondary);display:flex;align-items:center;gap:var(--space-sm);"><i class="fa-solid fa-bell"></i> <span data-lang="en">Notifications</span><span data-lang="fr">Notifications</span><span data-lang="ar">الإشعارات</span> <span style="background:#ef4444;color:white;font-size:0.65rem;font-weight:700;padding:2px 6px;border-radius:99px;margin-left:4px;">2</span></span>
+        <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+      </div>
+      <div class="menu-accordion-content" id="notifAccordTeacher" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+        <a href="#grades" style="font-size:0.8125rem;"><i class="fa-solid fa-file-arrow-up"></i> Ahmed submitted Web Dev assignment</a>
+        <a href="#schedule" style="font-size:0.8125rem;"><i class="fa-solid fa-clock"></i> TP starts in 1 hour</a>
+      </div>
+    </div>
+
+    <a href="/p/teacher-messages.html"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/p/teacher-reports.html"><i class="fa-solid fa-chart-bar"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="#settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="#appearance"><i class="fa-solid fa-palette"></i> <span data-lang="en">Appearance</span><span data-lang="fr">Apparence</span><span data-lang="ar">المظهر</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 4. ADMINISTRATION USER SIDEBAR -->
+<div class="state-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="fr">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="ar">د. عمار شوشان</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-user-tie"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/dept-admin-dashboard.html"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/p/dept-admin-profile.html"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/p/dept-admin-analytics.html"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/p/dept-admin-users.html"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/p/dept-admin-departments.html"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/p/dept-admin-reports.html"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/p/dept-admin-monitoring.html"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/p/dept-admin-activity-logs.html"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/p/dept-admin-messages.html"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/p/dept-admin-settings.html"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 5. PLATFORM ADMIN USER SIDEBAR -->
+<div class="state-platform-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Mr. Uns MAHMOUDI</span>
+      <span data-lang="fr">M. Uns MAHMOUDI</span>
+      <span data-lang="ar">أ. أنس محمودي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-server"></i> <span data-lang="en">Platform Admin</span><span data-lang="fr">Admin Plateforme</span><span data-lang="ar">مدير النظام</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/p/platform-admin-dashboard.html"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="#profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/p/dept-admin-analytics.html"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/p/dept-admin-users.html"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/p/dept-admin-departments.html"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/p/dept-admin-reports.html"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/p/dept-admin-monitoring.html"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/p/dept-admin-activity-logs.html"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/p/dept-admin-messages.html"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/p/dept-admin-settings.html"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/p/help-center.html"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+</aside></div></div>
+
+
+  <main id="main-content" class="site-main">
+    <div class="container layout">
+      <div class="content">
+        <div class="widget Blog" id="Blog1">
+          <article class="article">
+            <header class="article__header">
+              <h1 class="article__title">Platform Presentation</h1>
+            </header>
+            <div class="article__content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>AcadTrack — Official Conference Presentation</title>
+
+  <!-- Google Cairo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- SaaS UI Stylesheet -->
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text: #0f172a;
+      --text-secondary: #475569;
+      --text-light: #94a3b8;
+      --bg: #ffffff;
+      --bg-cool: #f8fafc;
+      --bg-warm: #f1f5f9;
+      --border: #cbd5e1;
+      --border-light: #e2e8f0;
+      --card: #ffffff;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --radius-lg: 16px;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.05);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg-cool);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== EXPLICIT LAYOUT OVERRIDE ===== */
+    .article__header {
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--border-light);
+      display: none;
+    }
+    .layout {
+      display: contents;
+      gap: var(--space-xl);
+    }
+    .article {
+      max-width: -webkit-fill-available;
+      margin: -27px auto;
+    }
+
+    /* Hide Blogger Default wrappers */
+    .sidebar, .page-title, .sidebar-widget { display: none !important; }
+    .layout { grid-template-columns: 1fr !important; }
+    .site-main { display: block !important; padding: 0 !important; }
+
+    /* Page Wrapper */
+    .saas-container {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 60px 24px !important;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Showcase Card */
+    .showcase-card {
+      background-color: var(--card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: var(--shadow-lg);
+    }
+    .showcase-icon {
+      width: 80px;
+      height: 80px;
+      background: #eff6ff;
+      color: var(--primary);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+    .showcase-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .showcase-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    /* Action Buttons */
+    .btn-saas {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 32px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn-saas-primary {
+      background-color: var(--primary);
+      color: #ffffff !important;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+    }
+    .btn-saas-primary:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+    }
+
+    /* ===== IMMERSIVE FULL-VIEWPORT OVERLAY MODAL (DESKTOP & MOBILE) ===== */
+    .presentation-modal-overlay {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      background: #0b0f19 !important; /* Matches presentation background */
+      z-index: 10000000 !important; /* Highest priority stacking */
+      display: none;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .presentation-modal-overlay.active {
+      display: flex !important;
+      opacity: 1 !important;
+    }
+
+    /* Isolated iframe rendering window */
+    .presentation-iframe {
+      width: 100% !important;
+      height: 100% !important;
+      border: none !important;
+      background: transparent !important;
+    }
+
+    /* Outside Close Button */
+    .pres-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 18px;
+      z-index: 10000010; /* Keep on top of the iframe */
+      transition: all 0.2s ease;
+    }
+    .pres-close-btn:hover {
+      background: #dc2626;
+      border-color: #dc2626;
+      transform: scale(1.05);
+    }
+
+    /* ===== RTL SUPPORT ===== */
+    .lang-ar .saas-container { direction: rtl; }
+    .lang-ar .showcase-card { text-align: right; }
+    .lang-ar .btn-saas-primary i { transform: scaleX(-1); }
+    .lang-ar .pres-close-btn { right: auto; left: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="saas-container" id="saasContainer">
+  <div class="showcase-card">
+    <div class="showcase-icon"><i class="fa-solid fa-desktop"></i></div>
+    
+    <h2 class="showcase-title">
+      <span data-lang="en">National Conference Presentation 2026</span>
+      <span data-lang="fr">Présentation Nationale de la Conférence</span>
+      <span data-lang="ar">الملتقى الوطني حول البرمجيات التعليمية 2026</span>
+    </h2>
+    
+    <p class="showcase-desc">
+      <span data-lang="en">Launch the interactive presentation of AcadTrack ERP designed for the National Conference on Educational Software and Digital Assessment Tools at Batna 1 University.</span>
+      <span data-lang="fr">Lancez la présentation interactive d'AcadTrack ERP conçue pour la conférence nationale sur les logiciels éducatifs à l'Université Batna 1.</span>
+      <span data-lang="ar">شغل العرض التقديمي التفاعلي المبتكر لمنصة AcadTrack والموجه للملتقى الوطني حول البرمجيات التعليمية وأدوات التقييم الرقمية بكلية العلوم الإنسانية والاجتماعية بجامعة باتنة 1.</span>
+    </p>
+    
+    <button class="btn-saas btn-saas-primary" onclick="openSaaSPresentationModal()">
+      <i class="fa-solid fa-play"></i>
+      <span data-lang="en">Open Presentation</span><span data-lang="fr">Ouvrir la Présentation</span><span data-lang="ar">عرض العرض التقديمي</span>
+    </button>
+  </div>
+</div>
+
+<!-- IMMERSIVE FULL-VIEWPORT OVERLAY MODAL -->
+<div class="presentation-modal-overlay" id="presentationModal">
+  <!-- Close Button -->
+  <button class="pres-close-btn" onclick="closeSaaSPresentationModal()" title="Close Presentation">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  
+  <!-- Isolated iframe viewport [1] -->
+  <iframe id="presentationIframe" class="presentation-iframe" src="about:blank"></iframe>
+</div>
+
+<!-- ============================================= -->
+<!-- UNCHANGED PRESENTATION CODE INJECTOR TEMPLATE [1] -->
+<!-- ============================================= -->
+<template id="presentation-template">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>العرض التقديمي لمنصة AcadTrack — الملتقى الوطني 2026</title>
+
+  <!-- Google Cairo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+
+  <style>
+    /* ===== SYSTEM RESET & SKELETON ===== */
+    html, body {
+      margin: 0; padding: 0;
+      width: 100vw; height: 100vh;
+      background-color: #0b0f19; /* Dark Slate space */
+      overflow: hidden;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    /* Outer Scale Viewport Frame [1] */
+    .slide-viewport {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Fixed Aspect Ratio Slide Canvas Container [1] */
+    #slide-wrapper {
+      width: 1280px;
+      height: 720px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      transform-origin: center;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Slide Sections */
+    .slide-canvas {
+      display: none;
+      width: 100%;
+      height: 100%;
+      padding: 40px 60px;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .slide-canvas.active {
+      display: flex;
+      animation: slideInEffect 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes slideInEffect {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Header & Title bar */
+    .slide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 12px;
+    }
+    .slide-header h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 0;
+    }
+    .slide-logo {
+      height: 28px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* Slide main body area */
+    .slide-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 0;
+      text-align: right;
+    }
+
+    /* Global Typography */
+    .title-primary { font-size: 38px; font-weight: 800; color: #ffffff; line-height: 1.25; margin-bottom: 15px; }
+    .title-primary span { background: linear-gradient(135deg, #60a5fa, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .title-sub { font-size: 20px; font-weight: 700; color: #38bdf8; margin-bottom: 24px; }
+    .paragraph-text { font-size: 16px; line-height: 1.7; color: #cbd5e1; font-weight: 500; }
+    .quote-box { background: rgba(255,255,255,0.04); border-right: 4px solid #2563eb; padding: 24px; border-radius: 8px; margin: 20px 0; }
+
+    /* Footer and Nav Controls */
+    .slide-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1.5px solid rgba(255, 255, 255, 0.08);
+      padding-top: 12px;
+      font-size: 12px;
+      color: #64748b;
+      font-weight: 700;
+    }
+    .slide-nav-controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .nav-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .nav-btn:hover { background: #2563eb; color: #ffffff; border-color: #2563eb; }
+    .btn-fs { background: #10b981; color: white; border-color: #10b981; margin-right: 12px; }
+    .btn-fs:hover { background: #059669; border-color: #059669; }
+
+    /* Grids & Cards */
+    .info-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .info-card { background: rgba(255, 255, 255, 0.03); border: 1.5px solid rgba(255, 255, 255, 0.06); border-radius: 12px; padding: 18px; transition: transform 0.2s; }
+    .info-card:hover { transform: translateY(-4px); border-color: rgba(37, 99, 235, 0.3); }
+    .info-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 12px; background: rgba(255,255,255,0.05); color: #2563eb; }
+    .info-card-title { font-size: 14.5px; font-weight: 800; color: #ffffff; margin-bottom: 6px; }
+    .info-card-desc { font-size: 12.5px; color: #94a3b8; line-height: 1.5; }
+
+    /* Table styles */
+    .saas-table { width: 100%; border-collapse: collapse; text-align: right; font-size: 13.5px; }
+    .saas-table th { background-color: rgba(255,255,255,0.04); padding: 12px 18px; font-weight: 700; color: #94a3b8; border-bottom: 1.5px solid rgba(255,255,255,0.08); }
+    .saas-table td { padding: 12px 18px; border-bottom: 1px solid rgba(255,255,255,0.04); color: #cbd5e1; }
+
+    /* Wave animation for title slide */
+    .wave-path { stroke-dasharray: 800; stroke-dashoffset: 800; animation: traceLine 3s ease forwards; }
+    @keyframes traceLine { to { stroke-dashoffset: 0; } }
+
+    /* RTL specific icon flips */
+    .lang-ar .fa-chevron-left { transform: rotate(180deg); }
+    .lang-ar .fa-chevron-right { transform: rotate(180deg); }
+  </style>
+</head>
+<body class="lang-ar">
+
+<div class="slide-viewport">
+  <div id="slide-wrapper">
+
+    <!-- ============================================= -->
+    <!-- SLIDE 1: TITLE SLIDE (صفحة العنوان) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas active" id="slide-1">
+      <div class="slide-header">
+        <h3>AcadTrack ERP</h3>
+        <!-- Blogger logo placeholder link -->
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <div class="row align-items-center">
+          <div class="col-7">
+            <h1 class="title-primary" style="font-size: 44px; margin-bottom: 10px;">نظام ذكي موحد لتسيير <span>الحياة الأكاديمية والتقييم الرقمي</span></h1>
+            <div class="title-sub" style="font-size: 18px;">الملتقى الوطني حول البرمجيات التعليمية وأدوات التقييم الرقمية</div>
+            
+            <div style="margin-top: 30px;">
+              <div style="font-size: 15px; font-weight:700; color: #cbd5e1;">تقديم: الأستاذة الدكتورة شنة زكية (Pr. CHENNA Zakia)</div>
+              <div style="font-size: 13.5px; color:#94a3b8; margin-top: 4px;">جامعة باتنة 1 — كلية العلوم الإنسانية والاجتماعية &nbsp;·&nbsp; 03-04 جوان 2026</div>
+            </div>
+          </div>
+          <div class="col-5 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="80%" height="80%">
+              <g fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="250" cy="275" r="52" fill="#2563eb" fill-opacity="0.1" class="wave-path" />
+                <path d="M 148 395 A 120 120 0 0 1 352 395" class="wave-path" />
+                <path d="M 162 290 A 92 92 0 1 1 338 290" stroke="#3b82f6" class="wave-path" />
+                <path d="M 129 328 A 136 136 0 1 1 371 328" stroke="#60a5fa" class="wave-path" />
+                <path d="M 97 365 A 180 180 0 1 1 403 365" stroke="#93c5fd" class="wave-path" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>أ.د. شنة زكية — جامعة باتنة 1</span>
+        <div class="slide-nav-controls">
+          <button class="nav-btn btn-fs" onclick="toggleFullScreen()" title="الشاشة الكاملة"><i class="fa-solid fa-expand"></i></button>
+          <button class="nav-btn" onclick="prevSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+          <span style="margin: 0 4px;" id="slideNumTracker">1 / 23</span>
+          <button class="nav-btn" onclick="nextSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 2: INTRODUCTION (مقدمة والتحول الرقمي) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-2">
+      <div class="slide-header">
+        <h3>الإطار العلمي والإشكالية</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">التحول الرقمي في <span>مؤسسات التعليم العالي</span></h2>
+        <p class="paragraph-text" style="max-width: 900px; margin-bottom: 20px;">
+          يشهد قطاع التعليم العالي اليوم تحولاً رقمياً متسارعاً يهدف لتحديث عمليات التسيير البيداغوجي. لم يعد دمج الأنظمة خياراً كلاسيكياً بل ضرورة بيداغوجية ملحة لتحقيق الجودة والعدالة والنزاهة الإدارية والأكاديمية للفئات الجامعية المختلفة.
+        </p>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-rotate"></i></div>
+            <div class="info-card-title">تكامل العمليات الأكاديمية</div>
+            <div class="info-card-desc">دمج الحضور، التقييم، الجداول والمراسلات في قاعدة بيانات موحدة تلغي تكرار العمليات.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="info-card-title">المزامنة في الزمن الحقيقي</div>
+            <div class="info-card-desc">اتصال دائم ولحظي لتحديث الإحصاءات والغيابات والدرجات لمتخذي القرار والطلبة.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <div class="info-card-title">خصوصية وحصانة البيانات</div>
+            <div class="info-card-desc">بناء بيئة عمل محلية ومؤمنة (Local-first) تحمي كشوف وسجلات الطلبة من التهديدات.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 1: الإطار العام والإشكالية</span>
+        <span>2 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 3: PROBLEM SPACE (واقع التحديات الجامعية) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-3">
+      <div class="slide-header">
+        <h3>فضاء المشكلة والتحديات</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">واقع وتحديات <span>التسيير الأكاديمي التقليدي</span></h2>
+        <div class="table-card" style="margin-top: 15px;">
+          <table class="saas-table">
+            <thead>
+              <tr>
+                <th>التحدي الإداري</th>
+                <th>المظهر الواقعي</th>
+                <th>الأثر على جودة التعليم والنزاهة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="font-weight:700;">تشتت البيانات (Fragmentation)</td>
+                <td>دفاتر حضور ورقية متفرقة، ملفات Excel للعلامات غير مترابطة.</td>
+                <td>صعوبة التنسيق، بطء في تجميع كشوف الامتحانات النهائية والمداولات.</td>
+              </tr>
+              <tr>
+                <td style="font-weight:700;">الاحتيال في تسجيل الحضور</td>
+                <td>توقيعات ورقية تقليدية يسهل تزويرها أو تسجيل حضور بالنيابة.</td>
+                <td>تجاوز عتبات الإقصاء البيداغوجي (نسبة غياب 20%) دون رصد حقيقي.</td>
+              </tr>
+              <tr>
+                <td style="font-weight:700;">غياب الشفافية اللحظية</td>
+                <td>تأخر إعلان العلامات، وصعوبة تتبع الطالب لغياباته الأسبوعية.</td>
+                <td>ضعف حافز التحصيل لدى الطلبة وتأخر التدخل البيداغوجي للمتعثرين.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 1: الإطار العام والإشكالية</span>
+        <span>3 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 4: RESEARCH CHALLENGE (الإشكالية المركزية) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-4">
+      <div class="slide-header">
+        <h3>الإشكالية العلمية المركزية</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary" style="font-size:32px;">كيف نصمم نظاماً أكاديمياً ذكياً يربط <span>كل العمليات في الزمن الحقيقي؟</span></h2>
+        <div class="quote-box" style="font-size: 16.5px; line-height: 1.8; font-weight:600; color: #cbd5e1;">
+          تتمحور الإشكالية حول كيفية بناء بوابة أكاديمية موحدة ومقاومة للتلاعب، تتجاوز المعالجة الورقية التقليدية بنظام مؤتمت يحافظ على أمان البيانات محلياً، ويدمج الحضور والتقييم والتقويم بالاعتماد على خوارزميات ذكية ونماذج بيداغوجية متكاملة.
+        </div>
+        <div class="row mt-3">
+          <div class="col-4"><div style="border-right: 3px solid #10b981; padding-right:12px;"><h4 style="font-size:15px; font-weight:800; color:#10b981;">حضور ذكي وموثوق</h4><p style="font-size:12.5px; color:#cbd5e1; margin:0;">منع التزوير والتسجيل عن بعد.</p></div></div>
+          <div class="col-4"><div style="border-right: 3px solid #3b82f6; padding-right:12px;"><h4 style="font-size:15px; font-weight:800; color:#3b82f6;">رصد آلي مرن للدرجات</h4><p style="font-size:12.5px; color:#cbd5e1; margin:0;">معادلات احتساب معدلات لحظية.</p></div></div>
+          <div class="col-4"><div style="border-right: 3px solid #7c3aed; padding-right:12px;"><h4 style="font-size:15px; font-weight:800; color:#7c3aed;">إشعارات فورية متكاملة</h4><p style="font-size:12.5px; color:#cbd5e1; margin:0;">تأمين سرعة إيصال وتكامل المعلومات.</p></div></div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 1: الإطار العام والإشكالية</span>
+        <span>4 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 5: WHAT IS ACADTRACK (تقديم الحل) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-5">
+      <div class="slide-header">
+        <h3>نظرة عامة على النظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">الحل المقترح: منصة <span>AcadTrack الذكية</span></h2>
+        <p class="paragraph-text" style="max-width: 950px; margin-bottom: 20px;">
+          AcadTrack هي منصة سحابية رائدة ونظام تسيير أكاديمي متكامل (SaaS) مصمم لرقمنة وهيكلة الكليات والجامعات. تتبنى المنصة أحدث أساليب الأمان وحفظ البيانات محلياً مع توفير فضاءات مخصصة تترابط لحظياً عبر خوادم محلية مشفرة.
+        </p>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="info-card-title">نظام موحد شامل</div>
+            <div class="info-card-desc">واجهة موحدة تجمع تسيير الأقسام، الأفواج، المقاييس، رصد الحضور، النقاط والتقارير الإحصائية.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="info-card-title">التخزين المحلي الآمن</div>
+            <div class="info-card-desc">تخزين محلي للبيانات (Local-first) يضمن أمانها وسرعتها، مع إمكانية أرشفة واستعادة البيانات بملفات JSON.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-flag-usa"></i></div>
+            <div class="info-card-title">دعم متعدد اللغات و RTL</div>
+            <div class="info-card-desc">واجهة متجاوبة ومترجمة بالكامل للعربية والفرنسية والإنجليزية مع تبديل وانعكاس فوري للغات.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 2: نظرة عامة على النظام</span>
+        <span>5 / 23</span>
+      </div>
+    </div>
+
+    <!-- = : SESSIONS PLANNER -->
+    <div class="slide-canvas" id="slide-6">
+      <div class="slide-header">
+        <h3>نظرة عامة على النظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">الأهداف الإستراتيجية <span>لمنصة AcadTrack</span></h2>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <ul class="paragraph-text" style="display:flex; flex-direction:column; gap:16px;">
+              <li><strong>أتمتة الأعمال البيداغوجية:</strong> إلغاء السجلات الورقية واليدوية بالتحول لنظام إلكتروني لحظي.</li>
+              <li><strong>العدالة والشفافية في التقييم:</strong> رصد دقيق وحساب آلي للدرجات يمنع أخطاء الجمع والتحويل البشري.</li>
+              <li><strong>تعزيز النزاهة والانضباط:</strong> فرض موثوقية عالية لتسجيل الغيابات باستبعاد الحضور الوهمي.</li>
+              <li><strong>دعم اتخاذ القرار الإداري:</strong> إمداد الإدارة بالتحليلات والإحصائيات الصائبة حول تقدم المقررات وتفاعل الطلبة.</li>
+            </ul>
+          </div>
+          <div class="col-4 text-center">
+            <i class="fa-solid fa-circle-nodes" style="font-size: 8rem; color:#2563eb;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 2: نظرة عامة على النظام</span>
+        <span>6 / 23</span>
+      </div>
+    </div>
+
+    <!-- =: CORE MODULES -->
+    <div class="slide-canvas" id="slide-7">
+      <div class="slide-header">
+        <h3>من هم المستفيدون؟</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">منظومة أكاديمية متكاملة <span>لجميع الفئات</span></h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <div class="info-card-title">إدارة القسم والكلية</div>
+            <div class="info-card-desc">متابعة غيابات الطلبة، إحصاءات النجاح، تفعيل تذاكر الدعم واشتراكات الأساتذة، واستخراج كشوف الـ PDF.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="info-card-title">أستاذ المقياس</div>
+            <div class="info-card-desc">جدولة الحصص، رصد الحضور يدوياً أو بالـ QR، تعبئة درجات الامتحانات والـ TD، وتوليد التقارير والامتحانات بذكاء.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="info-card-title">الطالب الجامعي</div>
+            <div class="info-card-desc">تسجيل حضوره بالهاتف عبر الموقع الجغرافي والـ QR، تتبع نقاطه ومعدلاته، وتلقي التنبيهات الفورية العاجلة.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 3: من هم المستفيدون؟</span>
+        <span>7 / 23</span>
+      </div>
+    </div>
+
+    <!-- =: SMART ATTENDANCE (التحضير الذكي) -->
+    <div class="slide-canvas" id="slide-8">
+      <div class="slide-header">
+        <h3>المكونات الأساسية للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">نظام تسجيل الحضور الذكي <span>ومتعدد الطبقات</span></h2>
+        <p class="paragraph-text" style="margin-bottom: 20px;">
+          يتعدى نظام تسجيل الحضور في AcadTrack الأسلوب التقليدي ليصبح منظومة متكاملة من أدوات التحقق لضمان الموثوقية:
+        </p>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-qrcode"></i></div>
+            <div class="info-card-title">الـ QR Code الديناميكي</div>
+            <div class="info-card-desc">توليد رمز QR مشفر للحصة يدور ويتغير كل 60 ثانية، مما يمنع تصويره أو مشاركته مع الطلاب الغائبين.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+            <div class="info-card-title">التحقق الجغرافي (GPS)</div>
+            <div class="info-card-desc">مطابقة موقع هاتف الطالب الجغرافي بالـ GPS للتأكد من تواجده الفعلي داخل القاعة (نطاق 50 متراً).</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-id-card"></i></div>
+            <div class="info-card-title">ماسح بطاقات الـ NFC</div>
+            <div class="info-card-desc">دعم مسح البطاقات الجامعية الذكية عبر مستشعرات الهاتف والباركود لتسجيل فوري في ثانية واحدة.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 4: المكونات الأساسية للنظام</span>
+        <span>8 / 23</span>
+      </div>
+    </div>
+
+    <!-- =: QR EXPIRED TIMER -->
+    <div class="slide-canvas" id="slide-9">
+      <div class="slide-header">
+        <h3>المكونات الأساسية للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">آلية الـ QR Code الديناميكي <span>والتشفير الزمني</span></h2>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <p class="paragraph-text">
+              تم تصميم خوارزمية توليد الـ QR الديناميكي لربط الرمز المشفر بمتغيرات الجلسة والزمن:
+            </p>
+            <ul class="paragraph-text" style="display:flex; flex-direction:column; gap:12px;">
+              <li><strong>صلاحية محدودة للغاية:</strong> تنتهي صلاحية الرمز تلقائياً في خوادم التحقق لمنع حفظه وإرساله خارج القاعة.</li>
+              <li><strong>مقاومة التلاعب والتحايل:</strong> كشف ومنع تسجيل الحضور عن طريق لقطات الشاشة (Screenshot Prevention) والصور المكررة.</li>
+              <li><strong>التحديث اللحظي للرصد:</strong> ربط ماسح الحضور بأجهزة الطلبة لتسجيل الحضور المباشر في كشوف الأستاذ دون الحاجة لتحديث الصفحة.</li>
+            </ul>
+          </div>
+          <div class="col-4 text-center">
+            <i class="fa-solid fa-qrcode" style="font-size: 8rem; color:#2563eb; padding: 15px; border: 2px dashed #2563eb; border-radius: 8px;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 4: المكونات الأساسية للنظام</span>
+        <span>9 / 23</span>
+      </div>
+    </div>
+
+    <!-- =: GEOFENCING SATELLITE MAP -->
+    <div class="slide-canvas" id="slide-10">
+      <div class="slide-header">
+        <h3>المكونات الأساسية للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">التحقق الجغرافي بالـ GPS <span>ومنع التسجيل عن بعد</span></h2>
+        <div class="row align-items-center">
+          <div class="col-4 text-center">
+            <i class="fa-solid fa-location-dot" style="font-size: 7rem; color:#ef4444;"></i>
+          </div>
+          <div class="col-8">
+            <p class="paragraph-text">
+              يتبنى نظام Geofencing في البوابة الذكية حماية جغرافية تمنع تسجيل الغيابات والحضور من خارج الكلية:
+            </p>
+            <ul class="paragraph-text" style="display:flex; flex-direction:column; gap:12px;">
+              <li><strong>تحديد النطاق الجغرافي:</strong> إحاطة مبنى قاعة التدريس بنطاق افتراضي دائري مغلق (مثلاً 50 متراً).</li>
+              <li><strong>الحساب الرياضي للمسافة:</strong> حساب المسافة بين الطالب وقاعة الدرس لحظة مسح الـ QR باستخدام خوارزمية الهافرسين الجغرافية.</li>
+              <li><strong>حظر المحاولات الخارجية:</strong> حظر وحجب الحضور تلقائياً إذا كان الطالب متواجداً خارج نطاق الكلية أو القاعة.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 4: المكونات الأساسية للنظام</span>
+        <span>10 / 23</span>
+      </div>
+    </div>
+
+    <!-- =: EXCEL-STYLE GRADES MATRIX -->
+    <div class="slide-canvas" id="slide-11">
+      <div class="slide-header">
+        <h3>المكونات الأساسية للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">دفتر رصد وعرض النقاط <span>الذكي والموزون</span></h2>
+        <p class="paragraph-text" style="margin-bottom:15px;">
+          تضم البوابة شبكة رصد متميزة شبيهة ببرنامج Excel تمنح أستاذ المقياس والمشرف الأكاديمي مرونة وحسابات دقيقة:
+        </p>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-calculator"></i></div>
+            <div class="info-card-title">الحساب التلقائي للمعدل</div>
+            <div class="info-card-desc">الدمج التلقائي وحساب معدل السداسي بناءً على أوزان التقييم (الامتحان، الـ TD، الـ TP، المشاركة والواجبات).</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="info-card-title">سجل عمليات التعديل</div>
+            <div class="info-card-desc">سجل كامل للأمان يدقق ويرصد كل تعديل للعلامة، مسجلاً المعرف، الوقت والـ IP للأستاذ المسؤول.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-lock"></i></div>
+            <div class="info-card-title">إقفال وحصانة العلامات</div>
+            <div class="info-card-desc">إقفال آلي ومبرمج للعلامات بعد انتهاء فترات التصحيح والطعون لضمان مصداقية وحصانة النتائج من التعديل.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 4: المكونات الأساسية للنظام</span>
+        <span>11 / 23</span>
+      </div>
+    </div>
+
+    <!-- =: DYNAMIC ADVANCED ANALYTICS -->
+    <div class="slide-canvas" id="slide-12">
+      <div class="slide-header">
+        <h3>المكونات الأساسية للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">لوحة تحليلات الأداء <span>والتنبؤ بالتعثر</span></h2>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <p class="paragraph-text">
+              تتحول البيانات المجمعة من كشوف الغيابات والنقاط إلى مؤشرات مرئية تمنح الإدارة والأستاذ تحليلات هامة:
+            </p>
+            <ul class="paragraph-text" style="display:flex; flex-direction:column; gap:12px;">
+              <li><strong>توزيع منحنيات النقاط:</strong> مراقبة مستويات التحصيل وعرض الرسوم البيانية لتوزيع درجات الفوج.</li>
+              <li><strong>ارتباط الحضور بالنتائج:</strong> دراسة أثر الغيابات والالتزام بالحضور على تحصيل الطالب ومعدله.</li>
+              <li><strong>رصد كشوف الحالات المعرضة للخطر:</strong> فرز تلقائي للطلبة المهددين بالإقصاء أو الرسوب (حضور &lt; 80% أو معدل &lt; 10).</li>
+            </ul>
+          </div>
+          <div class="col-4 text-center">
+            <i class="fa-solid fa-chart-line" style="font-size: 8rem; color:#10b981;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 4: المكونات الأساسية للنظام</span>
+        <span>12 / 23</span>
+      </div>
+    </div>
+
+    <!-- =: REPORTS PDF MAKER -->
+    <div class="slide-canvas" id="slide-13">
+      <div class="slide-header">
+        <h3>المكونات الأساسية للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">مركز استخراج <span>التقارير والمحاضر الرسمية</span></h2>
+        <div class="row align-items-center">
+          <div class="col-4 text-center">
+            <i class="fa-solid fa-file-pdf" style="font-size: 8rem; color:#ef4444;"></i>
+          </div>
+          <div class="col-8">
+            <p class="paragraph-text">
+              يسهل مركز التقارير استخراج وطباعة المستندات الأكاديمية بنقرة واحدة:
+            </p>
+            <ul class="paragraph-text" style="display:flex; flex-direction:column; gap:12px;">
+              <li><strong>محاضر نقاط وتوقيعات PDF:</strong> تجميع وتوليد محاضر النقاط الرسمية المنسقة برأسية وزارة التعليم العالي وشعار جامعة باتنة 1.</li>
+              <li><strong>تصدير جداول كشوف الـ CSV:</strong> تصدير سريع لقوائم غيابات وحضور الطلبة في ملفات وجداول Excel.</li>
+              <li><strong>سرعة أرشفة الملفات:</strong> توفير هائل في الوقت والجهد في تجميع وتوثيق الملفات الإدارية للفوج.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 4: المكونات الأساسية للنظام</span>
+        <span>13 / 23</span>
+      </div>
+    </div>
+
+    <!-- =: SYSTEM SECURITY & AUDIT TRAIL -->
+    <div class="slide-canvas" id="slide-14">
+      <div class="slide-header">
+        <h3>المكونات الأساسية للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">أمن النظام وسجلات <span>العمليات التاريخية</span></h2>
+        <p class="paragraph-text" style="margin-bottom:15px;">
+          يتبنى النظام معايير أمان صارمة تضمن توثيق ورصد كافة الحركات المنجزة بوضوح:
+        </p>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-binoculars"></i></div>
+            <div class="info-card-title">مراقبة ورصد النشاط</div>
+            <div class="info-card-desc">سجل كامل ومستمر يعرض تفاصيل حركات التسيير، إدخال العلامات، الغيابات، وتفعيل الاشتراكات بالـ IP والتوقيت.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <div class="info-card-title">كشف التهديدات والاختراقات</div>
+            <div class="info-card-desc">تنبيهات فورية في حال رصد حركات مشبوهة (مثل مسح QR متكرر من جهاز غريب أو محاولة رصد من خارج النطاق).</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fa-solid fa-key"></i></div>
+            <div class="info-card-title">تحديد الصلاحيات والمقاييس</div>
+            <div class="info-card-desc">توزيع دقيق ومحمي للمهام والولوج يمنع تداخل الصلاحيات البيداغوجية بين الأساتذة والإدارة والطلبة.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 4: المكونات الأساسية للنظام</span>
+        <span>14 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 15: AI ADVANCED FEATURES (مولد الامتحانات) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-15">
+      <div class="slide-header">
+        <h3>ميزات الذكاء الاصطناعي المتقدمة</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="title-primary">المولد الذكي للامتحانات <span>AI Exam Generator</span></h2>
+            <p class="paragraph-text">
+              من أهم ركائز التطوير في AcadTrack هو دمج الذكاء الاصطناعي (SaaS AI Compiler) في الأتمتة البيداغوجية وإتاحة توليد الامتحانات والتقييمات للأساتذة في ثوانٍ:
+            </p>
+            <ul class="paragraph-text" style="display:flex; flex-direction:column; gap:10px;">
+              <li><strong>رفع مستندات ومصادر المحاضرات:</strong> معالجة وقراءة ملفات الـ PDF ومذكرات الدرس المرفوعة وفهم سياقها المعرفي.</li>
+              <li><strong>توليد ذكي متنوع للأسئلة:</strong> صياغة فورية ومتوازنة لأسئلة الامتحان (QCM، صح وخطأ، أسئلة تحليلية ومقالية قصيرة).</li>
+              <li><strong>توليد نموذج التصحيح والـ Rubric:</strong> بناء معايير الإجابة وتوزيع النقاط لكل سؤال لمطابقتها في التصحيح التلقائي.</li>
+            </ul>
+          </div>
+          <div class="col-4 text-center">
+            <i class="fa-solid fa-brain" style="font-size: 8rem; color:#7c3aed;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 5: ميزات الذكاء الاصطناعي المتقدمة</span>
+        <span>15 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 16: AI ROADMAP 1 (خطوات المولد الذكي) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-16">
+      <div class="slide-header">
+        <h3>ميزات الذكاء الاصطناعي المتقدمة</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">آلية عمل مولد الامتحانات <span>(AI Workflow)</span></h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon" style="color:#7c3aed; background:rgba(124,58,237,0.1);"><i class="fa-solid fa-file-arrow-up"></i></div>
+            <div class="info-card-title">1. رفع الملفات وتحليلها</div>
+            <div class="info-card-desc">يقوم الأستاذ برفع ملفات المحاضرة، ويقوم الذكاء الاصطناعي باستخراج المفاهيم الأساسية والأهداف البيداغوجية.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon" style="color:#7c3aed; background:rgba(124,58,237,0.1);"><i class="fa-solid fa-gears"></i></div>
+            <div class="info-card-title">2. توليد الأسئلة وتدرجها</div>
+            <div class="info-card-desc">تصاغ أسئلة الامتحان تلقائياً بحسب مستويات تصنيف بلوم الإدراكية (تذكر، فهم، تطبيق، تحليل).</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon" style="color:#7c3aed; background:rgba(124,58,237,0.1);"><i class="fa-solid fa-file-signature"></i></div>
+            <div class="info-card-title">3. مراجعة وبناء الـ Rubric</div>
+            <div class="info-card-desc">يولد النظام كشف الإجابات النموذجية ومعايير توزيع الدرجات، ثم يصادق الأستاذ على النموذج النهائي.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 5: ميزات الذكاء الاصطناعي المتقدمة</span>
+        <span>16 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 17: LIVE DEMO SCREEN 1 (بدء المحاكاة الحية) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-17">
+      <div class="slide-header">
+        <h3>العرض الحي والمباشر للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">سيناريو المحاكاة: <span>جلسة بيداغوجية حقيقية</span></h2>
+        <p class="paragraph-text" style="max-width: 900px; margin-bottom: 20px;">
+          سنستعرض الآن في هذا العرض الحي والمباشر كيفية تسيير جلسة تدريسية ومتابعة الطلبة لحظياً عبر شاشتين متزامنتين (شاشة الأستاذ وشاشة الطالب عمر):
+        </p>
+        <div class="info-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="info-card">
+            <div class="info-card-title" style="color:#2563eb; font-size:15px;">1. تسجيل الدخول والبدء</div>
+            <div class="info-card-desc">تأكيد صلاحيات الولوج وإنشاء الأستاذ لجلسة دراسية حية وتوليد كود الـ QR الديناميكي فوراً.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-title" style="color:#10b981; font-size:15px;">2. رصد الحضور والغيابات</div>
+            <div class="info-card-desc">محاكاة تسجيل الحضور للطلبة بالـ QR والـ NFC، ورصد محاولة تزوير جغرافية (GPS) وحجبها آلياً.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-title" style="color:#7c3aed; font-size:15px;">3. النقاط والإشعارات اللحظية</div>
+            <div class="info-card-desc">رصد الأستاذ للعلامات وتلقي الطالب لإشعار فوري وتراسل بيداغوجي بالدارجة الجزائرية.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 6: العرض الحي والمباشر للنظام</span>
+        <span>17 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 18: LIVE DEMO SCREEN 2 (رصد وحجب الغش) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-18">
+      <div class="slide-header">
+        <h3>العرض الحي والمباشر للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">تسجيل حضور آمن <span>ورصد وحجب محاولات الغش</span></h2>
+        <div class="row align-items-center">
+          <div class="col-7">
+            <p class="paragraph-text">
+              شاهدوا المزامنة المباشرة على الشاشة:
+            </p>
+            <ul class="paragraph-text" style="display:flex; flex-direction:column; gap:12px;">
+              <li><strong>الطالب عمر (داخل القاعة):</strong> يمسح الـ QR بهاتفه، فيتحول اسمه للأخضر فوراً في كشف الأستاذ.</li>
+              <li><strong>الطالبة ليلى (مسح NFC):</strong> تمرر بطاقتها على الماسح ليتم تسجيل حضورها في أقل من ثانية.</li>
+              <li><strong>الطالب كريم (خارج الجامعة):</strong> يحاول مسح الكود من منزله، فيقوم حارس الجيوفنس الجغرافي برفض طلبه وحجبه فوراً.</li>
+            </ul>
+          </div>
+          <div class="col-5 text-center">
+            <!-- Simulated mockup list showing green / red indicators -->
+            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:15px; text-align:right;">
+              <div style="font-size:11px; font-weight:700; color:#94a3b8; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:4px; margin-bottom:10px;">المراسلات — عماد عزيزي</div>
+              <div style="background:#2563eb; color:white; padding:8px 12px; border-radius:8px; margin-bottom:6px; font-size:12px; width:80%;">يا عماد عيشك برك ما تنساش تبعثلي ورقة البحث قبل نهاية السيمستر</div>
+              <div style="background:rgba(255,255,255,0.05); color:white; padding:8px 12px; border-radius:8px; font-size:12px; width:80%; margin-right:auto;">يسلمك أستاذة زكية راني كملتها وذرك نبعثهالك في البوابة الأكاديمية حالا</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 6: العرض الحي والمباشر للنظام</span>
+        <span>18 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 19: LIVE DEMO SCREEN 3 (إشعارات ودارجة) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-19">
+      <div class="slide-header">
+        <h3>العرض الحي والمباشر للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">الرصد اللحظي للعلامات <span>والإشعارات والمراسلات</span></h2>
+        <div class="row align-items-center">
+          <div class="col-5">
+            <!-- Mockup chat view representing algerian Arabic Darija strictly with no emojis -->
+            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:15px; text-align:right;">
+              <div style="font-size:11px; font-weight:700; color:#94a3b8; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:4px; margin-bottom:10px;">المراسلات — عماد عزيزي</div>
+              <div style="background:#2563eb; color:white; padding:8px 12px; border-radius:8px; margin-bottom:6px; font-size:12px; width:80%;">يا عماد عيشك برك ما تنساش تبعثلي ورقة البحث قبل نهاية السيمستر</div>
+              <div style="background:rgba(255,255,255,0.05); color:white; padding:8px 12px; border-radius:8px; font-size:12px; width:80%; margin-right:auto;">يسلمك أستاذة زكية راني كملتها وذرك نبعثهالك في البوابة الأكاديمية حالا</div>
+            </div>
+          </div>
+          <div class="col-7">
+            <p class="paragraph-text">
+              بمجرد كتابة الأستاذ لعلامة التقييم وحفظها في شبكة الرصد:
+            </p>
+            <ul class="paragraph-text" style="display:flex; flex-direction:column; gap:12px;">
+              <li><strong>الحساب التلقائي اللحظي:</strong> احتساب معدل الطالب النهائي وعرض النتيجة فوراً على شاشته.</li>
+              <li><strong>تنبيهات جرس فورية:</strong> يتلقى الطالب إشعاراً فورياً على هاتفه بنشر علاماته ومعدله.</li>
+              <li><strong>مراسلات الدارجة الجزائرية (Darija):</strong> تواصل مريح وسلس ومؤطر يربط الطلبة بالأساتذة لحل الاستفسارات.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 6: العرض الحي والمباشر للنظام</span>
+        <span>19 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 20: EXAM GENERATOR LIVE (عرض المولد) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-20">
+      <div class="slide-header">
+        <h3>العرض الحي والمباشر للنظام</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">عرض حي: <span>المولد الذكي للامتحانات</span></h2>
+        <p class="paragraph-text" style="max-width: 900px; margin-bottom: 15px;">
+          بإمكان الأستاذ توليد امتحانات متكاملة في ثوانٍ معدودة برفع مستندات المحاضرة:
+        </p>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-title" style="color:#7c3aed; font-size:15px;">1. رفع مذكرات المحاضرة</div>
+            <div class="info-card-desc">سحب وإفلات ملف الـ PDF الخاص بالدرس (مثل: محاضرة علم النفس المرضي).</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-title" style="color:#7c3aed; font-size:15px;">2. صياغة الأسئلة آلياً</div>
+            <div class="info-card-desc">يقوم نموذج الـ LLM بتحليل المحتوى وتوليد أسئلة QCM وأسئلة مقالية متوازنة الصعوبة.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-title" style="color:#7c3aed; font-size:15px;">3. تصدير نموذج التصحيح</div>
+            <div class="info-card-desc">بناء وعرض سلم ومفاتيح الإجابة النموذجية (Rubrics) المخصصة للتصحيح التلقائي.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 6: العرض الحي والمباشر للنظام</span>
+        <span>20 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 21: IMPACT (الأثر البيداغوجي والإداري) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-21">
+      <div class="slide-header">
+        <h3>الأثر والرؤية المستقبلية</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">الأثر الأكاديمي والتربوي <span>للتحول الرقمي</span></h2>
+        <div class="row">
+          <div class="col-6">
+            <div style="border-right:3px solid #10b981; padding-right:12px; margin-bottom:15px;">
+              <h4 style="font-size:16px; font-weight:800; color:#10b981;">الأثر البيداغوجي (على الطالب والأستاذ)</h4>
+              <p style="font-size:13px; color:#cbd5e1; margin:0;">
+                العدالة والشفافية التامة في رصد الحضور والعلامات، توجيه الطلبة الضعفاء بإنذارات مبكرة، واختصار ساعات رصد وحساب الدرجات يدوياً للأساتذة.
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="border-right:3px solid #2563eb; padding-right:12px;">
+              <h4 style="font-size:16px; font-weight:800; color:#2563eb;">الأثر الإداري (على الكلية والقسم)</h4>
+              <p style="font-size:13px; color:#cbd5e1; margin:0;">
+                إلغاء العمل الورقي وأتمتة الجداول ومحاضر الاجتماعات والـ PVs، ومراقبة دقيقة لنشاطات وأمن النظام تضمن حماية السجلات وحصانتها.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 7: الأثر والرؤية المستقبلية</span>
+        <span>21 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 22: ROADMAP (الرؤية المستقبلية 2026-2030) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-22">
+      <div class="slide-header">
+        <h3>الأثر والرؤية المستقبلية</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <h2 class="title-primary">الرؤية المستقبلية: <span>خارطة طريق التطوير</span></h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-title" style="color:#2563eb;">المرحلة 1: 2026/2027</div>
+            <div class="info-card-desc">تكامل كلي مع المنصات البيداغوجية الوطنية للوزارة والتحقق التلقائي لاشتراكات الأساتذة عبر تكامل بوابة بريد الجزائر.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-title" style="color:#7c3aed;">المرحلة 2: 2028/2029</div>
+            <div class="info-card-desc">إطلاق نماذج الذكاء الاصطناعي التنبؤية بالتعثر الدراسي قبل نهاية الفصول، وإصدار تطبيق الجوال الرسمي الداعم للعمل دون إنترنت.</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-title" style="color:#10b981;">المرحلة 3: 2030 وما بعد</div>
+            <div class="info-card-desc">أتمتة جدولة الامتحانات وتوزيع الحراسة والقاعات الذكية كلياً بالذكاء الاصطناعي مع توفير المساعد الأكاديمي الافتراضي للطلبة.</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>القسم 7: الأثر والرؤية المستقبلية</span>
+        <span>22 / 23</span>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SLIDE 23: CONCLUSION & CONTACT (الخاتمة والتواصل) -->
+    <!-- ============================================= -->
+    <div class="slide-canvas" id="slide-23">
+      <div class="slide-header">
+        <h3>الخاتمة والتواصل الأكاديمي</h3>
+        <div style="font-weight: 800; color: #2563eb; font-size: 14px;">ACADTRACK.ORG</div>
+      </div>
+      <div class="slide-body">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="title-primary">نحو <span>جامعة ذكية، عادلة، ورقمية</span> بالكامل</h2>
+            <p class="paragraph-text" style="font-size:15px; margin-bottom:15px;">
+              نشكر لكم حسن إصغائكم واهتمامكم الكريم. نرحب بكافة تساؤلاتكم ومناقشاتكم البيداغوجية لإثراء هذا العمل الأكاديمي المتميز.
+            </p>
+            <div style="font-size: 13.5px; color:#cbd5e1; font-weight:600;">
+              <div><i class="fa-solid fa-envelope" style="color:var(--primary); width:20px;"></i> البريد الإلكتروني: contact@acadtrack.org</div>
+              <div style="margin-top:4px;"><i class="fa-solid fa-globe" style="color:var(--primary); width:20px;"></i> الموقع الرسمي للمنصة: www.acadtrack.org</div>
+              <div style="margin-top:4px;"><i class="fa-solid fa-phone" style="color:var(--primary); width:20px;"></i> الهاتف للاستفسار: 0552551064</div>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <!-- Simulated QR code representing contact/domain link -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.acadtrack.org" style="width:130px; height:130px; border-radius:8px; border:2px solid #cbd5e1; padding:4px; background:#fff;" alt="Domain QR" />
+            <div style="font-size:10px; color:#94a3b8; font-weight:700; margin-top:6px;">سجل حضورك وامسح لزيارة المنصة</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span>الملتقى الوطني حول البرمجيات التعليمية — جامعة باتنة 1</span>
+        <span>23 / 23</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+//<![CDATA[
+  let currentSlideIndex = 1;
+  const totalSlidesCount = 23;
+
+  document.addEventListener('DOMContentLoaded', function() {
+    handleSlideResize();
+    window.addEventListener('resize', handleSlideResize);
+    
+    // Bind Keyboard event triggers
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowRight' || e.key === 'Space' || e.key === ' ') {
+        e.preventDefault();
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevSlide();
+      }
+    });
+  });
+
+  // Aspect-ratio 16:9 uniform scale processor preserving layout bounds on all resolutions [1]
+  function handleSlideResize() {
+    const baseWidth = 1280;
+    const baseHeight = 720;
+    
+    const scaleX = window.innerWidth / baseWidth;
+    const scaleY = window.innerHeight / baseHeight;
+    const scale = Math.min(scaleX, scaleY);
+
+    const wrapper = document.getElementById('slide-wrapper');
+    if (wrapper) {
+      wrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
+    }
+  }
+
+  function renderActiveSlide() {
+    document.querySelectorAll('.slide-canvas').forEach(slide => {
+      slide.classList.remove('active');
+    });
+    
+    const activeSlide = document.getElementById(`slide-${currentSlideIndex}`);
+    if (activeSlide) {
+      activeSlide.classList.add('active');
+    }
+
+    // Sync global slide number trackers
+    const trackers = document.querySelectorAll('#slideNumTracker');
+    trackers.forEach(t => t.textContent = `${currentSlideIndex} / ${totalSlidesCount}`);
+  }
+
+  window.nextSlide = function() {
+    if (currentSlideIndex < totalSlidesCount) {
+      currentSlideIndex++;
+      renderActiveSlide();
+    }
+  };
+
+  window.prevSlide = function() {
+    if (currentSlideIndex > 1) {
+      currentSlideIndex--;
+      renderActiveSlide();
+    }
+  };
+
+  // HTML5 native full screen viewport requests triggers [1]
+  window.toggleFullScreen = function() {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(err => {
+        console.warn("Fullscreen request bypassed.", err);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  };
+//]]>
+</script>
+
+</body>
+</html>
+</template>
+
+<!-- SCRIPT CONTROLLING THE IMMERSIVE OVERLAY -->
+<script>
+//<![CDATA[
+  // Auto-align main page language on DOM load
+  document.addEventListener('DOMContentLoaded', function() {
+    const initLang = localStorage.getItem('acadtrack-lang') || 'en';
+    setPageLanguage(initLang);
+  });
+
+  function setPageLanguage(lang) {
+    localStorage.setItem('acadtrack-lang', lang);
+    document.documentElement.lang = lang;
+    const isRTL = lang === 'ar';
+    const container = document.getElementById('saasContainer');
+    if (container) container.dir = isRTL ? 'rtl' : 'ltr';
+
+    document.querySelectorAll('#saasContainer [data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+    });
+  }
+
+ window.openSaaSPresentationModal = async function () {
+  const modal = document.getElementById('presentationModal');
+  const iframe = document.getElementById('presentationIframe');
+  const template = document.getElementById('presentation-template');
+
+  if (!modal || !iframe || !template) return;
+
+  // Show modal
+  modal.classList.add('active');
+
+  // Inject presentation into iframe
+  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+  iframeDoc.open();
+  iframeDoc.write(template.innerHTML);
+  iframeDoc.close();
+
+  // Wait for rendering
+  setTimeout(async () => {
+    // FULLSCREEN THE MODAL (recommended target)
+    const el = modal;
+
+    if (el.requestFullscreen) {
+      await el.requestFullscreen();
+    } else if (el.webkitRequestFullscreen) {
+      el.webkitRequestFullscreen();
+    }
+  }, 50);
+};
+
+  // Closes the presentation overlay and exits full screen [1]
+  window.closeSaaSPresentationModal = function() {
+    const modal = document.getElementById('presentationModal');
+    const iframe = document.getElementById('presentationIframe');
+
+    if (modal) {
+      modal.classList.remove('active');
+    }
+
+    // Reset iframe to free up browser resources
+    if (iframe) {
+      iframe.src = "about:blank";
+    }
+
+    // Exit full screen cleanly if active [1]
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(err => {
+        console.warn("Error exiting fullscreen: ", err);
+      });
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+  };
+//]]>
+</script>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="sidebar"></aside>
+    </div>
+  </main>
+
+<div class="footer-area section" id="footer-area"><div class="widget HTML" id="HTML10">
+<style>
+  /* ===== NEBULA GRADIENT DARK FOOTER ===== */
+  .at-footer-section {
+    background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #1e293b 100%); /* Deep rich slate gradient [1] */
+    padding: clamp(60px, 8vw, 80px) 1.5rem 30px 1.5rem;
+    color: #cbd5e1;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .at-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* 4-Column Responsive Grid [1] */
+  .at-footer-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 640px) {
+    .at-footer-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .at-footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
+  }
+
+  /* Column 1: Brand Info */
+  .at-footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  .at-footer-logo {
+    height: 48px; /* Slightly larger clean sizing */
+    width: auto;
+    max-width: 240px;
+    object-fit: contain;
+    align-self: flex-start;
+  }
+  .at-footer-tagline {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #94a3b8;
+    max-width: 260px;
+  }
+  .at-footer-socials {
+    display: flex;
+    gap: 12px;
+  }
+  .at-social-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 14px;
+    transition: all 0.25s ease;
+  }
+  .at-social-icon:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+  }
+
+  /* Link Columns */
+  .at-footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  .at-footer-col-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .at-footer-links-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .at-footer-link {
+    font-size: 13px;
+    color: #94a3b8;
+    transition: all 0.2s ease;
+    font-weight: 600;
+  }
+  .at-footer-link:hover {
+    color: #3b82f6;
+  }
+  .at-footer-text-info {
+    font-size: 13px;
+    color: #94a3b8;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  /* ===== BOTTOM CREDIT BAR ===== */
+  .at-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 600;
+  }
+  .at-footer-copyright {
+    text-align: left;
+  }
+  .at-footer-developer {
+    text-align: right;
+  }
+  .at-footer-developer a {
+    color: #3b82f6;
+    font-weight: 700;
+    transition: color 0.2s ease;
+  }
+  .at-footer-developer a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+  }
+
+  /* ===== SYMMETRICAL MOBILE CENTERED ALIGNMENTS ===== */
+  @media (max-width: 1023px) {
+    .at-footer-brand {
+      text-align: center !important;
+      align-items: center !important;
+    }
+    .at-footer-logo {
+      align-self: center !important;
+    }
+    .at-footer-socials {
+      justify-content: center !important;
+    }
+    .at-footer-col {
+      text-align: center !important;
+      align-items: center !important;
+    }
+    .at-footer-bottom {
+      justify-content: center !important;
+      text-align: center !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+    }
+    .at-footer-copyright, .at-footer-developer {
+      text-align: center !important;
+    }
+  }
+
+  /* ===== RTL ARABIC VIEW ALIGNMENTS ===== */
+  .lang-ar .at-footer-grid { direction: rtl; }
+  .lang-ar .at-footer-brand { text-align: right; }
+  .lang-ar .at-footer-logo { align-self: flex-start; }
+  .lang-ar .at-footer-socials { justify-content: flex-start; }
+  .lang-ar .at-footer-col { text-align: right; }
+  .lang-ar .at-footer-bottom { flex-direction: row-reverse; }
+  .lang-ar .at-footer-copyright { text-align: right; }
+  .lang-ar .at-footer-developer { text-align: left; }
+
+  @media (max-width: 1023px) {
+    .lang-ar .at-footer-logo { align-self: center !important; }
+    .lang-ar .at-footer-socials { justify-content: center !important; }
+    .lang-ar .at-footer-bottom { flex-direction: column !important; }
+  }
+</style>
+
+<footer class="at-footer-section" id="atFooterSection">
+  <div class="at-footer-container">
+    
+    <!-- 4-Column Grid [1] -->
+    <div class="at-footer-grid">
+      
+      <!-- Column 1: Brand & Logo (Centered on mobile) -->
+      <div class="at-footer-brand">
+        <!-- Upgraded Logo Image [1] -->
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgFl9vkym4Qn9Hkm1X7SKcOycx_AjXf0wwhquAHk2_ZFNvOUBffCHSRr_eqNGTReWEFJQLVtGtRh0PC5hN7g9ShPhfn_9ZQXQX4II7polk0rMVUVKqC0ejLf_Le0MFCP_MDPl1tXw6Pys03cX2e6LHIFeX8hD1SqEo6PKE1ifmdGhCoGGgJ3SUnxLadiuY" class="at-footer-logo" alt="AcadTrack Logo" />
+        <p class="at-footer-tagline">
+          <span data-lang="en">Unified academic management portal designed for Algerian LMD higher education institutions.</span>
+          <span data-lang="fr">Portail unifié de gestion académique conçu pour les universités algériennes LMD.</span>
+          <span data-lang="ar">بوابة موحدة وحلول رقمية متكاملة تضمن أمان وموثوقية التسيير الأكاديمي لمؤسسات التعليم العالي بالجزائر.</span>
+        </p>
+        <!-- Social Networks -->
+        <div class="at-footer-socials">
+          <a href="https://www.linkedin.com/in/uns-mahmoudi/" class="at-social-icon" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="at-social-icon" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="at-social-icon" title="Github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Platform Links -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Platform</span>
+          <span data-lang="fr">Plateforme</span>
+          <span data-lang="ar">المنصة</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="/p/features.html" class="at-footer-link"><span data-lang="en">Platform Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">ميزات البوابة</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Documentation</span><span data-lang="fr">Documentation</span><span data-lang="ar">دليل الاستعمال</span></a></li>
+          <li><a href="/p/help-center.html" class="at-footer-link"><span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a></li>
+          <li><a href="/p/about.html" class="at-footer-link"><span data-lang="en">About Platform</span><span data-lang="fr">À Propos</span><span data-lang="ar">حول المنصة</span></a></li>
+          <li><a href="/p/exams-generator.html" class="at-footer-link"><span data-lang="en">Exams Generator</span><span data-lang="fr">générateur d'examens</span><span data-lang="ar">إنشاء الاختبارات بالذكاء الاصطناعي</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Trust & Security -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Trust &amp; Security</span>
+          <span data-lang="fr">Sécurité &amp; Confiance</span>
+          <span data-lang="ar">الأمان والموثوقية</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Privacy Policy</span><span data-lang="fr">Confidentialité</span><span data-lang="ar">سياسة الخصوصية</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Terms of Service</span><span data-lang="fr">Conditions d'Utilisation</span><span data-lang="ar">شروط الخدمة</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Cookies Policy</span><span data-lang="fr">Cookies</span><span data-lang="ar">سياسة ملفات الارتباط</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">SaaS Tutorials</span><span data-lang="fr">Tutoriels</span><span data-lang="ar">دروس تعليمية</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact us (Replaced University Portals) [1] -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Contact</span>
+          <span data-lang="fr">Contact</span>
+          <span data-lang="ar">الاتصال والطلب</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="#" class="at-footer-link" style="color:#ffffff;"><span data-lang="en">Contact us</span><span data-lang="fr">Contactez-nous</span><span data-lang="ar">اتصل بنا</span></a></li>
+          <li class="at-footer-text-info">
+            <span data-lang="en">Email:</span><span data-lang="fr">Email :</span><span data-lang="ar">البريد الإلكتروني:</span><br />
+            <span style="font-family:var(--font-mono, monospace); color:#94a3b8; font-weight:700;">contact.unsclass@gmail.com</span>
+          </li>
+          <li class="at-footer-text-info">
+            <span data-lang="en">Phone number:</span><span data-lang="fr">Téléphone :</span><span data-lang="ar">رقم الهاتف:</span><br />
+            <span style="font-family:var(--font-mono, monospace); color:#94a3b8; font-weight:700;">0656806365</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Developer Credit Bar [1] -->
+    <div class="at-footer-bottom">
+      <div class="at-footer-copyright">
+        <!-- Self-updating Copyright Year [1] -->
+        <span data-lang="en">&copy; <span id="current-year-placeholder">2026</span> AcadTrack ERP. All rights reserved.</span>
+        <span data-lang="fr">&copy; <span id="current-year-placeholder-fr">2026</span> AcadTrack ERP. Tous droits réservés.</span>
+        <span data-lang="ar">&copy; <span id="current-year-placeholder-ar">2026</span> AcadTrack . جميع الحقوق محفوظة لـ</span>
+      </div>
+      <div class="at-footer-developer">
+        <!-- LinkedIn Credit link [1] -->
+        <span data-lang="en">Developed by <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank">Mr. Uns MAHMOUDI</a></span>
+        <span data-lang="fr">Développé par <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank">M. Uns MAHMOUDI</a></span>
+        <span data-lang="ar">تم التطوير بواسطة <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank"> يونس محمودي</a></span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+//<![CDATA[
+  document.addEventListener('DOMContentLoaded', function() {
+    // Run instant language alignment listener on load
+    const initLang = localStorage.getItem('acadtrack-lang') || 'en';
+    setLanguage(initLang);
+
+    // Auto-update copyright year dynamically [1]
+    const year = new Date().getFullYear();
+    const placeholders = ['current-year-placeholder', 'current-year-placeholder-fr', 'current-year-placeholder-ar'];
+    placeholders.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = year;
+    });
+  });
+
+  function setLanguage(lang) {
+    localStorage.setItem('acadtrack-lang', lang);
+    document.documentElement.lang = lang;
+    const isRTL = lang === 'ar';
+    const section = document.getElementById('atFooterSection');
+    if (section) {
+      section.dir = isRTL ? 'rtl' : 'ltr';
+      if (isRTL) section.classList.add('lang-ar');
+      else section.classList.remove('lang-ar');
+    }
+
+    document.querySelectorAll('.at-footer-section [data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+    });
+  }
+//]]>
+</script>
+</div></div>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
