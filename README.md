@@ -97,7 +97,7 @@ BLUEPRINT.md                 Official architecture & production plan
 
 ## 5. Technologies used today
 
-- Static **HTML + CSS + vanilla JavaScript** (exported from a Blogger theme)
+- Static **HTML + CSS + vanilla JavaScript** 
 - Hand-written CSS design system (`theme.css`), **Font Awesome 6.4**, **Google Fonts (Cairo)**
 - Client-side internationalisation via `data-i18n-key` attributes
 - **`localStorage`** used as a temporary mock database, with hard-coded demo users per role
@@ -240,7 +240,7 @@ BLUEPRINT.md                 المخطط الرسمي للمعمارية وخط
 
 ## ٥. التقنيات المستخدمة حاليا
 
-- **HTML وCSS وJavaScript** ثابتة (مُصدَّرة من قالب Blogger)
+- **HTML وCSS وJavaScript** ثابتة 
 - نظام تصميم مكتوب يدوياً في `theme.css`، مع **Font Awesome 6.4** وخط **Cairo** من Google Fonts
 - ترجمة في المتصفح عبر خصائص `data-i18n-key`
 - استخدام **`localStorage`** كقاعدة بيانات مؤقتة وهمية، مع مستخدمين تجريبيين مكتوبين مباشرة في الكود
