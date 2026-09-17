@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Exams Generator - AcadTrack</title>
+<meta name="description" content="Generate exam papers and answer keys."/>
+<meta name="author" content="AcadTrack"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="canonical" href="/exams-generator"/>
+<meta property="og:title" content="Exams Generator - AcadTrack"/>
+<meta property="og:description" content="Generate exam papers and answer keys."/>
+<meta property="og:url" content="/exams-generator"/>
+<meta property="og:site_name" content="AcadTrack"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Exams Generator - AcadTrack"/>
+<meta name="twitter:description" content="Generate exam papers and answer keys."/>
+<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs"/>
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/theme.css"/>
+</head>
+
+<body class="">
+<a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-section section" id="header"><div class="widget Header" id="Header1"><a class="brand" href="/"><img alt="AcadTrack" src="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs" loading="eager"/></a></div></div>
+
+      <div class="nav-desktop-section section" id="desktop-navigation"><div class="widget HTML" id="HTML21"><nav class="nav-desktop" aria-label="Main navigation">
+<style>
+.nav-desktop { display: none; }
+@media (min-width: 1070px) { 
+  .nav-desktop { display: flex; align-items: center; gap: var(--space-lg); flex-shrink: 0; } 
+}
+.nav-link { font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); position: relative; padding: 0.25rem 0; cursor: pointer; }
+.nav-link:hover { color: var(--text); } 
+.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: var(--primary); transition: width var(--transition); } 
+.nav-link:hover::after { width: 100%; }
+.nav-btn-saas { background-color: var(--primary); color: white !important; padding: 0.5rem 1rem; border-radius: var(--radius-sm); font-weight: 600; font-size: 0.8125rem; transition: background var(--transition); }
+.nav-btn-saas:hover { background-color: var(--primary-hover); }
+
+/* Desktop Navigation Demo Dropdown Style System */
+.nav-item-demo { position: relative; display: inline-block; }
+.demo-role-dropdown-desktop {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  width: 340px;
+  background: var(--card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+.nav-item-demo.active .demo-role-dropdown-desktop {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.demo-role-dropdown-desktop::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: var(--card);
+  border-top: 1px solid var(--border-light);
+  border-left: 1px solid var(--border-light);
+}
+.demo-role-header { padding: 0.5rem 1rem; font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; color: var(--text-light); border-bottom: 1px solid var(--border-light); margin-bottom: 0.25rem; letter-spacing: 0.05em; }
+.demo-role-option { display: flex; flex-direction: column; gap: 2px; padding: 0.75rem 1rem; transition: background 0.2s; cursor: pointer; }
+.demo-role-option:hover { background-color: var(--bg-warm); }
+.demo-role-option.active { background-color: var(--bg-cool); border-left: 4px solid var(--primary); }
+.demo-role-title { font-weight: 700; font-size: 0.8125rem; color: var(--text); display: flex; align-items: center; gap: 0.5rem; }
+.demo-role-desc { font-size: 0.6875rem; color: var(--text-secondary); margin-left: 1.5rem; }
+.exit-demo-option { display: none; border-top: 1px solid var(--border-light); margin-top: 0.25rem; padding-top: 0.75rem; }
+.exit-demo-option.visible { display: flex !important; }
+.nav-item-demo.active #demoChevron {
+  transform: rotate(180deg);
+}
+</style>
+
+<a class="nav-link" href="/"><span data-lang="en">Home</span><span data-lang="fr">Accueil</span><span data-lang="ar">الرئيسية</span></a>
+<a class="nav-link" href="/features"><span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+<a class="nav-link" href="/about"><span data-lang="en">About</span><span data-lang="fr">À propos</span><span data-lang="ar">حول</span></a>
+<a class="nav-link" href="/contact"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span><span data-lang="ar">اتصل بنا</span></a>
+
+<!-- Integrated Main Header Demo Selector Dropdown -->
+<div class="nav-item-demo" id="demoNavContainer">
+  <a class="nav-link" href="#" id="demoBtnDesktop" onclick="return false;" style="display: flex; align-items: center; gap: 4px;">
+    <i class="fa-solid fa-flask" id="demoActiveIcon" style="font-size: 0.8125rem;" style="font-family: 'Cairo', sans-serif;"></i>
+    <span id="demoActiveLabel" style="font-family: 'Cairo', sans-serif;">
+      <span id="demoActiveLabelMobile" >العرض</span>
+    </span>
+    <i class="fa-solid fa-chevron-down" id="demoChevron" style="font-size: 0.75rem; transition: transform 0.2s;"></i>
+  </a>
+  <div class="demo-role-dropdown-desktop" id="demoRoleDropdownDesktop">
+    <div class="demo-role-header">
+      <span data-lang="en">Select Demo Profile</span>
+      <span data-lang="fr">Sélectionner un Profil Démo</span>
+      <span data-lang="ar">اختر ملف العرض</span>
+    </div>
+    <div class="demo-role-option" data-demo-role="student" onclick="selectSaaSRole('student')">
+      <span class="demo-role-title"><i class="fa-solid fa-graduation-cap" style="color:var(--primary)"></i> <span data-lang="en">Psychology Student</span><span data-lang="fr">Étudiant en Psychologie</span><span data-lang="ar">طالب علم النفس</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="fr">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="ar">عماد عزيزي (سنة 3) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="teacher" onclick="selectSaaSRole('teacher')">
+      <span class="demo-role-title"><i class="fa-solid fa-chalkboard-user" style="color:#10b981"></i> <span data-lang="en">Psychology Professor</span><span data-lang="fr">Enseignant en Psychologie</span><span data-lang="ar">أستاذ علم النفس</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="fr">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="ar">أ.د. زكية شنة (بروفيسور) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="admin" onclick="selectSaaSRole('admin')">
+      <span class="demo-role-title"><i class="fa-solid fa-user-tie" style="color:#f59e0b"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="fr">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="ar">د. عمار شوشان (أستاذ محاضر أ) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="platform-admin" onclick="selectSaaSRole('platform-admin')">
+      <span class="demo-role-title"><i class="fa-solid fa-server" style="color:#6366f1"></i> <span data-lang="en">Platform Super Admin</span><span data-lang="fr">Super Admin Plateforme</span><span data-lang="ar">مدير النظام</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Mr. Uns MAHMOUDI • Developer</span>
+        <span data-lang="fr">M. Uns MAHMOUDI • Développeur</span>
+        <span data-lang="ar">أ. يونس محمودي • مطور البرمجية</span>
+      </span>
+    </div>
+    <div class="demo-role-option exit-demo-option" onclick="selectSaaSRole('guest')">
+      <span class="demo-role-title" style="color:#ef4444;"><i class="fa-solid fa-circle-xmark"></i> <span data-lang="en">Exit Demo Mode</span><span data-lang="fr">Quitter le Mode Démo</span><span data-lang="ar">الخروج من وضع العرض</span></span>
+      <span class="demo-role-desc" data-lang="en">Reset to original guest state</span>
+      <span class="demo-role-desc" data-lang="fr">Réinitialiser à l'état invité</span>
+      <span class="demo-role-desc" data-lang="ar">إعادة تعيين إلى وضع الزائر</span>
+    </div>
+  </div>
+</div>
+
+<a class="nav-link only-logged-out" href="/login" style="margin-left: 1rem;"><span data-lang="en">Login</span><span data-lang="fr">Connexion</span><span data-lang="ar">تسجيل الدخول</span></a>
+<a class="nav-btn-saas only-logged-out" href="/signup"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+</nav></div></div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </button>
+
+      <div class="header-actions">
+        <div class="header-notif-section section" id="header-notifications"><div class="widget HTML" id="HTML34"><div class="notif-toggle only-logged-into-header">
+<style>
+.notif-toggle { display: block; position: relative; }
+
+.notif-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.notif-btn:hover {
+  background-color: var(--bg-warm);
+  border-color: var(--text-light);
+}
+
+.notif-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.125rem;
+  height: 1.125rem;
+  padding: 0 4px;
+  border-radius: 9999px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  border: 2px solid var(--bg);
+}
+
+.notif-dropdown {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: 0;
+  width: 320px;
+  background-color: var(--card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.notif-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.notif-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 14px;
+  width: 12px;
+  height: 12px;
+  background: var(--card);
+  border-top: 1px solid var(--border-light);
+  border-left: 1px solid var(--border-light);
+  transform: rotate(45deg);
+}
+
+.notif-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-light);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.notif-body {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.notif-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  transition: background 0.2s, opacity 0.2s;
+  text-align: left;
+}
+
+.notif-item:hover {
+  background-color: var(--bg-warm);
+}
+
+.notif-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--bg-cool);
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.notif-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.notif-item-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.notif-item-time {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.mark-read-btn {
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: opacity 0.2s;
+}
+
+.mark-read-btn.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.notif-item.read {
+  opacity: 0.65;
+}
+
+@media (max-width: 1070px) {
+  .notif-toggle.only-logged-into-header {
+    display: none !important;
+  }
+}
+</style>
+
+<div class="notif-toggle only-logged-into-header">
+  <button class="notif-btn" id="notifBtnDesktop" aria-label="Notifications">
+    <i class="fa-solid fa-bell"></i>
+    <span class="notif-badge" id="notifCountBadge">3</span>
+  </button>
+
+  <div class="notif-dropdown" id="notifDropdownDesktop">
+    <div class="notif-header">
+      <span>Notifications</span>
+      <span class="mark-read-btn" id="markAllReadBtn">Mark all read</span>
+    </div>
+
+    <div class="notif-body">
+
+      <!-- Guest -->
+      <div class="state-guest">
+        <div class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              Welcome to AcadTrack!
+            </span>
+
+            <span data-lang="en">
+              Select a demo role from the "Demo" menu to view dynamic academic notifications.
+            </span>
+
+            <span class="notif-item-title" data-lang="fr">
+              Bienvenue sur AcadTrack!
+            </span>
+
+            <span data-lang="fr">
+              Sélectionnez un rôle démo dans le menu "Démo" pour afficher les notifications académiques dynamiques.
+            </span>
+
+            <span class="notif-item-title" data-lang="ar">
+              مرحبًا بك في AcadTrack!
+            </span>
+
+            <span data-lang="ar">
+              اختر دورًا تجريبيًا من قائمة "العرض" لمشاهدة الإشعارات الأكاديمية التفاعلية.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student -->
+      <div class="state-student">
+
+        <a href="#results" class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              New Grade Published
+            </span>
+
+            <span data-lang="en">
+              Your Clinical Psychology result has been released.
+            </span>
+
+            <span class="notif-item-time">
+              10m ago
+            </span>
+          </div>
+        </a>
+
+        <a href="#attendance" class="notif-item">
+          <div class="notif-item-icon" style="color:#ef4444;">
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              Absence Alert
+            </span>
+
+            <span data-lang="en">
+              An absence has been recorded in Research Methodology.
+            </span>
+
+            <span class="notif-item-time">
+              2h ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Teacher -->
+      <div class="state-teacher">
+
+        <a href="#submissions" class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-file-arrow-up"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title">
+              New Assignment Submission
+            </span>
+
+            <span>
+              Student Imad AZIZI submitted his Clinical Psychology report.
+            </span>
+
+            <span class="notif-item-time">
+              5m ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Admin -->
+      <div class="state-admin state-platform-admin">
+
+        <a href="#approvals" class="notif-item">
+          <div class="notif-item-icon" style="color:var(--primary);">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title">
+              New Instructor Verification
+            </span>
+
+            <span>
+              Pr. Zakia CHENNA submitted subscription verification data.
+            </span>
+
+            <span class="notif-item-time">
+              30m ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+
+  const notifBtn = document.getElementById('notifBtnDesktop');
+  const notifDropdown = document.getElementById('notifDropdownDesktop');
+  const notifBadge = document.getElementById('notifCountBadge');
+  const markAllReadBtn = document.getElementById('markAllReadBtn');
+
+  const STORAGE_KEY = 'acadtrack_notifications_read';
+
+  // Toggle dropdown
+  function toggleDropdown(e) {
+    e.stopPropagation();
+    notifDropdown.classList.toggle('active');
+  }
+
+  // Apply read state UI
+  function applyReadState() {
+
+    const isRead = localStorage.getItem(STORAGE_KEY) === 'true';
+
+    if (isRead) {
+
+      // Hide badge
+      if (notifBadge) {
+        notifBadge.style.display = 'none';
+      }
+
+      // Fade notifications
+      document.querySelectorAll('.notif-item').forEach(item => {
+        item.classList.add('read');
+      });
+
+      // Disable button
+      if (markAllReadBtn) {
+        markAllReadBtn.textContent = 'All read';
+        markAllReadBtn.classList.add('disabled');
+      }
+
+    } else {
+
+      if (notifBadge) {
+        notifBadge.style.display = 'inline-flex';
+      }
+
+      document.querySelectorAll('.notif-item').forEach(item => {
+        item.classList.remove('read');
+      });
+
+      if (markAllReadBtn) {
+        markAllReadBtn.textContent = 'Mark all read';
+        markAllReadBtn.classList.remove('disabled');
+      }
+    }
+  }
+
+  // Mark notifications as read
+  function markAllAsRead() {
+
+    localStorage.setItem(STORAGE_KEY, 'true');
+
+    applyReadState();
+  }
+
+  // Open / Close
+  if (notifBtn) {
+    notifBtn.addEventListener('click', toggleDropdown);
+  }
+
+  // Mark read click
+  if (markAllReadBtn) {
+    markAllReadBtn.addEventListener('click', markAllAsRead);
+  }
+
+  // Close outside click
+  document.addEventListener('click', function (e) {
+
+    if (
+      notifDropdown &&
+      !notifDropdown.contains(e.target) &&
+      !notifBtn.contains(e.target)
+    ) {
+      notifDropdown.classList.remove('active');
+    }
+  });
+
+  // Prevent dropdown click close
+  notifDropdown.addEventListener('click', function (e) {
+    e.stopPropagation();
+  });
+
+  // Restore saved state
+  applyReadState();
+
+})();
+</script>
+</div></div></div>
+
+        <div class="header-lang-section section" id="header-language"><div class="widget HTML" id="HTML33"><div class="lang-toggle lang-desktop-only">
+<style>
+.lang-toggle { position: relative; }
+.lang-btn { display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; background: none; border: 1px solid var(--border); border-radius: 9999px; cursor: pointer; overflow: hidden; transition: background 0.2s; }
+.lang-btn:hover { background-color: var(--bg-warm); border-color: var(--text-light); }
+.lang-btn img { width: 2.25rem; height: 2.25rem; border-radius: 50%; object-fit: cover; }
+.lang-dropdown { position: absolute; top: calc(100% + 0.75rem); right: 0; width: 180px; background: var(--card); border: 1px solid var(--border-light); border-radius: var(--radius); box-shadow: var(--shadow-lg); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 100; overflow: hidden; }
+.lang-dropdown::before { content: ''; position: absolute; top: -6px; right: 10px; width: 12px; height: 12px; background: var(--card); border-top: 1px solid var(--border-light); border-left: 1px solid var(--border-light); transform: rotate(45deg); }
+.lang-dropdown.active { opacity: 1; visibility: visible; transform: translateY(0); }
+.lang-option { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; color: var(--text-secondary); font-size: 0.875rem; font-weight: 500; transition: background 0.2s; text-align: left; }
+.lang-option:hover { background-color: var(--bg-warm); color: var(--primary); } .lang-option img { width: 1.25rem; height: 1.25rem; border-radius: 50%; object-fit: cover; }
+@media (min-width: 1070px) { .lang-mobile-only { display: none !important; } }
+@media (max-width: 1070px) { .lang-desktop-only { display: none !important; } }
+</style>
+
+<!-- Default Language Configuration: change this value to 'en', 'fr', or 'ar' to set your default language portal-wide -->
+<span id="defaultLangConfig" style="display:none;">ar</span>
+
+<button class="lang-btn" id="langToggleDesktop" aria-label="Change Language">
+  <img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN" id="activeFlagDesktop" class="active-lang-flag"/>
+</button>
+<div class="lang-dropdown" id="langDropdownDesktop">
+  <a href="#" onclick="setLanguage('en'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN"/> <span data-lang="en">English</span><span data-lang="fr">Anglais</span><span data-lang="ar">الإنجليزية</span></a>
+  <a href="#" onclick="setLanguage('fr'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/fr.svg" alt="FR"/> <span data-lang="en">French</span><span data-lang="fr">Français</span><span data-lang="ar">الفرنسية</span></a>
+  <a href="#" onclick="setLanguage('ar'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/dz.svg" alt="AR"/> <span data-lang="en">Arabic</span><span data-lang="fr">Arabe</span><span data-lang="ar">العربية</span></a>
+</div>
+
+<script>
+  function setLanguage(lang) {
+    applyLanguage(lang);
+  }
+  function registerLangToggler() {
+    var langToggleDesktop = document.getElementById('langToggleDesktop');
+    var langDropdownDesktop = document.getElementById('langDropdownDesktop');
+    if (langToggleDesktop && langDropdownDesktop) {
+      langToggleDesktop.removeEventListener('click', handleLangClick);
+      langToggleDesktop.addEventListener('click', handleLangClick);
+    }
+  }
+  window.addEventListener('load', registerLangToggler);
+  document.addEventListener('DOMSubtreeModified', registerLangToggler);
+</script>
+</div></div></div>
+
+        <button class="user-toggle" id="userToggle" aria-label="User menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+      </div>
+
+      <div class="desktop-user-menu-section section" id="desktop-user-menu"><div class="widget HTML" id="HTML23"><div class="user-dropdown" id="userDropdown">
+<style>
+  .user-dropdown { 
+    position: absolute; 
+    top: calc(100% + 0.75rem); 
+    right: 0; 
+    width: 260px; 
+    background-color: var(--card); 
+    border: 1px solid var(--border-light); 
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow-lg); 
+    padding: var(--space-md); 
+    opacity: 0; 
+    visibility: hidden; 
+    transform: translateY(-10px); 
+    transition: all 0.2s ease; 
+    z-index: 100; 
+    /* Dynamic viewport height constraint to support smaller screens */
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  .user-dropdown::-webkit-scrollbar { width: 6px; }
+  .user-dropdown::-webkit-scrollbar-track { background: var(--bg-warm); }
+  .user-dropdown::-webkit-scrollbar-thumb { background-color: var(--border); border-radius: 999px; }
+
+  .user-dropdown::before { content: ''; position: absolute; top: -6px; right: 10px; width: 12px; height: 12px; background-color: var(--card); border-top: 1px solid var(--border-light); border-left: 1px solid var(--border-light); transform: rotate(45deg); }
+  .user-dropdown.active { opacity: 1; visibility: visible; transform: translateY(0); }
+  @media (max-width: 767px) { .user-dropdown { display: none !important; } }
+  .user-profile-header { margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+  .user-greeting { font-size: 0.875rem; color: var(--text-secondary); } 
+  .user-name { font-size: 1.125rem; font-weight: 700; color: var(--text); margin-top: 0.25rem; }
+  .user-profile-actions { display: flex; gap: var(--space-xs); margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+  .btn-sm { padding: 0.5rem 1rem; font-size: 0.8125rem; flex: 1; justify-content: center; border-radius: 0.5rem; } 
+  .btn-outline { background-color: transparent; color: var(--primary); border: 1px solid var(--primary); } 
+  .btn-outline:hover { background-color: var(--primary); color: white; }
+  .user-profile-nav { display: flex; flex-direction: column; gap: var(--space-xs); } 
+  .user-profile-nav a { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) 0; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); transition: color var(--transition); } 
+  .user-profile-nav a i { width: 1.25rem; text-align: center; }
+  .user-profile-nav a:hover { color: var(--primary); }
+  .saas-subtext { font-size: 0.75rem; font-weight: 600; color: var(--primary); text-transform: uppercase; margin-top: 2px; letter-spacing: 0.05em; }
+
+  /* New custom styling targeting the logout buttons */
+  .user-profile-nav a[href="#logout"] {
+    background-color: #dc2626 !important;
+    color: #ffffff !important;
+    border: 1px solid #dc2626 !important;
+    transition: all 0.2s ease !important;
+  }
+  .user-profile-nav a[href="#logout"]:hover {
+    background-color: #ffffff !important;
+    color: #dc2626 !important;
+    border: 1px solid #dc2626 !important;
+  }
+</style>
+
+<!-- 1. GUEST DROP DOWN -->
+<div class="state-guest">
+  <div class="user-profile-header">
+    <div class="user-name">
+      <span data-lang="en">Welcome to AcadTrack</span>
+      <span data-lang="fr">Bienvenue sur AcadTrack</span>
+      <span data-lang="ar">مرحبًا بك في AcadTrack</span>
+    </div>
+    <div class="user-greeting">
+      <span data-lang="en">Login to access your dashboard</span>
+      <span data-lang="fr">Connectez-vous pour accéder au tableau de bord</span>
+      <span data-lang="ar">سجل الدخول للوصول إلى لوحة التحكم</span>
+    </div>
+  </div>
+  <div class="user-profile-actions" style="flex-direction: column; gap: 0.5rem;">
+    <a href="/login" class="btn btn-sm" style="width:100%;"><i class="fa-solid fa-right-to-bracket"></i> <span data-lang="en">Login</span><span data-lang="fr">Connexion</span><span data-lang="ar">تسجيل الدخول</span></a>
+    <a href="/signup" class="btn btn-sm btn-outline" style="width:100%;"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+    <a href="#googlesignup" class="btn btn-sm btn-outline" style="width:100%;"><i class="fa-brands fa-google"></i> <span data-lang="en">Continue with Google</span><span data-lang="fr">Continuer avec Google</span><span data-lang="ar">المتابعة باستخدام Google</span></a>
+  </div>
+  <div class="saas-subtext" style="margin-bottom: 0.5rem;">
+    <span data-lang="en">Quick Access</span>
+    <span data-lang="fr">Accès rapide</span>
+    <span data-lang="ar">وصول سريع</span>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/features"><i class="fa-solid fa-star"></i> <span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+    <a href="/about"><i class="fa-solid fa-circle-info"></i> <span data-lang="en">About Platform</span><span data-lang="fr">À propos de la plateforme</span><span data-lang="ar">حول المنصة</span></a>
+    <a href="/help-center"><i class="fa-solid fa-question-circle"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+  </nav>
+</div>
+
+<!-- 2. STUDENT DROP DOWN -->
+<div class="state-student">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name studentName">
+      <span data-lang="en">Imad AZIZI</span>
+      <span data-lang="fr">Imad AZIZI</span>
+      <span data-lang="ar">عماد عزيزي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-graduation-cap"></i> <span data-lang="en">Student</span><span data-lang="fr">Étudiant</span><span data-lang="ar">طالب</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/student-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/student-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/student-modules"><i class="fa-solid fa-book"></i> <span data-lang="en">Modules</span><span data-lang="fr">Modules</span><span data-lang="ar">المواد الدراسية</span></a>
+    <a href="/student-schedule"><i class="fa-solid fa-calendar-days"></i> <span data-lang="en">Schedule</span><span data-lang="fr">Emploi du temps</span><span data-lang="ar">جدول الحصص</span></a>
+    <a href="/student-grades"><i class="fa-solid fa-square-poll-vertical"></i> <span data-lang="en">Grades &amp; Results</span><span data-lang="fr">Notes &amp; Résultats</span><span data-lang="ar">النقاط والنتائج</span></a>
+    <a href="/student-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/student-reports"><i class="fa-solid fa-chart-pie"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="/student-settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 3. TEACHER DROP DOWN -->
+<div class="state-teacher">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Pr. Zakia CHENNA</span>
+      <span data-lang="fr">Pr. Zakia CHENNA</span>
+      <span data-lang="ar">أ.د. زكية شنة</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-chalkboard-user"></i> <span data-lang="en">Professor</span><span data-lang="fr">Enseignant</span><span data-lang="ar">أستاذ</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/teacher-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/teacher-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/teacher-sessions"><i class="fa-solid fa-clock"></i> <span data-lang="en">My Sessions</span><span data-lang="fr">Mes Sessions</span><span data-lang="ar">حصصي الدراسية</span></a>
+    <a href="/teacher-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/teacher-reports"><i class="fa-solid fa-chart-bar"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="#settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="#appearance"><i class="fa-solid fa-palette"></i> <span data-lang="en">Appearance</span><span data-lang="fr">Apparence</span><span data-lang="ar">المظهر</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 4. ADMINISTRATION DROP DOWN -->
+<div class="state-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="fr">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="ar">د. عمار شوشان</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-user-tie"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/dept-admin-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/dept-admin-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/dept-admin-analytics"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/dept-admin-users"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/dept-admin-departments"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/dept-admin-reports"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/dept-admin-monitoring"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/dept-admin-activity-logs"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/dept-admin-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/dept-admin-settings"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 5. PLATFORM ADMIN DROP DOWN -->
+<div class="state-platform-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Mr. Uns MAHMOUDI</span>
+      <span data-lang="fr">M. Uns MAHMOUDI</span>
+      <span data-lang="ar">أ. أنس محمودي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-server"></i> <span data-lang="en">Platform Admin</span><span data-lang="fr">Admin Plateforme</span><span data-lang="ar">مدير النظام</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/platform-admin-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="#profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/dept-admin-analytics"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/dept-admin-users"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/dept-admin-departments"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/dept-admin-reports"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/dept-admin-monitoring"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/dept-admin-activity-logs"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/dept-admin-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/dept-admin-settings"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+</div></div></div>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+
+  <div class="mobile-nav-section section" id="mobile-navigation"><div class="widget HTML" id="HTML22"><nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+<style>
+.mobile-nav { position: fixed; inset: var(--header-height) 0 0 0; background-color: var(--bg); padding: var(--space-lg); flex-direction: column; gap: 0; z-index: 40; border-top: 1px solid var(--border-light); transform: translateX(-100%); opacity: 0; visibility: hidden; transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s 0.35s; overflow-y: auto; }
+.mobile-nav.active { transform: translateX(0); opacity: 1; visibility: visible; transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s 0s; display: flex; }
+.mobile-nav a { font-size: 1.125rem; font-weight: 500; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light); color: var(--text); transform: translateX(-20px); opacity: 0; transition: color var(--transition), transform 0.35s ease, opacity 0.35s ease; }
+.mobile-nav.active a { transform: translateX(0); opacity: 1; } 
+.mobile-nav.active a:nth-child(1) { transition-delay: 0.08s; } 
+.mobile-nav.active a:nth-child(2) { transition-delay: 0.14s; } 
+.mobile-nav.active a:nth-child(3) { transition-delay: 0.2s; } 
+.mobile-nav.active a:nth-child(4) { transition-delay: 0.26s; }
+.mobile-nav a:hover { color: var(--primary); }
+</style>
+<a href="/"><span data-lang="en">Home</span><span data-lang="fr">Accueil</span><span data-lang="ar">الرئيسية</span></a>
+<a href="#features"><span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+<a href="/about"><span data-lang="en">About</span><span data-lang="fr">À propos</span><span data-lang="ar">حول</span></a>
+<a href="/contact"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span><span data-lang="ar">اتصل بنا</span></a>
+
+<!-- Mobile Navigation Language Selector Accordion (Mobile View Only) -->
+<div style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-light);">
+  <div class="menu-accordion-header">
+    <span style="font-size:1.125rem;font-weight:500;color:var(--text);display:flex;align-items:center;gap:var(--space-sm);">
+      <i class="fa-solid fa-globe" style="width: 1.25rem;"></i> 
+      <span data-lang="en">Language</span><span data-lang="fr">Langue</span><span data-lang="ar">اللغة</span>
+    </span>
+    <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+  </div>
+  <div class="menu-accordion-content" id="langAccordMobile" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+    <a href="#" onclick="setLanguage('en'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>English</span>
+    </a>
+    <a href="#" onclick="setLanguage('fr'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/fr.svg" alt="FR" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>Français</span>
+    </a>
+    <a href="#" onclick="setLanguage('ar'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/dz.svg" alt="AR" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>العربية</span>
+    </a>
+  </div>
+</div>
+
+<!-- Mobile Navigation Demo Selector Accordion -->
+<div style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-light);">
+  <div class="menu-accordion-header">
+    <span style="font-size:1.125rem;font-weight:500;color:var(--text);display:flex;align-items:center;gap:var(--space-sm);">
+      <i class="fa-solid fa-flask" id="demoActiveIconMobile" style="width: 1.25rem;"></i> 
+      <span id="demoActiveLabelMobile"  style="font-family: 'Cairo', sans-serif;">
+       <span id="demoActiveLabelMobile" style="font-family: 'Cairo', sans-serif;">العرض</span>
+      </span>
+    </span>
+    <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+  </div>
+  <div class="menu-accordion-content" id="demoAccordMobile" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+    <div class="demo-role-option" onclick="selectSaaSRole('student')" id="demoOptMobileStudent" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-graduation-cap" style="color:var(--primary); margin-right: 8px;"></i> <span data-lang="en">Psychology Student</span><span data-lang="fr">Étudiant en Psychologie</span><span data-lang="ar">طالب علم النفس</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="fr">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="ar">عماد عزيزي (سنة 3) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('teacher')" id="demoOptMobileTeacher" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-chalkboard-user" style="color:#10b981; margin-right: 8px;"></i> <span data-lang="en">Psychology Professor</span><span data-lang="fr">Enseignant en Psychologie</span><span data-lang="ar">أستاذ علم النفس</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="fr">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="ar">أ.د. زكية شنة (بروفيسور) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('admin')" id="demoOptMobileAdmin" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-user-tie" style="color:#f59e0b; margin-right: 8px;"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="fr">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="ar">د. عمار شوشان (أستاذ محاضر أ) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('platform-admin')" id="demoOptMobilePlatform" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-server" style="color:#6366f1; margin-right: 8px;"></i> <span data-lang="en">Platform Super Admin</span><span data-lang="fr">Super Admin Plateforme</span><span data-lang="ar">مدير النظام</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Mr. Uns MAHMOUDI • Developer</span>
+        <span data-lang="fr">M. Uns MAHMOUDI • Développeur</span>
+        <span data-lang="ar">أ. يونس محمودي • مطور البرمجية</span>
+      </span>
+    </div>
+    <div class="demo-role-option exit-demo-option" onclick="selectSaaSRole('guest')" id="demoOptMobileExit" style="padding: 0.5rem 0; border-top:1px solid var(--border-light); margin-top:0.5rem;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700; color:#ef4444;"><i class="fa-solid fa-circle-xmark" style="margin-right: 8px;"></i> <span data-lang="en">Exit Demo Mode</span><span data-lang="fr">Quitter le Mode Démo</span><span data-lang="ar">الخروج من وضع العرض</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="en">Reset to original guest state</span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="fr">Réinitialiser à l'état invité</span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="ar">إعادة تعيين إلى وضع الزائر</span>
+    </div>
+  </div>
+</div>
+</nav></div></div>
+
+  <div class="user-sidebar-overlay" id="userSidebarOverlay"></div>
+
+  <div class="mobile-user-sidebar-section section" id="mobile-user-sidebar"><div class="widget HTML" id="HTML24"><aside class="user-sidebar" id="userSidebar">
+<style>
+.user-sidebar { display: none; }
+@media (max-width: 767px) { 
+  .user-sidebar { display: flex; flex-direction: column; position: fixed; top: var(--header-height); right: 0; bottom: 0; width: 300px; max-width: 85vw; background-color: var(--bg); z-index: 45; box-shadow: -4px 0 15px rgba(0,0,0,0.1); transform: translateX(100%); transition: transform 0.35s ease; overflow-y: auto; padding: var(--space-lg); } 
+  .user-sidebar.active { transform: translateX(0); } 
+}
+.user-profile-header { margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+.user-greeting { font-size: 0.875rem; color: var(--text-secondary); } 
+.user-name { font-size: 1.125rem; font-weight: 700; color: var(--text); margin-top: 0.25rem; }
+.user-profile-actions { display: flex; gap: var(--space-xs); margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.8125rem; flex: 1; justify-content: center; border-radius: 0.5rem; } 
+.btn-outline { background-color: transparent; color: var(--primary); border: 1px solid var(--primary); } 
+.btn-outline:hover { background-color: var(--primary); color: white; }
+.user-profile-nav { display: flex; flex-direction: column; gap: var(--space-xs); } 
+.user-profile-nav a { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) 0; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); transition: color var(--transition); } 
+.user-profile-nav a i { width: 1.25rem; text-align: center; }
+.user-profile-nav a:hover { color: var(--primary); }
+.saas-subtext { font-size: 0.75rem; font-weight: 600; color: var(--primary); text-transform: uppercase; margin-top: 2px; letter-spacing: 0.05em; }
+
+/* New custom styling targeting the logout buttons */
+.user-profile-nav a[href="#logout"] {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border: 1px solid #dc2626 !important;
+  transition: all 0.2s ease !important;
+}
+.user-profile-nav a[href="#logout"]:hover {
+  background-color: #ffffff !important;
+  color: #dc2626 !important;
+  border: 1px solid #dc2626 !important;
+}
+</style>
+
+<!-- 1. GUEST USER SIDEBAR -->
+<div class="state-guest">
+  <div class="user-profile-header">
+    <div class="user-name">Welcome to AcadTrack</div>
+    <div class="user-greeting">Login to access your dashboard</div>
+  </div>
+  <div class="user-profile-actions" style="flex-direction: column; gap: 0.5rem;">
+    <a href="/login" class="btn btn-sm" style="width:100%;"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+    <a href="/signup" class="btn btn-sm btn-outline" style="width:100%;"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+    <a href="#googlesignup" class="btn btn-sm btn-outline" style="width:100%;"><i class="fa-brands fa-google"></i> Google Sign up</a>
+  </div>
+  <div class="saas-subtext" style="margin-bottom: 0.5rem;">Quick Access</div>
+  <nav class="user-profile-nav">
+    <a href="/features"><i class="fa-solid fa-star"></i> <span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+    <a href="/about"><i class="fa-solid fa-circle-info"></i> <span data-lang="en">About Platform</span><span data-lang="fr">À propos de la plateforme</span><span data-lang="ar">حول المنصة</span></a>
+    <a href="/help-center"><i class="fa-solid fa-question-circle"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+  </nav>
+</div>
+
+<!-- 2. STUDENT USER SIDEBAR -->
+<div class="state-student">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Imad AZIZI</span>
+      <span data-lang="fr">Imad AZIZI</span>
+      <span data-lang="ar">عماد عزيزي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-graduation-cap"></i> <span data-lang="en">Student</span><span data-lang="fr">Étudiant</span><span data-lang="ar">طالب</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/student-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/student-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/student-modules"><i class="fa-solid fa-book"></i> <span data-lang="en">Modules</span><span data-lang="fr">Modules</span><span data-lang="ar">المواد الدراسية</span></a>
+    <a href="/student-schedule"><i class="fa-solid fa-calendar-days"></i> <span data-lang="en">Schedule</span><span data-lang="fr">Emploi du temps</span><span data-lang="ar">جدول الحصص</span></a>
+    <a href="/student-grades"><i class="fa-solid fa-square-poll-vertical"></i> <span data-lang="en">Grades &amp; Results</span><span data-lang="fr">Notes &amp; Résultats</span><span data-lang="ar">النقاط والنتائج</span></a>
+    
+    <!-- Mobile Notification Bell integration inside the User Sidebar Menu -->
+    <div style="padding: 0.25rem 0;">
+      <div class="menu-accordion-header">
+        <span style="font-size:0.875rem;font-weight:500;color:var(--text-secondary);display:flex;align-items:center;gap:var(--space-sm);"><i class="fa-solid fa-bell"></i> <span data-lang="en">Notifications</span><span data-lang="fr">Notifications</span><span data-lang="ar">الإشعارات</span> <span style="background:#ef4444;color:white;font-size:0.65rem;font-weight:700;padding:2px 6px;border-radius:99px;margin-left:4px;">2</span></span>
+        <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+      </div>
+      <div class="menu-accordion-content" id="notifAccordStudent" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+        <a href="/student-grades" style="font-size:0.8125rem;"><i class="fa-solid fa-graduation-cap"></i> Database systems result released</a>
+        <a href="#absences" style="font-size:0.8125rem;color:#ef4444;"><i class="fa-solid fa-triangle-exclamation"></i> Network security absence logged</a>
+      </div>
+    </div>
+
+    <a href="/student-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/student-reports"><i class="fa-solid fa-chart-pie"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="/student-settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 3. TEACHER USER SIDEBAR -->
+<div class="state-teacher">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Pr. Zakia CHENNA</span>
+      <span data-lang="fr">Pr. Zakia CHENNA</span>
+      <span data-lang="ar">أ.د. زكية شنة</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-chalkboard-user"></i> <span data-lang="en">Professor</span><span data-lang="fr">Enseignant</span><span data-lang="ar">أستاذ</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/teacher-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/teacher-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/teacher-sessions"><i class="fa-solid fa-clock"></i> <span data-lang="en">My Sessions</span><span data-lang="fr">Mes Sessions</span><span data-lang="ar">حصصي الدراسية</span></a>
+
+    <!-- Mobile Notification Bell integration inside the User Sidebar Menu -->
+    <div style="padding: 0.25rem 0;">
+      <div class="menu-accordion-header">
+        <span style="font-size:0.875rem;font-weight:500;color:var(--text-secondary);display:flex;align-items:center;gap:var(--space-sm);"><i class="fa-solid fa-bell"></i> <span data-lang="en">Notifications</span><span data-lang="fr">Notifications</span><span data-lang="ar">الإشعارات</span> <span style="background:#ef4444;color:white;font-size:0.65rem;font-weight:700;padding:2px 6px;border-radius:99px;margin-left:4px;">2</span></span>
+        <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+      </div>
+      <div class="menu-accordion-content" id="notifAccordTeacher" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+        <a href="#grades" style="font-size:0.8125rem;"><i class="fa-solid fa-file-arrow-up"></i> Ahmed submitted Web Dev assignment</a>
+        <a href="#schedule" style="font-size:0.8125rem;"><i class="fa-solid fa-clock"></i> TP starts in 1 hour</a>
+      </div>
+    </div>
+
+    <a href="/teacher-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/teacher-reports"><i class="fa-solid fa-chart-bar"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="#settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="#appearance"><i class="fa-solid fa-palette"></i> <span data-lang="en">Appearance</span><span data-lang="fr">Apparence</span><span data-lang="ar">المظهر</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 4. ADMINISTRATION USER SIDEBAR -->
+<div class="state-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="fr">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="ar">د. عمار شوشان</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-user-tie"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/dept-admin-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/dept-admin-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/dept-admin-analytics"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/dept-admin-users"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/dept-admin-departments"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/dept-admin-reports"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/dept-admin-monitoring"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/dept-admin-activity-logs"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/dept-admin-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/dept-admin-settings"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 5. PLATFORM ADMIN USER SIDEBAR -->
+<div class="state-platform-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Mr. Uns MAHMOUDI</span>
+      <span data-lang="fr">M. Uns MAHMOUDI</span>
+      <span data-lang="ar">أ. أنس محمودي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-server"></i> <span data-lang="en">Platform Admin</span><span data-lang="fr">Admin Plateforme</span><span data-lang="ar">مدير النظام</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/platform-admin-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="#profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/dept-admin-analytics"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/dept-admin-users"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/dept-admin-departments"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/dept-admin-reports"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/dept-admin-monitoring"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/dept-admin-activity-logs"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/dept-admin-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/dept-admin-settings"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+</aside></div></div>
+
+
+  <main id="main-content" class="site-main">
+    <div class="container layout">
+      <div class="content">
+        <div class="widget Blog" id="Blog1">
+          <article class="article">
+            <header class="article__header">
+              <h1 class="article__title">Exams Generator</h1>
+            </header>
+            <div class="article__content">
+<!-- 1. The Iframe that will display the app -->
+<style>
+  :root { 
+    --blogger-header-height: 37px; /* INCREASE THIS if the app covers your header */
+  }
+  #acadtrack-iframe {
+    position: fixed;
+    top: var(--blogger-header-height);
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - var(--blogger-header-height));
+    border: none;
+    z-index: 40;
+    background: #f8fafc;
+    display: block;
+  }
+</style>
+<iframe id="acadtrack-iframe"></iframe>
+
+<!-- 2. This Textarea holds your app code safely -->
+<textarea id="acadtrack-code" style="display:none;">
+
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AcadTrack – مولّد الامتحانات الذكي | جامعة باتنة 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{--primary:#2563eb;--primary-light:#3b82f6;--primary-dark:#1e40af;--primary-ghost:rgba(37,99,235,.08);--accent:#60a5fa;--accent-light:#93c5fd;--accent-dark:#2563eb;--bg:#f8fafc;--bg-alt:#f1f5f9;--card:#fff;--text:#0f172a;--text-muted:#64748b;--border:#e2e8f0;--success:#16a34a;--danger:#dc2626;--info:#2563eb;--sidebar-w:260px;--radius:10px;--shadow:0 2px 12px rgba(0,0,0,.06);--shadow-lg:0 8px 32px rgba(0,0,0,.1);--font-main:'Cairo',sans-serif;--font-formal:'Amiri','Traditional Arabic',serif}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font-main);background:var(--bg);color:var(--text);min-height:100vh;display:flex;transition:background .3s,color .3s}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 15% 10%,rgba(37,99,235,.05) 0%,transparent 55%),radial-gradient(ellipse at 85% 90%,rgba(96,165,250,.04) 0%,transparent 55%);pointer-events:none;z-index:-1}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg-alt)}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:3px}
+.sidebar {
+  width: var(--sidebar-w);
+  min-height: 100vh;
+  background: #fff;
+  color: var(--text);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  transition: transform .35s cubic-bezier(.4,0,.2,1);
+  border-left: 1px solid var(--border);
+  box-shadow: -4px 0 15px rgba(0,0,0,.03);
+}
+
+.sidebar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--primary);
+}
+
+.sidebar-brand {
+  padding: 24px 16px 18px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.sidebar-brand .logo-icon {
+
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.sidebar-brand .logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.sidebar-brand h2 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -.3px;
+  line-height: 1.4;
+  color: var(--primary-dark);
+}
+
+.sidebar-brand span {
+  font-size: 9px;
+  display: block;
+  margin-top: 4px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 16px 12px;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 16px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all .2s;
+  margin-bottom: 4px;
+}
+
+.sidebar-nav a:hover {
+  background: #eff6ff;
+  color: var(--primary-dark);
+}
+
+.sidebar-nav a.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(37,99,235,.3);
+}
+
+.sidebar-nav a.active:hover {
+  background: var(--primary-light);
+  color: #fff;
+}
+
+.sidebar-nav a i {
+  width: 22px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15,23,42,.25);
+  z-index: 99;
+  transition: opacity .3s;
+}
+
+.sidebar-overlay.visible {
+  display: block;
+}
+
+.main-content{flex:1;margin-right:var(--sidebar-w);min-height:100vh;transition:margin .35s}
+.topbar{background:var(--card);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50;backdrop-filter:blur(8px)}
+.topbar h1{font-size:17px;font-weight:700}
+.topbar-actions{display:flex;gap:8px;align-items:center}
+
+.btn{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border-radius:8px;font-family:var(--font-main);font-size:13px;font-weight:600;border:none;cursor:pointer;transition:all .2s;text-decoration:none;white-space:nowrap}
+.btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:var(--primary-light);transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,99,235,.25)}
+.btn-accent{background:var(--accent-dark);color:#fff}.btn-accent:hover{background:var(--primary)}
+.btn-outline{background:transparent;border:2px solid var(--border);color:var(--text)}.btn-outline:hover{border-color:var(--primary);color:var(--primary)}
+.btn-danger{background:var(--danger);color:#fff}.btn-danger:hover{background:#b91c1c}
+.btn-sm{padding:6px 12px;font-size:11px}
+.btn-icon{width:34px;height:34px;padding:0;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;background:var(--primary-ghost);color:var(--primary);border:none;cursor:pointer;transition:all .2s;font-size:13px}
+.btn-icon:hover{background:var(--primary);color:#fff}
+
+.page{display:none;padding:24px;animation:fadeUp .35s ease}.page.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
+.stat-card{background:var(--card);border-radius:var(--radius);padding:18px;border:1px solid var(--border);display:flex;align-items:center;gap:12px;transition:transform .2s,box-shadow .2s}
+.stat-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.stat-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.stat-icon.blue{background:rgba(37,99,235,.1);color:var(--primary)}.stat-icon.sky{background:rgba(96,165,250,.12);color:var(--accent-dark)}.stat-icon.indigo{background:rgba(99,102,241,.1);color:#6366f1}.stat-icon.red{background:rgba(220,38,38,.08);color:var(--danger)}
+.stat-info h3{font-size:22px;font-weight:800;line-height:1}.stat-info p{font-size:11px;color:var(--text-muted);margin-top:2px}
+
+.section-title{font-size:16px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:9px}
+.section-title i{color:var(--primary);font-size:15px}
+
+.recent-list{display:flex;flex-direction:column;gap:7px}
+.recent-item{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;transition:border-color .2s,box-shadow .2s}
+.recent-item:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+.recent-item-info h4{font-size:13px;font-weight:600}.recent-item-info p{font-size:11px;color:var(--text-muted);margin-top:2px}
+.recent-item-actions{display:flex;gap:5px}
+
+.empty-state{text-align:center;padding:48px 20px;color:var(--text-muted)}
+.empty-state i{font-size:42px;margin-bottom:12px;opacity:.2;display:block}.empty-state p{font-size:13px}
+
+.form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}
+.form-group{display:flex;flex-direction:column;gap:4px}
+.form-group label{font-size:12px;font-weight:600}.form-group label .req{color:var(--danger);margin-right:2px}
+.form-control{padding:9px 12px;border:2px solid var(--border);border-radius:8px;font-family:var(--font-main);font-size:13px;background:var(--card);color:var(--text);transition:border-color .2s,box-shadow .2s;outline:none;width:100%}
+.form-control:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-ghost)}
+select.form-control{cursor:pointer}
+
+.checkbox-group{display:flex;flex-wrap:wrap;gap:12px;padding:5px 0}
+.checkbox-label{display:flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;font-weight:500}
+.checkbox-label input[type="checkbox"]{width:17px;height:17px;accent-color:var(--primary);cursor:pointer}
+
+.difficulty-selector{display:flex;gap:8px}
+.diff-option{flex:1;padding:10px 6px;border:2px solid var(--border);border-radius:8px;text-align:center;cursor:pointer;font-size:12px;font-weight:600;transition:all .2s;background:var(--card)}
+.diff-option:hover{border-color:var(--primary)}.diff-option.selected{border-color:var(--primary);background:var(--primary-ghost);color:var(--primary)}
+.diff-option .diff-icon{font-size:16px;display:block;margin-bottom:1px}
+
+.generate-section{text-align:center;padding:22px 0}
+.btn-generate{padding:14px 38px;font-size:15px;font-weight:700;background:linear-gradient(135deg,var(--primary),var(--primary-light));color:#fff;border:none;border-radius:12px;cursor:pointer;font-family:var(--font-main);transition:all .3s;position:relative}
+.btn-generate:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,99,235,.3)}
+.btn-generate:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-generate .spinner{display:none;width:17px;height:17px;border:3px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;margin-right:7px;vertical-align:middle}
+.btn-generate.loading .spinner{display:inline-block}.btn-generate.loading .btn-text{opacity:.7}
+
+.ai-progress{display:none;margin-top:20px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;max-width:440px;margin-left:auto;margin-right:auto;text-align:right}
+.ai-progress.visible{display:block}
+.ai-step{display:flex;align-items:center;gap:9px;padding:5px 0;font-size:12px;color:var(--text-muted);transition:color .3s}
+.ai-step.active{color:var(--primary);font-weight:600}.ai-step.done{color:var(--success)}
+.ai-step i{width:18px;text-align:center;font-size:13px}
+
+.editor-toolbar{background:var(--card);border:1px solid var(--border);border-bottom:none;border-radius:var(--radius) var(--radius) 0 0;padding:6px 10px;display:flex;flex-wrap:wrap;gap:3px;align-items:center}
+.toolbar-btn{min-width:30px;height:30px;padding:0 5px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:5px;background:var(--card);color:var(--text);cursor:pointer;font-size:12px;transition:all .15s;font-family:var(--font-main)}
+.toolbar-btn:hover{background:var(--primary-ghost);border-color:var(--primary);color:var(--primary)}
+.toolbar-sep{width:1px;height:20px;background:var(--border);margin:0 3px}
+.toolbar-select{height:30px;padding:0 6px;border:1px solid var(--border);border-radius:5px;background:var(--card);color:var(--text);font-family:var(--font-main);font-size:11px;cursor:pointer;outline:none}
+.toolbar-select:focus{border-color:var(--primary)}
+.toolbar-color{width:26px;height:26px;border:1px solid var(--border);border-radius:4px;cursor:pointer;padding:0;background:none}
+
+.exam-editor{border:1px solid var(--border);border-radius:0 0 var(--radius) var(--radius);min-height:700px;padding:36px 44px;background:#fff;color:#0f172a;font-family:var(--font-formal);font-size:15px;line-height:2;outline:none;direction:rtl;transition:box-shadow .2s}
+.exam-editor:focus{box-shadow:inset 0 0 0 2px rgba(37,99,235,.12)}
+.exam-editor .exam-header{text-align:center;margin-bottom:10px}
+.exam-editor .exam-header h1{font-size:14px;font-weight:700;line-height:2.2;margin:0}
+.exam-editor .exam-header h2{font-size:13px;font-weight:700;line-height:2.2;margin:0}
+.exam-editor .exam-logo{max-width:70px;max-height:70px;margin:0 auto 6px;display:block}
+.exam-editor .exam-separator{border:none;border-top:2px solid #1e293b;margin:8px 0}
+.exam-editor .exam-info-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin:8px 0;font-size:13px}
+.exam-editor .student-row{display:flex;justify-content:space-between;flex-wrap:wrap;margin:12px 0;font-size:13px}
+.exam-editor .grading-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:12px;font-family:var(--font-main)}
+.exam-editor .grading-table th,.exam-editor .grading-table td{border:1px solid #475569;padding:5px 7px;text-align:center}
+.exam-editor .grading-table th{background:#f1f5f9;font-weight:700}
+.exam-editor .q-block{margin:14px 0;padding:10px 12px;border:1px dashed #cbd5e1;border-radius:6px;transition:border-color .2s,background .2s}
+.exam-editor .q-block:hover{border-color:var(--primary);background:rgba(37,99,235,.015)}
+.exam-editor .q-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}
+.exam-editor .q-num{font-weight:700;color:var(--primary-dark);font-family:var(--font-main);font-size:13px}
+.exam-editor .q-pts{font-size:11px;color:#94a3b8;font-family:var(--font-main)}
+.exam-editor .mcq-list{padding-right:22px;margin-top:5px}
+.exam-editor .mcq-list li{margin:2px 0;list-style:arabic-indic}
+.exam-editor .answer-space{margin:6px 0 10px}
+.exam-editor .answer-line{height:30px;border-bottom:1px dotted #cbd5e1;margin:0}
+.exam-editor .signature-area{display:flex;justify-content:space-between;margin-top:30px;padding-top:16px;border-top:1px solid #e2e8f0;font-size:12px;font-family:var(--font-main)}
+
+.editor-actions{display:flex;gap:7px;margin-top:16px;flex-wrap:wrap}
+
+.preview-frame{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:44px 52px;max-width:850px;margin:0 auto;color:#0f172a;font-family:var(--font-formal);font-size:15px;line-height:2;direction:rtl;box-shadow:var(--shadow-lg)}
+.preview-frame .exam-logo{max-width:70px;max-height:70px;margin:0 auto 6px;display:block}
+
+.history-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.history-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:all .2s;position:relative;overflow:hidden}
+.history-card::before{content:'';position:absolute;top:0;right:0;width:4px;height:100%;background:var(--primary);border-radius:0 4px 0 0}
+.history-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.history-card h4{font-size:13px;font-weight:700;margin-bottom:7px;padding-right:10px}
+.history-card .meta{font-size:11px;color:var(--text-muted);display:flex;flex-direction:column;gap:3px;padding-right:10px}
+.history-card .meta span{display:flex;align-items:center;gap:5px}
+.history-card .actions{display:flex;gap:5px;margin-top:10px;padding-right:10px}
+
+.toast-container{position:fixed;top:18px;left:18px;z-index:9999;display:flex;flex-direction:column;gap:7px}
+.toast{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px 16px;font-size:12px;font-weight:500;display:flex;align-items:center;gap:9px;box-shadow:var(--shadow-lg);animation:toastIn .3s ease;min-width:240px;color:var(--text)}
+.toast.success{border-right:4px solid var(--success)}.toast.error{border-right:4px solid var(--danger)}.toast.info{border-right:4px solid var(--info)}
+@keyframes toastIn{from{transform:translateX(-100%);opacity:0}to{transform:translateX(0);opacity:1}}
+
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;align-items:center;justify-content:center}
+.modal-overlay.visible{display:flex}
+.modal-box{background:var(--card);border-radius:14px;padding:26px;max-width:420px;width:90%;box-shadow:var(--shadow-lg)}
+.modal-box h3{font-size:16px;font-weight:700;margin-bottom:9px}.modal-box p{font-size:13px;color:var(--text-muted);margin-bottom:16px;line-height:1.7}
+.modal-actions{display:flex;gap:9px}
+
+.mobile-toggle{display:none;background:var(--primary);color:#fff;border:none;width:36px;height:36px;border-radius:7px;font-size:16px;cursor:pointer;align-items:center;justify-content:center}
+
+@media(max-width:1100px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .form-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  .sidebar{transform:translateX(100%)}
+  .sidebar.open{transform:translateX(0)}
+  .sidebar-overlay.visible{display:block}
+  .main-content{margin-right:0}
+  .mobile-toggle{display:inline-flex}
+  .form-grid{grid-template-columns:1fr}
+  .exam-editor,.preview-frame{padding:22px 16px}
+  .page{padding:16px}
+}
+@media(max-width:600px){
+  .stats-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .stat-card{padding:14px}
+  .stat-icon{width:38px;height:38px;font-size:15px}
+  .stat-info h3{font-size:18px}
+  .history-grid{grid-template-columns:1fr}
+  .topbar{padding:10px 12px}
+  .topbar h1{font-size:14px}
+  .difficulty-selector{flex-direction:column}
+  .preview-frame{padding:18px 14px}
+  .preview-frame .exam-logo{max-width:50px;max-height:50px}
+  .exam-editor .exam-logo{max-width:50px;max-height:50px}
+}
+@media print{
+  .sidebar,.sidebar-overlay,.topbar,.editor-toolbar,.editor-actions,.toast-container,.modal-overlay,.mobile-toggle{display:none!important}
+  .main-content{margin:0!important}.page{padding:0!important;animation:none!important}
+  .exam-editor,.preview-frame{border:none!important;box-shadow:none!important;padding:16px!important}
+  body::before{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="logo-icon"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs" alt="AcadTrack"></div>
+
+    <span>قسم علم النفس وعلوم التربية والأرطوفونيا – جامعة باتنة 1</span>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="#" data-page="dashboard" class="active"><i class="fas fa-gauge-high"></i>لوحة التحكم</a>
+    <a href="#" data-page="generator"><i class="fas fa-wand-magic-sparkles"></i>إنشاء امتحان</a>
+    <a href="#" data-page="editor"><i class="fas fa-pen-to-square"></i>المحرر</a>
+    <a href="#" data-page="preview"><i class="fas fa-eye"></i>معاينة</a>
+    <a href="#" data-page="history"><i class="fas fa-clock-rotate-left"></i>الأرشيف</a>
+  </nav>
+</aside>
+
+<div class="main-content">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px">
+      <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+      <h1 id="pageTitle">لوحة التحكم</h1>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn btn-primary btn-sm" onclick="App.navigate('generator')"><i class="fas fa-plus"></i> امتحان جديد</button>
+    </div>
+  </header>
+
+  <section class="page active" id="page-dashboard">
+    <div class="stats-grid" id="statsGrid"></div>
+    <div class="section-title"><i class="fas fa-clock"></i> الامتحانات الأخيرة</div>
+    <div class="recent-list" id="recentList"></div>
+  </section>
+
+  <section class="page" id="page-generator">
+    <div class="form-grid">
+      <div class="form-group"><label><span class="req">*</span> القسم</label><select class="form-control" id="fDepartment"><option value="">اختر القسم</option><option value="علم النفس">علم النفس</option><option value="علوم التربية">علوم التربية</option><option value="علم النطق">علم النطق</option></select></div>
+      <div class="form-group"><label><span class="req">*</span> المستوى</label><select class="form-control" id="fLevel"><option value="">اختر المستوى</option><option value="السنة الأولى ليسانس">السنة الأولى ليسانس</option><option value="السنة الثانية ليسانس">السنة الثانية ليسانس</option><option value="السنة الثالثة ليسانس">السنة الثالثة ليسانس</option><option value="السنة الأولى ماستر">السنة الأولى ماستر</option><option value="السنة الثانية ماستر">السنة الثانية ماستر</option></select></div>
+      <div class="form-group"><label><span class="req">*</span> المادة</label><select class="form-control" id="fModule"><option value="">اختر القسم أولاً</option></select></div>
+      <div class="form-group"><label>الشعبة</label><select class="form-control" id="fGroup"><option value="">اختر الشعبة</option><option value="أ">أ</option><option value="ب">ب</option><option value="ج">ج</option><option value="د">د</option></select></div>
+      <div class="form-group"><label><span class="req">*</span> نوع الامتحان</label><select class="form-control" id="fExamType"><option value="">اختر النوع</option><option value="امتحان">امتحان</option><option value="فرض محروس">فرض محروس (TD)</option><option value="أعمال تطبيقية">أعمال تطبيقية (TP)</option><option value="اختبار قصير">اختبار قصير (Quiz)</option><option value="امتحان استدراكي">امتحان استدراكي</option></select></div>
+      <div class="form-group"><label><span class="req">*</span> طبيعة الامتحان</label><select class="form-control" id="fBookType"><option value="">اختر الطبيعة</option><option value="مغلق الكتاب">مغلق الكتاب</option><option value="مفتوح الكتاب">مفتوح الكتاب</option></select></div>
+      <div class="form-group"><label><span class="req">*</span> المدة</label><select class="form-control" id="fDuration"><option value="">اختر المدة</option><option value="ساعة واحدة">ساعة واحدة</option><option value="ساعة ونصف">ساعة ونصف</option><option value="ساعتان">ساعتان</option><option value="ساعتان ونصف">ساعتان ونصف</option><option value="ثلاث ساعات">ثلاث ساعات</option></select></div>
+      <div class="form-group"><label><span class="req">*</span> التاريخ</label><input type="date" class="form-control" id="fDate"></div>
+      <div class="form-group"><label>الصعوبة</label><div class="difficulty-selector"><div class="diff-option" data-diff="سهل" onclick="Generator.selectDifficulty(this)"><span class="diff-icon">🟢</span>سهل</div><div class="diff-option selected" data-diff="متوسط" onclick="Generator.selectDifficulty(this)"><span class="diff-icon">🟡</span>متوسط</div><div class="diff-option" data-diff="صعب" onclick="Generator.selectDifficulty(this)"><span class="diff-icon">🔴</span>صعب</div></div></div>
+    </div>
+    <div class="form-group" style="margin-bottom:20px"><label>أنواع الأسئلة</label><div class="checkbox-group">
+      <label class="checkbox-label"><input type="checkbox" value="definition" checked> تعريفات</label>
+      <label class="checkbox-label"><input type="checkbox" value="essay" checked> مقالية</label>
+      <label class="checkbox-label"><input type="checkbox" value="longEssay"> مقالة مطوّلة</label>
+      <label class="checkbox-label"><input type="checkbox" value="caseStudy" checked> دراسة حالة</label>
+      <label class="checkbox-label"><input type="checkbox" value="mcq" checked> اختيار متعدد</label>
+      <label class="checkbox-label"><input type="checkbox" value="trueFalse"> صح / خطأ</label>
+    </div></div>
+    <div class="generate-section">
+      <button class="btn-generate" id="btnGenerate" onclick="Generator.start()"><span class="spinner"></span><span class="btn-text"><i class="fas fa-wand-magic-sparkles"></i> توليد الامتحان بالذكاء الاصطناعي</span></button>
+      <div class="ai-progress" id="aiProgress">
+        <div class="ai-step" data-step="0"><i class="fas fa-circle-notch fa-spin"></i> تحليل متطلبات المادة...</div>
+        <div class="ai-step" data-step="1"><i class="fas fa-circle"></i> اختيار الأسئلة المناسبة...</div>
+        <div class="ai-step" data-step="2"><i class="fas fa-circle"></i> ضبط مستوى الصعوبة...</div>
+        <div class="ai-step" data-step="3"><i class="fas fa-circle"></i> تنسيق ورقة الامتحان...</div>
+        <div class="ai-step" data-step="4"><i class="fas fa-circle"></i> المراجعة النهائية...</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-editor">
+    <div id="editorEmpty" class="empty-state"><i class="fas fa-file-lines"></i><p>لم يتم توليد امتحان بعد. أنشئ امتحاناً جديداً.</p><button class="btn btn-primary" style="margin-top:14px" onclick="App.navigate('generator')">إنشاء امتحان</button></div>
+    <div id="editorContent" style="display:none">
+      <div class="editor-toolbar" id="editorToolbar">
+        <select class="toolbar-select" title="حجم الخط" onchange="document.execCommand('fontSize',false,this.value);this.selectedIndex=0"><option value="">حجم الخط</option><option value="1">صغير جداً</option><option value="2">صغير</option><option value="3">عادي</option><option value="4">متوسط</option><option value="5">كبير</option><option value="6">كبير جداً</option></select>
+        <select class="toolbar-select" title="نص عنوان" onchange="document.execCommand('formatBlock',false,this.value);this.selectedIndex=0"><option value="">العناوين</option><option value="h1">عنوان 1</option><option value="h2">عنوان 2</option><option value="h3">عنوان 3</option><option value="p">فقرة</option></select>
+        <div class="toolbar-sep"></div>
+        <button class="toolbar-btn" title="غامق" onclick="document.execCommand('bold')"><i class="fas fa-bold"></i></button>
+        <button class="toolbar-btn" title="مائل" onclick="document.execCommand('italic')"><i class="fas fa-italic"></i></button>
+        <button class="toolbar-btn" title="تسطير" onclick="document.execCommand('underline')"><i class="fas fa-underline"></i></button>
+        <button class="toolbar-btn" title="يتوسط" onclick="document.execCommand('strikethrough')"><i class="fas fa-strikethrough"></i></button>
+        <div class="toolbar-sep"></div>
+        <button class="toolbar-btn" title="محاذاة يمين" onclick="document.execCommand('justifyRight')"><i class="fas fa-align-right"></i></button>
+        <button class="toolbar-btn" title="محاذاة وسط" onclick="document.execCommand('justifyCenter')"><i class="fas fa-align-center"></i></button>
+        <button class="toolbar-btn" title="محاذاة يسار" onclick="document.execCommand('justifyLeft')"><i class="fas fa-align-left"></i></button>
+        <button class="toolbar-btn" title="ضبط" onclick="document.execCommand('justifyFull')"><i class="fas fa-align-justify"></i></button>
+        <div class="toolbar-sep"></div>
+        <button class="toolbar-btn" title="قائمة مرقمة" onclick="document.execCommand('insertOrderedList')"><i class="fas fa-list-ol"></i></button>
+        <button class="toolbar-btn" title="قائمة نقطية" onclick="document.execCommand('insertUnorderedList')"><i class="fas fa-list-ul"></i></button>
+        <div class="toolbar-sep"></div>
+        <button class="toolbar-btn" title="مرفوع" onclick="document.execCommand('superscript')"><i class="fas fa-superscript"></i></button>
+        <button class="toolbar-btn" title="منخفض" onclick="document.execCommand('subscript')"><i class="fas fa-subscript"></i></button>
+        <div class="toolbar-sep"></div>
+        <input type="color" class="toolbar-color" title="لون النص" value="#0f172a" onchange="document.execCommand('foreColor',false,this.value)">
+        <input type="color" class="toolbar-color" title="لون الخلفية" value="#bfdbfe" onchange="document.execCommand('hiliteColor',false,this.value)">
+        <div class="toolbar-sep"></div>
+        <button class="toolbar-btn" title="إزالة التنسيق" onclick="document.execCommand('removeFormat')"><i class="fas fa-eraser"></i></button>
+        <button class="toolbar-btn" title="فاصل" onclick="document.execCommand('insertHorizontalRule')"><i class="fas fa-minus"></i></button>
+        <button class="toolbar-btn" title="تراجع" onclick="document.execCommand('undo')"><i class="fas fa-rotate-left"></i></button>
+        <button class="toolbar-btn" title="إعادة" onclick="document.execCommand('redo')"><i class="fas fa-rotate-right"></i></button>
+      </div>
+      <div class="exam-editor" id="examEditor" contenteditable="true"></div>
+      <div class="editor-actions">
+        <button class="btn btn-primary" onclick="Editor.save()"><i class="fas fa-floppy-disk"></i> حفظ</button>
+        <button class="btn btn-accent" onclick="App.navigate('preview')"><i class="fas fa-eye"></i> معاينة</button>
+        <button class="btn btn-outline" onclick="ExportManager.toPDF()"><i class="fas fa-file-pdf"></i> PDF</button>
+        <button class="btn btn-outline" onclick="ExportManager.toWord()"><i class="fas fa-file-word"></i> Word</button>
+        <button class="btn btn-outline" onclick="window.print()"><i class="fas fa-print"></i> طباعة</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-preview">
+    <div style="display:flex;gap:7px;margin-bottom:16px;flex-wrap:wrap">
+      <button class="btn btn-outline" onclick="App.navigate('editor')"><i class="fas fa-pen-to-square"></i> المحرر</button>
+      <button class="btn btn-primary" onclick="ExportManager.toPDF()"><i class="fas fa-file-pdf"></i> PDF</button>
+      <button class="btn btn-accent" onclick="ExportManager.toWord()"><i class="fas fa-file-word"></i> Word</button>
+      <button class="btn btn-outline" onclick="window.print()"><i class="fas fa-print"></i> طباعة</button>
+    </div>
+    <div class="preview-frame" id="previewFrame"></div>
+  </section>
+
+  <section class="page" id="page-history">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px">
+      <div class="section-title" style="margin-bottom:0"><i class="fas fa-clock-rotate-left"></i> الأرشيف</div>
+      <div style="display:flex;gap:7px"><input type="text" class="form-control" id="historySearch" placeholder="بحث..." style="width:180px" oninput="HistoryPage.render()"><button class="btn btn-danger btn-sm" onclick="HistoryPage.clearAll()"><i class="fas fa-trash"></i> حذف الكل</button></div>
+    </div>
+    <div class="history-grid" id="historyGrid"></div>
+    <div class="empty-state" id="historyEmpty" style="display:none"><i class="fas fa-folder-open"></i><p>لا توجد امتحانات محفوظة.</p></div>
+  </section>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+<div class="modal-overlay" id="confirmModal"><div class="modal-box"><h3 id="confirmTitle">تأكيد</h3><p id="confirmMsg">هل أنت متأكد؟</p><div class="modal-actions"><button class="btn btn-danger" id="confirmYes">نعم</button><button class="btn btn-outline" id="confirmNo">إلغاء</button></div></div></div>
+
+<script>
+var UNIVERSITY_LOGO="https://www.univ-batna.dz/wp-content/uploads/2026/02/ChatGPT-Image-26-avr.-2026-16_54_46.png";
+
+var QuestionBank={
+"علم النفس المرضي":{
+definitions:{"سهل":["عرّف علم النفس المرضي مع ذكر أهم أهدافه","ما المقصود بالاضطراب النفسي؟ أعط أمثلة","عرّف الذهان ووضح الفرق بينه وبين العصاب"],"متوسط":["عرّف الفصام وبين خصائصه الإكلينيكية الرئيسية","ما المقصود باضطراب ثنائي القطب؟ اشرح مراحله","عرّف الاكتئاب الذهاني وبيّن اختلافه عن الاكتئاب العصابي"],"صعب":["ناقش مفهوم الطيف الذهاني في السياق النفسي المرضي الحديث مع التمييز بين مستوياته","عرّف اضطراب الشخصية الحدية مبيناً معايير التشخيص التفريقي"]},
+essay:{"سهل":["اذكر ثلاثة أنواع من الاضطرابات القلقية مع شرح مختصر","بين العلاقة بين الضغط النفسي والاضطرابات النفسية الجسمية","ما هي أبرز أسباب الاضطرابات النفسية من منظور التحليل النفسي؟"],"متوسط":["قارن بين النموذج الطبي والنموذج النفسي في تفسير الاضطرابات النفسية","ناقش أثر الصدمات النفسية في الطفولة على نشوء الاضطرابات النفسية في البلوغ","اشرح نظرية سيليغمان عن العجز المكتسب وعلاقتها بالاكتئاب"],"صعب":["ناقش الإشكالية التشخيصية في علم النفس المرضي مع الإشارة إلى محددات DSM-5","حلل العلاقة بين الجينات والبيئة في نشوء الفصام وفق أحدث الأبحاث","ناقش انتقادات مدرسة اللاطب النفسي لنموذج الطب النفسي التقليدي"]},
+longEssay:{"سهل":["اكتب مقالاً حول أهمية التشخيص المبكر للاضطرابات النفسية في تحسين نسب الشفاء"],"متوسط":["اكتب مقالاً مفصلاً حول المقاربات العلاجية الحديثة في علم النفس المرضي مع المقارنة بين فعاليتها","ناقش في مقال مطوّل العلاقة بين الحدث الصادم والاستجابة النفسية المرضية مع الإشارة إلى النظريات المفسرة"],"صعب":["اكتب مقالاً تحليلياً شاملاً حول تطور مفهوم الذهان عبر المدارس النفسية المختلفة وتأثيره على الممارسة العيادية المعاصرة","ناقش في مقال نقدي إشكالية التصنيف النفسي المرضي بين الكونية والخصوصية الثقافية مع تقديم أمثلة من السياق العربي"]},
+caseStudy:{"متوسط":[{scenario:"مريض يبلغ من العمر 35 سنة يعاني من هلاوس سمعية يسمع فيها أصواتاً تعلق على سلوكه، مع اعتقاد راسخ بأن المراقبين يتبعونه. انسحب من الحياة الاجتماعية ويفقد الاهتمام بمظهره الشخصي.",questions:["ما هو الاضطراب المحتمل؟ علل إجابتك","ما هي الأعراض الإيجابية والسلبية الظاهرة؟","اقترح خطة علاجية نفسية واجتماعية"]},{scenario:"طالبة جامعية تبلغ من العمر 21 سنة تشكو من نوبات خوف مفاجئ وشديد مصحوبة بضيق في التنفس وتسارع ضربات القلب وخوف من الموت. تحاول تجنب الأماكن التي حدثت فيها النوبات.",questions:["ما هو التشخيص المحتمل؟","ما الفرق بين نوبة الهلع والقلق العام؟","ما هي المقاربات العلاجية المناسبة؟"]}],"صعب":[{scenario:"شاب عمره 28 سنة يدخل في نوبات من الاكتئاب الشديد تستمر أسابيع، تعقبها نوبات من النشاط المفرط والتفكير المتسارع وقلة الحاجة للنوم واتخاذ قرارات متهورة. يوجد تاريخ عائلي لاضطرابات مزاجية.",questions:["ما التشخيص التفريقي المطلوب؟","ناقش العوامل البيولوجية والنفسية المؤثرة","ما هي الخطوط العلاجية الدوائية والنفسية؟","ما هي سيرورة المرض وتوقعاته؟"]}]},
+mcq:{"سهل":[{q:"أي مما يلي يُعد اضطراباً قلقياً؟",opts:["الفصام","الرهاب الاجتماعي","اضطراب ثنائي القطب","التوحد"],answer:1},{q:"الهلوسة السمعية تُعد من الأعراض:",opts:["السلبية","الإيجابية","المزاجية","المعرفية"],answer:1},{q:"من أبرز مؤسسي حركة الصحة النفسية:",opts:["فرويد","بيفيلد","سكنر","بياجيه"],answer:1}],"متوسط":[{q:"الفصام الزوراني يتميز أساساً بـ:",opts:["تبلد الانفعال","أفكار الاضطهاد والعظمة","اضطراب التفكير الشكلي","السلوك الطفولي"],answer:1},{q:"مثبطات إعادة امتصاص السيروتونين تُستخدم لعلاج:",opts:["الفصام","الاكتئاب","اضطراب الشخصية","التوحد"],answer:1},{q:"في تصنيف DSM-5، اضطراب ما بعد الصدمة يندرج ضمن:",opts:["اضطرابات المزاج","اضطرابات القلق","اضطرابات الصدمة والضغط","اضطرابات الشخصية"],answer:2}],"صعب":[{q:"التشخيص التفريقي بين الفصام والاضطراب الفصامي العاطفي يعتمد على:",opts:["مدة الأعراض الذهانية والمزاجية","وجود هلاوس بصرية","استجابة العلاج الدوائي","التاريخ العائلي فقط"],answer:0},{q:"نظرية الدوبامين في الفصام تفترض:",opts:["نقص الدوبامين في المسار الميزولمبي","زيادة الدوبامين في المسار الميزولمبي","نقص السيروتونين","خلل في الجابا"],answer:1}]},
+trueFalse:{"سهل":[{q:"الهلوسة هي إدراك حسي بدون منبه خارجي",answer:true},{q:"القلق الطبيعي يُصنّف كاضطراب نفسي",answer:false},{q:"الاكتئاب يمكن أن يكون له أعراض جسمية",answer:true}],"متوسط":[{q:"الفصام والشيزوفرينيا هما اضطرابان مختلفان",answer:false},{q:"مثبتات المزاج تُستخدم في علاج اضطراب ثنائي القطب",answer:true},{q:"الأعراض السلبية في الفصام تستجيب بشكل أفضل للأدوية المضادة للذهان",answer:false}],"صعب":[{q:"التشخيص المزدوج يشير إلى وجود اضطراب نفسي وإدمان في آن واحد",answer:true},{q:"العلاج المعرفي السلوكي غير فعال في علاج الفصام",answer:false}]}
+},
+"علم النفس العيادي":{
+definitions:{"سهل":["عرّف علم النفس العيادي وبين مجالات عمله","ما المقصود بالمقابلة العيادية؟","عرّف التقييم النفسي وأهدافه"],"متوسط":["عرّف اختبار رورشاخ وبين أسس تفسيره","ما المقصود بالتشخيص التفريقي في العيادة النفسية؟","عرّف المقاربة المعرفية السلوكية في العلاج النفسي"],"صعب":["عرّف مفهوم التحالف العلاجي وبين دوره في نجاح العلاج النفسي","ناقش مفهوم المقاومة في التحليل النفسي العيادي"]},
+essay:{"سهل":["اذكر أهم طرق التقييم النفسي العيادي مع شرح مختصر","بين دور الأخصائي النفسي العيادي في المؤسسات الصحية","ما هي خطوات المقابلة العيادية الأولى؟"],"متوسط":["قارن بين المقابلة غير المهيكلة والمهيكلة في التقييم العيادي","ناقش معايير اختيار الاختبارات النفسية في السياق العيادي الجزائري","اشرح مراحل العلاج المعرفي السلوكي مع مثال تطبيقي"],"صعب":["ناقش إشكالية التشخيص الثقافي في علم النفس العيادي مع الإشارة للسياق العربي","حلل دور العلاقة العلاجية في تحديد فعالية التدخلات النفسية"]},
+longEssay:{"سهل":["اكتب مقالاً حول أهمية التقييم النفسي المتعدد المحاور في العملية العيادية"],"متوسط":["اكتب مقالاً مفصلاً حول دور المقابلة العيادية في بناء الفهم المشترك للمعاناة النفسية"],"صعب":["اكتب مقالاً تحليلياً شاملاً حول العلاقة بين التقييم والتدخل العيادي في سياق الأزمات النفسية المعقدة"]},
+caseStudy:{"متوسط":[{scenario:"مراجع يبلغ 40 سنة يحال من الطبيب العام يعاني من أرق مزمن وصداع متكرر وشعور بالحزن منذ ستة أشهر بعد فقدان عمله. يرفض فكرة الذهاب لأخصائي نفسي.",questions:["كيف تتعامل مع مقاومة المراجع؟","ما الأدوات التقييمية المناسبة؟","ما المقاربة العلاجية المقترحة؟"]}],"صعب":[{scenario:"طفل عمره 8 سنوات يحال من المدرسة بسبب صعوبات التعلم وسلوكيات عدوانية. الأسرة متمزقة والأم تعاني من اكتئاب.",questions:["ما الخطة التقييمية الشاملة؟","كيف تتعامل مع البعد الأسري؟","ما التشخيص التفريقي المطلوب؟","اقترح برنامجاً علاجياً متكاملاً"]}]},
+mcq:{"سهل":[{q:"أبرز أداة تقييم في المقابلة العيادية هي:",opts:["استمارة مقننة","الملاحظة والمقابلة","اختبار ذكاء","رسم شخص"],answer:1},{q:"مؤسس العلاج المعرفي السلوكي هو:",opts:["فرويد","بيك","روجرز","سكنر"],answer:1}],"متوسط":[{q:"اختبار MMPI يُستخدم أساساً لـ:",opts:["قياس الذكاء","الكشف عن الاضطرابات النفسية","تقييم الشخصية الطبيعية","قياس الانتباه"],answer:1},{q:"التحالف العلاجي يشير إلى:",opts:["الصداقة بين المعالج والمراجع","التعاون والارتباط في العملية العلاجية","الاعتمادية المتبادلة","النقل والمقابل نقل"],answer:1}],"صعب":[{q:"مفهوم النقل في التحليل النفسي يعني:",opts:["انتقال المريض لمعالج آخر","إسقاط علاقات سابقة على المعالج","تحويل الأعراض من نفسية لجسدية","تغيير تقنيات العلاج"],answer:1}]},
+trueFalse:{"سهل":[{q:"المقابلة العيادية تُجرى فقط مرة واحدة",answer:false},{q:"السرية المهنية من مبادئ العمل العيادي",answer:true}],"متوسط":[{q:"اختبار رورشاخ هو اختبار شخصية إسقاطي",answer:true},{q:"العلاج النفسي الجماعي أقل فعالية من الفردي",answer:false}],"صعب":[{q:"المعالج السلوكي يحلل اللاشعور كبداية للعلاج",answer:false},{q:"التقييم البيئي جزء من التقييم العيادي الشامل",answer:true}]}
+},
+"علم النفس الاجتماعي":{
+definitions:{"سهل":["عرّف علم النفس الاجتماعي وبين موضوعاته","ما المقصود بالتنشئة الاجتماعية؟","عرّف الموقف الاجتماعي"],"متوسط":["عرّف ظاهرة الامتثال الاجتماعي مع مثال","ما المقصود بالإدراك الاجتماعي والتحيزات المعرفية؟","عرّف دينامية الجماعة ومكوناتها"],"صعب":["ناقش مفهوم الهوية الاجتماعية وفق نظرية تاجفيل","عرّف البناء الاجتماعي للواقع من منظور برغر ولاكمان"]},
+essay:{"سهل":["اذكر أنواع التأثير الاجتماعي مع أمثلة","بين دور الأسرة في التنشئة الاجتماعية","ما هي خصائص الجماعة الأولية والثانوية؟"],"متوسط":["ناقش نظرية الاستجلاب الذاتي لروبرت ميرتون","قارن بين الامتثال والطاعة والقبول الاجتماعي","اشرح ظاهرة التنمر الإلكتروني من منظور نفسي اجتماعي"],"صعب":["حلل أثر وسائل التواصل الاجتماعي على الهوية الفردية والجماعية","ناقش نظريات الصراع الاجتماعي في تفسير التمييز العرقي"]},
+longEssay:{"سهل":["اكتب مقالاً حول دور المدرسة في التنشئة الاجتماعية للمراهق"],"متوسط":["اكتب مقالاً مفصلاً حول تأثير وسائل التواصل الاجتماعي على العلاقات بين الأجيال"],"صعب":["اكتب مقالاً تحليلياً شاملاً حول أزمة الهوية في المجتمعات العربية المعاصرة"]},
+caseStudy:{"متوسط":[{scenario:"مجموعة طلابية تقرر مقاطعة الامتحان احتجاجاً على قرار إداري. بعض الطلاب غير مقتنعين لكنهم ينضمون خوفاً من العزلة.",questions:["ما الظواهر النفسية الاجتماعية المتضمنة؟","اشرح آليات الضغط الجماعي","كيف يمكن التقليل من التأثير السلبي؟"]}],"صعب":[{scenario:"مجتمع محلي يرفض استقبال لاجئين بسبب تحيزات مسبقة ومخاطر متصوّرة. وسائل الإعلام المحلية تضخّم المخاطر.",questions:["حلل العوامل النفسية الاجتماعية للرفض","ما دور وسائل الإعلام في تشكيل الاتجاهات؟","اقترح تدخلاً نفسياً اجتماعياً","ناقش نظرية الصورة النمطية"]}]},
+mcq:{"سهل":[{q:"تجربة آش تدرس ظاهرة:",opts:["الطاعة","الامتثال","الإقناع","التعاون"],answer:1},{q:"الصورة النمطية هي:",opts:["انطباع إيجابي","تعميم مسبق على جماعة","سلوك تعاوني","قيمة اجتماعية"],answer:1}],"متوسط":[{q:"تأثير المتفرج يزداد عندما:",opts:["يقل عدد المتفرجين","يزداد عدد المتفرجين","يكون الموقف واضحاً","تكون الضحية معروفة"],answer:1}],"صعب":[{q:"نظرية التنافر المعرفي لفستنغر تفترض أن الفرد:",opts:["يسعى للاتساق المعرفي","يتجنب الاتصال الاجتماعي","يقلد الآخرين دائماً","يبحث عن اللذة فقط"],answer:0}]},
+trueFalse:{"سهل":[{q:"الدور الاجتماعي يتحدد بناء على التوقعات المجتمعية",answer:true},{q:"الجماعة الثانوية تتميز بالعلاقات الحميمية",answer:false}],"متوسط":[{q:"تأثير هالو يعني تأثر الحكم على صفة بصفة أخرى سابقة",answer:true}],"صعب":[{q:"الاستبطان هو المنهج الوحيد في علم النفس الاجتماعي",answer:false}]}
+},
+"علم النفس النمو":{
+definitions:{"سهل":["عرّف علم النفس النمو وبين مراحله الرئيسية","ما المقصود بالنضج والفرق بينه وبين التعلم؟","عرّف فترة المراهقة وخصائصها"],"متوسط":["عرّف مفهوم الارتداد النمائي وعلاقته بالفروق الفردية","ما المقصود بالحساسية النوعية؟","عرّف أزمة الهوية عند إريكسون"],"صعب":["ناقش مفهوم المنطقة القريبة من النمو عند فيغوتسكي","عرّف مفهوم النمو المستمر والنمو المرحلي مع المقارنة"]},
+essay:{"سهل":["اذكر مراحل النمو المعرفي عند بياجيه مع شرح مختصر","بين أهم مكتسبات الطفل في السنوات الثلاث الأولى","ما هي أهمية اللعب في نمو الطفل؟"],"متوسط":["قارن بين نظرية بياجيه وفيغوتسكي في النمو المعرفي","ناقش أثر الحرمان العاطفي على نمو الطفل","اشرح مراحل النمو النفسي الاجتماعي عند إريكسون"],"صعب":["ناقش إشكالية وراثة مقابل بيئة في تفسير النمو النفسي","حلل تأثير الرقمنة المبكرة على النمو المعرفي والاجتماعي للطفل"]},
+longEssay:{"سهل":["اكتب مقالاً حول أهمية اللعب الرمزي في النمو المعرفي للطفل"],"متوسط":["اكتب مقالاً مفصلاً حول المراهقة كأزمة نمائية بين الاستقلالية والانتماء الأسري"],"صعب":["اكتب مقالاً تحليلياً شاملاً حول إشكالية النمو في عصر الرقمنة بين الفرص والمخاطر النفسية"]},
+caseStudy:{"متوسط":[{scenario:"طفل عمره 4 سنوات لا يتكلم إلا بكلمات قليلة ويتجنب التواصل البصري ويلعب وحيداً.",questions:["ما المؤشرات النمائية المقلقة؟","ما التقييم المطلوب؟","ما دور الأسرة في التدخل المبكر؟"]}],"صعب":[{scenario:"مراهق 16 سنة يعاني من اضطراب الهوية ويرفض قيم الأسرة ويتأثر بمجموعة أقران منحرفة.",questions:["حلل الأزمة النمائية وفق إريكسون","ما العوامل المؤثرة في الانحراف؟","اقترح برنامجاً إرشادياً نفسياً","ما دور المدرسة في الدعم؟"]}]},
+mcq:{"سهل":[{q:"مرحلة العمليات المحسوسة عند بياجيه تبدأ من:",opts:["من الولادة - سنتين","2-7 سنوات","7-11 سنة","11 فما فوق"],answer:2},{q:"الارتباط العاطفي بالأم يسمى:",opts:["التطابق","التعلق","النقل","الاستبطان"],answer:1}],"متوسط":[{q:"المنطقة القريبة من النمو مفهوم لـ:",opts:["بياجيه","إريكسون","فيغوتسكي","فرويد"],answer:2}],"صعب":[{q:"مفهوم الطبع يشير إلى:",opts:["سمات مكتسبة","استعدادات بيولوجية فطرية","سلوكيات متعلمة","استجابات انفعالية مؤقتة"],answer:1}]},
+trueFalse:{"سهل":[{q:"النمو يتبع تسلسلاً ثابتاً في المراحل",answer:true},{q:"المراهقة هي مرحلة بيولوجية فقط",answer:false}],"متوسط":[{q:"الحرمان الثقافي يؤثر على النمو المعرفي",answer:true}],"صعب":[{q:"مفهوم الارتداد النمائي يفسر الفروق الفردية بشكل كامل",answer:false}]}
+},
+"القياس النفسي":{
+definitions:{"سهل":["عرّف القياس النفسي وبين أهدافه","ما المقصود بالموثوقية في الاختبار النفسي؟","عرّف الصدق وأنواعه"],"متوسط":["عرّف الصدق البنائي والفرق بينه وبين الصدق التنبؤي","ما المقصود بالمعايير Norm في بناء الاختبار؟","عرّف الاختبار المرجعية المعيارية مقابل المرجعية المحكية"],"صعب":["ناقش مفهوم الثبات وطرق حسابه مع المقارنة بينها","عرّف نظرية السمات الكامنة والقياس المستند إليها"]},
+essay:{"سهل":["اذكر خصائص الاختبار النفسي الجيد","بين الفرق بين الصدق والموثوقية مع أمثلة","ما خطوات بناء اختبار نفسي؟"],"متوسط":["ناقش مشكلات القياس في السياق الثقافي العربي","اشرح طريقة إعادة الاختبار في حساب الثبات","بين كيفية حساب معامل ألفا كرونباخ ودلالته"],"صعب":["ناقش نظرية القياس الكلاسيكية وحدودها","حلل إشكالية المقارنة بين الثقافات في القياس النفسي"]},
+longEssay:{"سهل":["اكتب مقالاً حول أهمية التكيف الثقافي للاختبارات النفسية"],"متوسط":["اكتب مقالاً مفصلاً حول إشكالية بناء المقاييس النفسية في السياق العربي الجزائري"],"صعب":["اكتب مقالاً تحليلياً شاملاً حول أزمة القياس النفسي بين الموضوعية والبنائية الاجتماعية"]},
+caseStudy:{"متوسط":[{scenario:"أخصائي نفسي يريد بناء مقياس لقياس القلق لدى طلاب الجامعة الجزائرية.",questions:["ما الخطوات المنهجية لبناء المقياس؟","كيف تضمن الصدق الثقافي؟","ما العينة المناسبة للمعيرة؟"]}],"صعب":[{scenario:"مقياس شخصية أظهر ثباتاً منخفضاً (0.45) عند تطبيقه على عينة جزائرية رغم ثباته العالي في النسخة الأصلية.",questions:["ما الأسباب المحتملة؟","كيف تعالج هذه المشكلة؟","ما إجراءات التكيف الثقافي المطلوبة؟","هل يجوز استخدام المقياس بالوضع الحالي؟"]}]},
+mcq:{"سهل":[{q:"معامل الارتباط المستخدم في حساب الثبات غالباً هو:",opts:["معامل بيرسون","اختبار ت","تحليل التباين","اختبار كاي مربع"],answer:0},{q:"الصدق يعني:",opts:["ثبات النتائج","قياس ما صُمم لقياسه","سهولة التطبيق","حجم العينة"],answer:1}],"متوسط":[{q:"ألفا كرونباخ تقيس:",opts:["الصدق","الثبات","الصعوبة","التمييز"],answer:1}],"صعب":[{q:"نظرية السمات الكامنة تفترض أن:",opts:["السمة قابلة للقياس المباشر","الأداء يعتمد على السمة الكامنة والخطأ","الثبات ثابت عبر العينات","الصدق يغني عن الثبات"],answer:1}]},
+trueFalse:{"سهل":[{q:"موثوقية الاختبار تعني أنه يقيس السمة بشكل صحيح",answer:false},{q:"الاختبار الجيد يجب أن يكون صادقاً وموثوقاً",answer:true}],"متوسط":[{q:"معامل ألفا كرونباخ يحسب الثبات بطريقة التجزئة النصفية",answer:false}],"صعب":[{q:"الصدق البنائي هو أقوى أنواع الصدق",answer:true}]}
+},
+"الإحصاء النفسي":{
+definitions:{"سهل":["عرّف الإحصاء الوصفي وبين استخداماته","ما المقصود بالمتوسط الحسابي؟","عرّف الانحراف المعياري ودلالته"],"متوسط":["عرّف الارتباط الخطي وفرق بينه وبين السببية","ما المقصود بالتوزيع الاحتمالي الطبيعي وخصائصه؟","عرّف فرضية العدم والفرضية البديلة"],"صعب":["عرّف تحليل التباين الأحادي واشتراطات استخدامه","ناقش مفهوم حجم الأثر ودلالته"]},
+essay:{"سهل":["اشرح مقاييس النزعة المركزية مع أمثلة","بين الفرق بين المتغير المستقل والتابع","ما خطوات اختبار الفرضيات الإحصائية؟"],"متوسط":["ناقش أنواع العينات وطرق سحبها في البحث النفسي","اشرح متى نستخدم اختبار ت ومتى نستخدم تحليل التباين","بين دلالة حجم العينة في دقة التقدير"],"صعب":["ناقش مشكلة الأخطاء من النوع الأول والثاني","حلل إشكالية الدلالة الإحصائية مقابل الدلالة العملية"]},
+longEssay:{"سهل":["اكتب مقالاً حول أهمية الإحصاء في البحث النفسي"],"متوسط":["اكتب مقالاً مفصلاً حول مشكلات الاستدلال الإحصائي في البحوث النفسية العربية"],"صعب":["اكتب مقالاً تحليلياً شاملاً حول التحول من الدلالة الإحصائية إلى مقاربات حجم الأثر"]},
+caseStudy:{"متوسط":[{scenario:"باحث يريد مقارنة مستوى القلق بين طلاب السنة الأولى وطلاب السنة الثالثة في قسم علم النفس.",questions:["ما الاختبار الإحصائي المناسب؟","ما الشروط الواجب التحقق منها؟","كيف تُفسر النتائج؟"]}],"صعب":[{scenario:"دراسة تقارن بين ثلاث طرق علاجية للاكتئاب مع قياس التحسن قبل وبعد وبعد 6 أشهر.",questions:["ما التصميم الإحصائي المناسب؟","ما المتغيرات المستقلة والتابعة؟","ما التحليل الإحصائي الأنسب؟","كيف تتعامل مع الانسحاب من العينة؟"]}]},
+mcq:{"سهل":[{q:"المتوسط الحسابي لمجموعة 4, 6, 8, 10, 12 هو:",opts:["6","8","10","7"],answer:1},{q:"الوسيط هو القيمة:",opts:["الأكثر تكراراً","الوسطى في الترتيب","المتوسط الحسابي","الانحراف"],answer:1}],"متوسط":[{q:"معامل ارتباط بيرسون يتراوح بين:",opts:["0 و 1","-1 و 1","0 و 100","-∞ و +∞"],answer:1}],"صعب":[{q:"خطأ النوع الأول يعني:",opts:["رفض فرضية العدم وهي صحيحة","قبول فرضية العدم وهي خاطئة","عدم دقة القياس","خطأ في اختيار العينة"],answer:0}]},
+trueFalse:{"سهل":[{q:"الانحراف المعياري يقيس التشتت حول المتوسط",answer:true},{q:"المنوال هو القيمة الأقل تكراراً",answer:false}],"متوسط":[{q:"الارتباط يقتضي السببية",answer:false}],"صعب":[{q:"توزيع t يقترب من التوزيع الطبيعي كلما زادت درجات الحرية",answer:true}]}
+},
+"منهجية البحث العلمي":{
+definitions:{"سهل":["عرّف المنهج العلمي وخصائصه","ما المقصود بالمتغير المستقل والتابع؟","عرّف الفرضية العلمية"],"متوسط":["عرّف المنهج التجريبي وشروطه","ما المقصود بالصدق الداخلي للبحث؟","عرّف العينة العشوائية الطبقية"],"صعب":["ناقش مفهوم الموضوعية في البحث النفسي وحدودها","عرّف المنهج شبه التجريبي والفرق بينه وبين التجريبي"]},
+essay:{"سهل":["اذكر أنواع المناهج البحثية مع مقارنة مختصرة","بين خطوات إعداد خطة البحث","ما هي معايير صياغة الفرضيات؟"],"متوسط":["ناقش مشكلات الصدق الداخلي والخارجي في البحث النفسي","اشرح أهمية المراجعة الأدبية في البحث العلمي","بين طرق ضبط المتغيرات الدخيلة في التصميم التجريبي"],"صعب":["ناقش إشكالية الأخلاقيات في البحث النفسي مع أمثلة","حلل أزمة التكرار في علم النفس وتداعياتها"]},
+longEssay:{"سهل":["اكتب مقالاً حول أهمية المراجعة الأدبية في البحث العلمي"],"متوسط":["اكتب مقالاً مفصلاً حول إشكالية اختيار المنهج البحثي المناسب في علم النفس"],"صعب":["اكتب مقالاً تحليلياً شاملاً حول أزمة التكرار في علم النفس ومستقبل المنهج العلمي"]},
+caseStudy:{"متوسط":[{scenario:"باحث يريد دراسة أثر برنامج إرشادي على خفض مستوى الضغط النفسي لدى طلاب البكالوريا.",questions:["صغ الفرضية","ما التصميم المنهجي المناسب؟","ما أدوات القياس المقترحة؟"]}],"صعب":[{scenario:"دراسة مسحية على عينة من 500 طالب جامعي حول انتشار الاكتئاب. نسبة الاستجابة كانت 35% فقط.",questions:["ما مشكلات هذه الدراسة؟","كيف تتعامل مع انخفاض نسبة الاستجابة؟","ما تأثير ذلك على تعميم النتائج؟","اقترح تحسينات منهجية"]}]},
+mcq:{"سهل":[{q:"الفرضية هي:",opts:["سؤال بحثي","توقع قابل للاختبار","نتيجة البحث","تعريف إجرائي"],answer:1},{q:"المنهج الوصفي يهدف إلى:",opts:["تحديد السبب","وصف الظاهرة كما هي","التنبؤ","تغيير السلوك"],answer:1}],"متوسط":[{q:"المجموعة الضابطة:",opts:["تتلقى المعالجة","لا تتلقى المعالجة","تتلقى معالجة جزئية","تُهمل"],answer:1}],"صعب":[{q:"التأثير العشوائي يُحلل عبر:",opts:["المتغير المستقل","الخطأ المعياري","التباين المتبقي","المتغير الوسيط"],answer:2}]},
+trueFalse:{"سهل":[{q:"البحث العلمي يتطلب الموضوعية والمنهجية",answer:true},{q:"العينة الملائمة هي أفضل أنواع العينات",answer:false}],"متوسط":[{q:"الصدق الخارجي يعني قابلية تعميم النتائج",answer:true}],"صعب":[{q:"التصميم شبه التجريبي يتيح الاستنتاج السببي القاطع",answer:false}]}
+},
+"علم النفس التربوي":{
+definitions:{"سهل":["عرّف علم النفس التربوي وأهدافه","ما المقصود بالتعلم والفرق بينه وبين التعليم؟","عرّف الدافعية للتعلم"],"متوسط":["عرّف التعلم بالاستبصار عند كوهلر","ما المقصود بالتعلم التعاوني؟","عرّف أسلوب التعلم وأنواعه"],"صعب":["ناقش مفهوم ما وراء المعرفة وعلاقته بالتعلم الذاتي","عرّف النظرية البنائية في التعلم ومبادئها"]},
+essay:{"سهل":["اذكر نظريات التعلم الرئيسية مع مقارنة مختصرة","بين دور الدافعية الداخلية والخارجية في التحصيل الدراسي","ما هي استراتيجيات التدريس الفعالة؟"],"متوسط":["ناقش نظرية التعلم الاجتماعي لباندورا وتطبيقاتها التربوية","اشرح الفرق بين التعلم التقليدي والتعلم النشط","بين كيفية توظيف الذكاءات المتعددة في الفصل"],"صعب":["ناقش إشكالية الفروق الفردية في التعلم وآليات التعامل معها","حلل أثر التكنولوجيا الرقمية على عمليات التعلم والتعليم"]},
+longEssay:{"سهل":["اكتب مقالاً حول دور التعزيز في التحصيل الدراسي"],"متوسط":["اكتب مقالاً مفصلاً حول المقاربة البنائية في التدريس الجامعي وتحديات تطبيقها"],"صعب":["اكتب مقالاً تحليلياً شاملاً حول مستقبل التعليم الجامعي في ظل الذكاء الاصطناعي"]},
+caseStudy:{"متوسط":[{scenario:"تلميذ في المتوسط يواجه صعوبات في مادة الرياضيات رغم قدرته العقلية العادية. يفقد الثقة بنفسه ويتهرب من الحصص.",questions:["ما التشخيص المحتمل؟","ما الاستراتيجيات التربوية المناسبة؟","كيف تبني دافعيته؟"]}],"صعب":[{scenario:"أستاذ جامعي يلاحظ ضعفاً عاماً في التحصيل وغياباً للتفاعل في المحاضرات.",questions:["حلل أسباب الضعف التحصيلي","ما المقاربات البيداغوجية البديلة؟","اقترح خطة لتنشيط المحاضرات","كيف تقيم فعالية التغييرات؟"]}]},
+mcq:{"سهل":[{q:"التعلم بالشرط الكلاسيكي يرتبط بـ:",opts:["سكنر","بافلوف","بياجيه","فرويد"],answer:1},{q:"الدافعية الداخلية تعني:",opts:["المكافآت المادية","الرغبة الذاتية للتعلم","الخوف من العقاب","المنافسة"],answer:1}],"متوسط":[{q:"منطقة النمو القريبة مفهوم لـ:",opts:["بياجيه","فيغوتسكي","باندورا","ماسلو"],answer:1}],"صعب":[{q:"ما وراء المعرفة تشير إلى:",opts:["المعرفة العامة","التفكير في التفكير","الذاكرة طويلة المدى","الذكاء العاطفي"],answer:1}]},
+trueFalse:{"سهل":[{q:"التعلم التعاوني يعتمد على المنافسة بين الطلاب",answer:false},{q:"التعزيز الإيجابي يزيد من احتمال تكرار السلوك",answer:true}],"متوسط":[{q:"الأساليب المعرفية ثابتة لا تتغير",answer:false}],"صعب":[{q:"النظرية البنائية تعتبر المتعلم نشطاً في بناء معرفته",answer:true}]}
+}
+};
+
+var DepartmentModules={"علم النفس":["علم النفس المرضي","علم النفس العيادي","علم النفس الاجتماعي","علم النفس النمو","القياس النفسي","الإحصاء النفسي","منهجية البحث العلمي","علم النفس التربوي"],"علوم التربية":["علم النفس التربوي","منهجية البحث العلمي","علم النفس النمو","القياس النفسي","الإحصاء النفسي"],"علم النطق":["علم النفس النمو","علم النفس المرضي","القياس النفسي","الإحصاء النفسي","منهجية البحث العلمي"]};
+
+var Storage={
+  getExams:function(){try{return JSON.parse(localStorage.getItem('psych_exams')||'[]')}catch(e){return[]}},
+  saveExams:function(e){localStorage.setItem('psych_exams',JSON.stringify(e))},
+  addExam:function(e){var x=this.getExams();x.unshift(e);this.saveExams(x)},
+  updateExam:function(id,d){var x=this.getExams();var i=x.findIndex(function(e){return e.id===id});if(i>-1){x[i]=Object.assign({},x[i],d,{updatedAt:new Date().toISOString()});this.saveExams(x)}},
+  deleteExam:function(id){this.saveExams(this.getExams().filter(function(e){return e.id!==id}))},
+  getCurrentExam:function(){try{return JSON.parse(localStorage.getItem('psych_current')||'null')}catch(e){return null}},
+  setCurrentExam:function(e){localStorage.setItem('psych_current',JSON.stringify(e))},
+  getPrefs:function(){try{return JSON.parse(localStorage.getItem('psych_prefs')||'{}')}catch(e){return{}}},
+  savePrefs:function(p){localStorage.setItem('psych_prefs',JSON.stringify(p))}
+};
+
+var Generator={
+  difficulty:'متوسط',
+  selectDifficulty:function(el){document.querySelectorAll('.diff-option').forEach(function(d){d.classList.remove('selected')});el.classList.add('selected');this.difficulty=el.dataset.diff},
+  uid:function(){return Date.now().toString(36)+Math.random().toString(36).slice(2,8)},
+  pick:function(arr,n){if(!arr||!arr.length)return[];var s=[].concat(arr).sort(function(){return Math.random()-.5});return s.slice(0,Math.min(n,s.length))},
+  answerLines:function(type){var count={definition:3,essay:7,longEssay:12,caseStudy:0,mcq:0,trueFalse:0};var n=count[type]||0;if(n===0)return'';var h='<div class="answer-space">';for(var i=0;i<n;i++)h+='<div class="answer-line"></div>';h+='</div>';return h},
+  buildExam:function(config){
+    var bank=QuestionBank[config.module];if(!bank)return null;
+    var diff=config.difficulty,types=config.questionTypes,questions=[],qNum=1,totalPts=0;
+    var ptsMap={definition:{"سهل":2,"متوسط":3,"صعب":4},essay:{"سهل":3,"متوسط":4,"صعب":5},longEssay:{"سهل":5,"متوسط":6,"صعب":8},caseStudy:{"سهل":4,"متوسط":5,"صعب":6},mcq:{"سهل":1,"متوسط":1.5,"صعب":2},trueFalse:{"سهل":.5,"متوسط":1,"صعب":1}};
+    var countMap={definition:{"سهل":3,"متوسط":3,"صعب":2},essay:{"سهل":2,"متوسط":2,"صعب":2},longEssay:{"سهل":1,"متوسط":1,"صعب":1},caseStudy:{"سهل":0,"متوسط":1,"صعب":1},mcq:{"سهل":3,"متوسط":3,"صعب":2},trueFalse:{"سهل":3,"متوسط":3,"صعب":2}};
+    var self=this;
+    ['definition','essay','longEssay','mcq','trueFalse'].forEach(function(t){
+      if(types.indexOf(t)<0)return;
+      if(t==='caseStudy')return;
+      var pool=bank[t]&&bank[t][diff]?bank[t][diff]:(bank[t]&&bank[t]["متوسط"]?bank[t]["متوسط"]:[]);
+      var count=countMap[t][diff]||1;
+      self.pick(pool,count).forEach(function(q){
+        var pts=ptsMap[t][diff]||2;
+        if(t==='mcq'){questions.push({id:self.uid(),type:'mcq',number:qNum++,text:q.q,options:q.opts,answer:q.answer,points:pts})}
+        else if(t==='trueFalse'){questions.push({id:self.uid(),type:'trueFalse',number:qNum++,text:q.q,answer:q.answer,points:pts})}
+        else{questions.push({id:self.uid(),type:t,number:qNum++,text:q,points:pts})}
+        totalPts+=pts;
+      });
+    });
+    if(types.indexOf('caseStudy')>-1&&diff!=='سهل'){
+      var pool=bank.caseStudy&&bank.caseStudy[diff]?bank.caseStudy[diff]:(bank.caseStudy&&bank.caseStudy["متوسط"]?bank.caseStudy["متوسط"]:[]);
+      var count=countMap.caseStudy[diff]||1;
+      this.pick(pool,count).forEach(function(cs){var pts=ptsMap.caseStudy[diff]||5;questions.push({id:self.uid(),type:'caseStudy',number:qNum++,text:cs.scenario,subQuestions:cs.questions,points:pts});totalPts+=pts});
+    }
+    return{questions:questions,totalPoints:totalPts};
+  },
+  generateHTML:function(config,data){
+    var typeLabels={definition:'تعريفي',essay:'مقالي',longEssay:'مقالة مطوّلة',caseStudy:'دراسة حالة',mcq:'اختيار متعدد',trueFalse:'صح / خطأ'};
+    var h='';
+    h+='<div class="exam-header">';
+    h+='<img src="'+UNIVERSITY_LOGO+'" class="exam-logo" onerror="this.style.display=\'none\'" alt="شعار جامعة باتنة 1">';
+    h+='<h1>الجمهورية الجزائرية الديمقراطية الشعبية</h1>';
+    h+='<h2>وزارة التعليم العالي والبحث العلمي</h2>';
+    h+='<h2>جامعة الحاج لخضر – باتنة</h2>';
+    h+='<h2>كلية العلوم الإنسانية والاجتماعية</h2>';
+    h+='<h2>قسم: '+config.department+'</h2>';
+    h+='</div>';
+    h+='<hr class="exam-separator">';
+    h+='<div class="exam-info-row"><span><strong>نوع الامتحان:</strong> '+config.examType+'</span><span><strong>المادة:</strong> '+config.module+'</span><span><strong>المستوى:</strong> '+config.level+'</span></div>';
+    h+='<div class="exam-info-row"><span><strong>المدة:</strong> '+config.duration+'</span><span><strong>التاريخ:</strong> '+config.date+'</span>';
+    if(config.group)h+='<span><strong>الشعبة:</strong> '+config.group+'</span>';
+    if(config.bookType)h+='<span><strong>طبيعة الامتحان:</strong> '+config.bookType+'</span>';
+    h+='</div>';
+    h+='<hr class="exam-separator">';
+    h+='<div class="student-row"><span>اسم ولقب الطالب: ............................................</span><span>رقم التسجيل: .......................</span></div>';
+    h+='<hr class="exam-separator">';
+    h+='<table class="grading-table"><tr><th>السؤال</th>';
+    for(var i=0;i<data.questions.length;i++){h+='<th>'+data.questions[i].number+'</th>'}
+    h+='<th style="background:var(--primary);color:#fff">المجموع</th></tr><tr><td style="font-weight:700">النقطة</td>';
+    for(var i=0;i<data.questions.length;i++){h+='<td>'+data.questions[i].points+'</td>'}
+    h+='<td style="font-weight:700;color:var(--primary)">'+data.totalPoints+'</td></tr>';
+    h+='<tr><td style="font-weight:700">الملاحظة</td>';
+    for(var i=0;i<data.questions.length;i++){h+='<td></td>'}
+    h+='<td></td></tr></table>';
+    h+='<hr class="exam-separator">';
+    var self=this;
+    data.questions.forEach(function(q){
+      h+='<div class="q-block" data-qid="'+q.id+'"><div class="q-head"><span class="q-num">السؤال '+q.number+':</span><span class="q-pts">('+q.points+' نقطة) – '+(typeLabels[q.type]||'')+'</span></div>';
+      if(q.type==='caseStudy'){
+        h+='<p style="margin:5px 0"><strong>الحالة:</strong> '+q.text+'</p>';
+        if(q.subQuestions){h+='<ol style="padding-right:18px;margin:3px 0">';q.subQuestions.forEach(function(sq){h+='<li>'+sq+'</li>'});h+='</ol>'}
+        var subCount=q.subQuestions?q.subQuestions.length:1;
+        for(var s=0;s<subCount;s++){h+='<div class="answer-space">';for(var l=0;l<5;l++)h+='<div class="answer-line"></div>';h+='</div>'}
+      }else if(q.type==='mcq'){
+        h+='<p style="margin:5px 0">'+q.text+'</p><ol class="mcq-list" type="أ">';q.options.forEach(function(opt){h+='<li>'+opt+'</li>'});h+='</ol>';
+      }else if(q.type==='trueFalse'){
+        h+='<p style="margin:5px 0">'+q.text+'&nbsp;&nbsp; ( صح / خطأ )</p>';
+      }else{
+        h+='<p style="margin:5px 0">'+q.text+'</p>'+self.answerLines(q.type);
+      }
+      h+='</div>';
+    });
+    h+='<div class="signature-area"><span>إمضاء الأستاذ: ........................</span><span>إمضاء المراقب: ........................</span></div>';
+    return h;
+  },
+  start:async function(){
+    var config={department:document.getElementById('fDepartment').value,level:document.getElementById('fLevel').value,module:document.getElementById('fModule').value,group:document.getElementById('fGroup').value,examType:document.getElementById('fExamType').value,bookType:document.getElementById('fBookType').value,duration:document.getElementById('fDuration').value,date:document.getElementById('fDate').value,difficulty:this.difficulty,questionTypes:[].slice.call(document.querySelectorAll('.checkbox-group input:checked')).map(function(c){return c.value})};
+    if(!config.department||!config.level||!config.module||!config.examType||!config.duration||!config.date){App.toast('يرجى ملء جميع الحقول المطلوبة','error');return}
+    if(config.questionTypes.length===0){App.toast('يرجى اختيار نوع سؤال واحد على الأقل','error');return}
+    var btn=document.getElementById('btnGenerate'),progress=document.getElementById('aiProgress'),steps=progress.querySelectorAll('.ai-step');
+    btn.classList.add('loading');btn.disabled=true;progress.classList.add('visible');
+    for(var i=0;i<steps.length;i++){steps[i].classList.add('active');steps[i].querySelector('i').className='fas fa-circle-notch fa-spin';await new Promise(function(r){setTimeout(r,500+Math.random()*500)});steps[i].classList.remove('active');steps[i].classList.add('done');steps[i].querySelector('i').className='fas fa-check-circle'}
+    var data=this.buildExam(config);
+    if(!data||data.questions.length===0){App.toast('لا توجد أسئلة كافية لهذه الإعدادات','error');btn.classList.remove('loading');btn.disabled=false;progress.classList.remove('visible');this._resetSteps(steps);return}
+    var htmlContent=this.generateHTML(config,data);
+    var exam={id:this.uid(),department:config.department,level:config.level,module:config.module,group:config.group,examType:config.examType,bookType:config.bookType,duration:config.duration,date:config.date,difficulty:config.difficulty,questionTypes:config.questionTypes,questions:data.questions,totalPoints:data.totalPoints,htmlContent:htmlContent,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()};
+    Storage.addExam(exam);Storage.setCurrentExam(exam);Editor.currentExam=exam;
+    btn.classList.remove('loading');btn.disabled=false;progress.classList.remove('visible');this._resetSteps(steps);
+    App.toast('تم توليد الامتحان بنجاح — '+data.questions.length+' سؤال / '+data.totalPoints+' نقطة','success');
+    setTimeout(function(){App.navigate('editor')},200);
+  },
+  _resetSteps:function(steps){steps.forEach(function(s,i){s.classList.remove('active','done');s.querySelector('i').className=i===0?'fas fa-circle-notch fa-spin':'fas fa-circle'})}
+};
+
+var Editor={
+  currentExam:null,
+  load:function(exam){if(!exam)return;this.currentExam=exam;document.getElementById('editorEmpty').style.display='none';document.getElementById('editorContent').style.display='block';document.getElementById('examEditor').innerHTML=exam.htmlContent},
+  save:function(){if(!this.currentExam){App.toast('لا يوجد امتحان للحفظ','error');return}var html=document.getElementById('examEditor').innerHTML;this.currentExam.htmlContent=html;Storage.updateExam(this.currentExam.id,{htmlContent:html});Storage.setCurrentExam(this.currentExam);App.toast('تم حفظ التعديلات بنجاح','success')},
+  loadFromHistory:function(id){var exams=Storage.getExams();var exam=exams.find(function(e){return e.id===id});if(exam){this.currentExam=exam;Storage.setCurrentExam(exam);App.navigate('editor');var self=this;setTimeout(function(){self.load(exam)},60)}}
+};
+
+var ExportManager={
+  _getContent:function(){var el=document.getElementById('examEditor');if(el&&el.innerHTML.trim())return el.innerHTML;var pv=document.getElementById('previewFrame');if(pv&&pv.innerHTML.trim())return pv.innerHTML;return''},
+  _printCSS:function(){return[
+    '@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap");',
+    '*{margin:0;padding:0;box-sizing:border-box}',
+    'body{font-family:"Amiri","Traditional Arabic",serif;direction:rtl;text-align:right;font-size:14pt;line-height:2;color:#000;background:#fff;padding:20px}',
+    '.exam-header{text-align:center;margin-bottom:10px}',
+    '.exam-header h1{font-size:15pt;font-weight:700;line-height:2.2;margin:0}',
+    '.exam-header h2{font-size:13pt;font-weight:700;line-height:2.2;margin:0}',
+    '.exam-logo{max-width:70px;max-height:70px;margin:0 auto 6px;display:block}',
+    '.exam-separator{border:none;border-top:2px solid #000;margin:8px 0}',
+    '.exam-info-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin:8px 0;font-size:12pt}',
+    '.student-row{display:flex;justify-content:space-between;flex-wrap:wrap;margin:10px 0;font-size:12pt}',
+    '.grading-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:10pt;font-family:"Cairo",sans-serif}',
+    '.grading-table th,.grading-table td{border:1px solid #444;padding:5px 7px;text-align:center}',
+    '.grading-table th{background:#eee;font-weight:700}',
+    '.q-block{margin:14px 0;padding:10px 12px;border:1px dashed #ccc;border-radius:4px}',
+    '.q-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px}',
+    '.q-num{font-weight:700;color:#1e40af;font-family:"Cairo",sans-serif;font-size:11pt}',
+    '.q-pts{font-size:9pt;color:#666;font-family:"Cairo",sans-serif}',
+    '.mcq-list{padding-right:22px;margin-top:4px}',
+    '.mcq-list li{margin:2px 0;list-style:arabic-indic}',
+    '.answer-space{margin:6px 0}',
+    '.answer-line{height:28px;border-bottom:1px dotted #aaa;margin:0}',
+    '.signature-area{display:flex;justify-content:space-between;margin-top:28px;padding-top:14px;border-top:1px solid #ccc;font-size:10pt;font-family:"Cairo",sans-serif}',
+    '@media print{body{padding:0}}'
+  ].join('\n')},
+  toPDF:function(){var content=this._getContent();if(!content){App.toast('لا يوجد محتوى للتصدير','error');return}App.toast('سيتم فتح نافذة الطباعة — اختر "Save as PDF" للحفظ','info');var w=window.open('','_blank','width=900,height=700');if(!w){App.toast('يرجى السماح بالنوافذ المنبثقة','error');return}w.document.write('<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><title>امتحان علم النفس</title><style>'+this._printCSS()+'</style></head><body>'+content+'</body></html>');w.document.close();w.onload=function(){setTimeout(function(){w.print()},400)}},
+  toWord:function(){var content=this._getContent();if(!content){App.toast('لا يوجد محتوى للتصدير','error');return}var htmlDoc=['<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">','<head><meta charset="utf-8"><style>body{font-family:"Traditional Arabic","Cairo",sans-serif;direction:rtl;text-align:right;font-size:14pt;line-height:2}.exam-header{text-align:center;margin-bottom:12pt}.exam-separator{border-top:2px solid #000;margin:8pt 0}.q-block{margin:12pt 0;padding:8pt;border:1px dashed #ccc}.answer-line{border-bottom:1px dotted #aaa;height:28pt}.grading-table{border-collapse:collapse;width:100%}.grading-table th,.grading-table td{border:1px solid #444;padding:5pt;text-align:center}</style></head><body>'+content+'</body></html>'].join('');var blob=new Blob(['\ufeff'+htmlDoc],{type:'application/msword'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='امتحان_علم_النفس.doc';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);App.toast('تم تصدير ملف Word بنجاح','success')}
+};
+
+var HistoryPage={
+  render:function(){var exams=Storage.getExams();var search=(document.getElementById('historySearch')?document.getElementById('historySearch').value:'').trim().toLowerCase();var grid=document.getElementById('historyGrid');var empty=document.getElementById('historyEmpty');var filtered=exams;if(search){filtered=exams.filter(function(e){return(e.module||'').toLowerCase().indexOf(search)>-1||(e.level||'').toLowerCase().indexOf(search)>-1||(e.examType||'').toLowerCase().indexOf(search)>-1})}if(filtered.length===0){grid.innerHTML='';empty.style.display='block';return}empty.style.display='none';grid.innerHTML=filtered.map(function(e){var created=e.createdAt?new Date(e.createdAt).toLocaleDateString('ar-DZ'):'';return'<div class="history-card"><h4>'+(e.module||'امتحان')+'</h4><div class="meta"><span><i class="fas fa-graduation-cap"></i> '+(e.level||'-')+'</span><span><i class="fas fa-file-alt"></i> '+(e.examType||'-')+'</span><span><i class="fas fa-calendar"></i> '+(e.date||'-')+'</span><span><i class="fas fa-star"></i> '+(e.difficulty||'-')+' | '+(e.totalPoints||0)+' نقطة</span><span><i class="fas fa-clock"></i> '+created+'</span></div><div class="actions"><button class="btn btn-primary btn-sm" onclick="Editor.loadFromHistory(\''+e.id+'\')"><i class="fas fa-pen"></i> تعديل</button><button class="btn btn-outline btn-sm" onclick="HistoryPage.previewExam(\''+e.id+'\')"><i class="fas fa-eye"></i> معاينة</button><button class="btn btn-danger btn-sm" onclick="HistoryPage.deleteExam(\''+e.id+'\')"><i class="fas fa-trash"></i> حذف</button></div></div>'}).join('')},
+  previewExam:function(id){var exams=Storage.getExams();var exam=exams.find(function(e){return e.id===id});if(exam){Editor.currentExam=exam;Storage.setCurrentExam(exam);App.navigate('preview')}},
+  deleteExam:function(id){App.confirm('حذف الامتحان','هل أنت متأكد من حذف هذا الامتحان؟',function(){Storage.deleteExam(id);HistoryPage.render();DashboardPage.render();App.toast('تم حذف الامتحان','success')})},
+  clearAll:function(){if(Storage.getExams().length===0){App.toast('لا توجد امتحانات للحذف','info');return}App.confirm('حذف جميع الامتحانات','سيتم حذف جميع الامتحانات المحفوظة نهائياً.',function(){Storage.saveExams([]);HistoryPage.render();DashboardPage.render();App.toast('تم حذف جميع الامتحانات','success')})}
+};
+
+var DashboardPage={
+  render:function(){var exams=Storage.getExams();var total=exams.length;var now=new Date();var thisMonth=exams.filter(function(e){var d=new Date(e.createdAt);return d.getMonth()===now.getMonth()&&d.getFullYear()===now.getFullYear()}).length;var modules=[].concat(new Set(exams.map(function(e){return e.module}).filter(Boolean))).length;document.getElementById('statsGrid').innerHTML='<div class="stat-card"><div class="stat-icon blue"><i class="fas fa-file-lines"></i></div><div class="stat-info"><h3>'+total+'</h3><p>إجمالي الامتحانات</p></div></div><div class="stat-card"><div class="stat-icon sky"><i class="fas fa-calendar-check"></i></div><div class="stat-info"><h3>'+thisMonth+'</h3><p>هذا الشهر</p></div></div><div class="stat-card"><div class="stat-icon indigo"><i class="fas fa-book"></i></div><div class="stat-info"><h3>'+modules+'</h3><p>مواد مستخدمة</p></div></div><div class="stat-card"><div class="stat-icon red"><i class="fas fa-brain"></i></div><div class="stat-info"><h3>8</h3><p>بنوك الأسئلة</p></div></div>';var list=document.getElementById('recentList');if(exams.length===0){list.innerHTML='<div class="empty-state"><i class="fas fa-folder-open"></i><p>لم يتم إنشاء أي امتحان بعد.</p></div>'}else{list.innerHTML=exams.slice(0,5).map(function(e){return'<div class="recent-item"><div class="recent-item-info"><h4>'+(e.module||'امتحان')+'</h4><p>'+(e.level||'')+' – '+(e.examType||'')+' – '+(e.date||'')+'</p></div><div class="recent-item-actions"><button class="btn-icon" onclick="Editor.loadFromHistory(\''+e.id+'\')"><i class="fas fa-pen"></i></button><button class="btn-icon" onclick="HistoryPage.previewExam(\''+e.id+'\')"><i class="fas fa-eye"></i></button></div></div>'}).join('')}}
+};
+
+var App={
+  init:function(){
+    document.getElementById('fDate').value=new Date().toISOString().split('T')[0];
+    document.getElementById('fDepartment').addEventListener('change',function(){var modules=DepartmentModules[this.value]||[];var sel=document.getElementById('fModule');sel.innerHTML='<option value="">اختر المادة</option>';modules.forEach(function(m){var opt=document.createElement('option');opt.value=m;opt.textContent=m;sel.appendChild(opt)})});
+    document.querySelectorAll('.sidebar-nav a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();App.navigate(this.dataset.page);App.closeSidebar()})});
+    document.getElementById('mobileToggle').addEventListener('click',function(){App.toggleSidebar()});
+    document.getElementById('sidebarOverlay').addEventListener('click',function(){App.closeSidebar()});
+    DashboardPage.render();HistoryPage.render();
+    var current=Storage.getCurrentExam();if(current)Editor.currentExam=current;
+  },
+  toggleSidebar:function(){var sb=document.getElementById('sidebar');var ov=document.getElementById('sidebarOverlay');if(sb.classList.contains('open')){sb.classList.remove('open');ov.classList.remove('visible')}else{sb.classList.add('open');ov.classList.add('visible')}},
+  closeSidebar:function(){document.getElementById('sidebar').classList.remove('open');document.getElementById('sidebarOverlay').classList.remove('visible')},
+  navigate:function(page){
+    document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active')});
+    var pageEl=document.getElementById('page-'+page);if(pageEl)pageEl.classList.add('active');
+    document.querySelectorAll('.sidebar-nav a').forEach(function(a){a.classList.toggle('active',a.dataset.page===page)});
+    var titles={dashboard:'لوحة التحكم',generator:'إنشاء امتحان جديد',editor:'محرر الامتحان',preview:'معاينة الامتحان',history:'الأرشيف'};
+    document.getElementById('pageTitle').textContent=titles[page]||'';
+    if(page==='editor'){var exam=Editor.currentExam||Storage.getCurrentExam();if(exam)Editor.load(exam);else{document.getElementById('editorEmpty').style.display='block';document.getElementById('editorContent').style.display='none'}}
+    if(page==='preview'){var exam=Editor.currentExam||Storage.getCurrentExam();if(exam)document.getElementById('previewFrame').innerHTML=exam.htmlContent;else document.getElementById('previewFrame').innerHTML='<div class="empty-state"><i class="fas fa-file-lines"></i><p>لا يوجد امتحان للمعاينة</p></div>'}
+    if(page==='history')HistoryPage.render();if(page==='dashboard')DashboardPage.render();
+  },
+  toast:function(msg,type){type=type||'info';var container=document.getElementById('toastContainer');var icons={success:'fa-check-circle',error:'fa-times-circle',info:'fa-info-circle'};var toast=document.createElement('div');toast.className='toast '+type;toast.innerHTML='<i class="fas '+(icons[type]||icons.info)+'"></i><span>'+msg+'</span>';container.appendChild(toast);setTimeout(function(){toast.style.opacity='0';toast.style.transform='translateX(-100%)';toast.style.transition='all .3s';setTimeout(function(){toast.remove()},300)},3500)},
+  confirm:function(title,msg,onYes){var modal=document.getElementById('confirmModal');document.getElementById('confirmTitle').textContent=title;document.getElementById('confirmMsg').textContent=msg;modal.classList.add('visible');var yesBtn=document.getElementById('confirmYes');var noBtn=document.getElementById('confirmNo');function cleanup(){modal.classList.remove('visible');yesBtn.replaceWith(yesBtn.cloneNode(true));noBtn.replaceWith(noBtn.cloneNode(true));document.getElementById('confirmNo').addEventListener('click',cleanup)}yesBtn.onclick=function(){cleanup();onYes()};noBtn.onclick=cleanup}
+};
+
+document.addEventListener('DOMContentLoaded',function(){App.init()});
+</script>
+</body>
+</html>
+
+</textarea>
+
+<!-- 3. Script to inject the code into the iframe -->
+<script>
+  (function() {
+    var codeContainer = document.getElementById('acadtrack-code');
+    var iframe = document.getElementById('acadtrack-iframe');
+    
+    if (iframe && codeContainer) {
+      // .value gets the raw text from the textarea, safely ignoring HTML parsing
+      var code = codeContainer.value; 
+      
+      var doc = iframe.contentDocument || iframe.contentWindow.document;
+      doc.open();
+      doc.write(code);
+      doc.close();
+    }
+  })();
+</script>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="sidebar"></aside>
+    </div>
+  </main>
+
+<div class="footer-area section" id="footer-area"><div class="widget HTML" id="HTML10">
+<style>
+  /* ===== NEBULA GRADIENT DARK FOOTER ===== */
+  .at-footer-section {
+    background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #1e293b 100%); /* Deep rich slate gradient [1] */
+    padding: clamp(60px, 8vw, 80px) 1.5rem 30px 1.5rem;
+    color: #cbd5e1;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .at-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* 4-Column Responsive Grid [1] */
+  .at-footer-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 640px) {
+    .at-footer-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .at-footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
+  }
+
+  /* Column 1: Brand Info */
+  .at-footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  .at-footer-logo {
+    height: 48px; /* Slightly larger clean sizing */
+    width: auto;
+    max-width: 240px;
+    object-fit: contain;
+    align-self: flex-start;
+  }
+  .at-footer-tagline {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #94a3b8;
+    max-width: 260px;
+  }
+  .at-footer-socials {
+    display: flex;
+    gap: 12px;
+  }
+  .at-social-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 14px;
+    transition: all 0.25s ease;
+  }
+  .at-social-icon:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+  }
+
+  /* Link Columns */
+  .at-footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  .at-footer-col-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .at-footer-links-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .at-footer-link {
+    font-size: 13px;
+    color: #94a3b8;
+    transition: all 0.2s ease;
+    font-weight: 600;
+  }
+  .at-footer-link:hover {
+    color: #3b82f6;
+  }
+  .at-footer-text-info {
+    font-size: 13px;
+    color: #94a3b8;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  /* ===== BOTTOM CREDIT BAR ===== */
+  .at-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 600;
+  }
+  .at-footer-copyright {
+    text-align: left;
+  }
+  .at-footer-developer {
+    text-align: right;
+  }
+  .at-footer-developer a {
+    color: #3b82f6;
+    font-weight: 700;
+    transition: color 0.2s ease;
+  }
+  .at-footer-developer a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+  }
+
+  /* ===== SYMMETRICAL MOBILE CENTERED ALIGNMENTS ===== */
+  @media (max-width: 1023px) {
+    .at-footer-brand {
+      text-align: center !important;
+      align-items: center !important;
+    }
+    .at-footer-logo {
+      align-self: center !important;
+    }
+    .at-footer-socials {
+      justify-content: center !important;
+    }
+    .at-footer-col {
+      text-align: center !important;
+      align-items: center !important;
+    }
+    .at-footer-bottom {
+      justify-content: center !important;
+      text-align: center !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+    }
+    .at-footer-copyright, .at-footer-developer {
+      text-align: center !important;
+    }
+  }
+
+  /* ===== RTL ARABIC VIEW ALIGNMENTS ===== */
+  .lang-ar .at-footer-grid { direction: rtl; }
+  .lang-ar .at-footer-brand { text-align: right; }
+  .lang-ar .at-footer-logo { align-self: flex-start; }
+  .lang-ar .at-footer-socials { justify-content: flex-start; }
+  .lang-ar .at-footer-col { text-align: right; }
+  .lang-ar .at-footer-bottom { flex-direction: row-reverse; }
+  .lang-ar .at-footer-copyright { text-align: right; }
+  .lang-ar .at-footer-developer { text-align: left; }
+
+  @media (max-width: 1023px) {
+    .lang-ar .at-footer-logo { align-self: center !important; }
+    .lang-ar .at-footer-socials { justify-content: center !important; }
+    .lang-ar .at-footer-bottom { flex-direction: column !important; }
+  }
+</style>
+
+<footer class="at-footer-section" id="atFooterSection">
+  <div class="at-footer-container">
+    
+    <!-- 4-Column Grid [1] -->
+    <div class="at-footer-grid">
+      
+      <!-- Column 1: Brand & Logo (Centered on mobile) -->
+      <div class="at-footer-brand">
+        <!-- Upgraded Logo Image [1] -->
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgFl9vkym4Qn9Hkm1X7SKcOycx_AjXf0wwhquAHk2_ZFNvOUBffCHSRr_eqNGTReWEFJQLVtGtRh0PC5hN7g9ShPhfn_9ZQXQX4II7polk0rMVUVKqC0ejLf_Le0MFCP_MDPl1tXw6Pys03cX2e6LHIFeX8hD1SqEo6PKE1ifmdGhCoGGgJ3SUnxLadiuY" class="at-footer-logo" alt="AcadTrack Logo" />
+        <p class="at-footer-tagline">
+          <span data-lang="en">Unified academic management portal designed for Algerian LMD higher education institutions.</span>
+          <span data-lang="fr">Portail unifié de gestion académique conçu pour les universités algériennes LMD.</span>
+          <span data-lang="ar">بوابة موحدة وحلول رقمية متكاملة تضمن أمان وموثوقية التسيير الأكاديمي لمؤسسات التعليم العالي بالجزائر.</span>
+        </p>
+        <!-- Social Networks -->
+        <div class="at-footer-socials">
+          <a href="https://www.linkedin.com/in/uns-mahmoudi/" class="at-social-icon" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="at-social-icon" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="at-social-icon" title="Github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Platform Links -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Platform</span>
+          <span data-lang="fr">Plateforme</span>
+          <span data-lang="ar">المنصة</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="/features" class="at-footer-link"><span data-lang="en">Platform Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">ميزات البوابة</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Documentation</span><span data-lang="fr">Documentation</span><span data-lang="ar">دليل الاستعمال</span></a></li>
+          <li><a href="/help-center" class="at-footer-link"><span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a></li>
+          <li><a href="/about" class="at-footer-link"><span data-lang="en">About Platform</span><span data-lang="fr">À Propos</span><span data-lang="ar">حول المنصة</span></a></li>
+          <li><a href="/exams-generator" class="at-footer-link"><span data-lang="en">Exams Generator</span><span data-lang="fr">générateur d'examens</span><span data-lang="ar">إنشاء الاختبارات بالذكاء الاصطناعي</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Trust & Security -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Trust &amp; Security</span>
+          <span data-lang="fr">Sécurité &amp; Confiance</span>
+          <span data-lang="ar">الأمان والموثوقية</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Privacy Policy</span><span data-lang="fr">Confidentialité</span><span data-lang="ar">سياسة الخصوصية</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Terms of Service</span><span data-lang="fr">Conditions d'Utilisation</span><span data-lang="ar">شروط الخدمة</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Cookies Policy</span><span data-lang="fr">Cookies</span><span data-lang="ar">سياسة ملفات الارتباط</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">SaaS Tutorials</span><span data-lang="fr">Tutoriels</span><span data-lang="ar">دروس تعليمية</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact us (Replaced University Portals) [1] -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Contact</span>
+          <span data-lang="fr">Contact</span>
+          <span data-lang="ar">الاتصال والطلب</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="#" class="at-footer-link" style="color:#ffffff;"><span data-lang="en">Contact us</span><span data-lang="fr">Contactez-nous</span><span data-lang="ar">اتصل بنا</span></a></li>
+          <li class="at-footer-text-info">
+            <span data-lang="en">Email:</span><span data-lang="fr">Email :</span><span data-lang="ar">البريد الإلكتروني:</span><br />
+            <span style="font-family:var(--font-mono, monospace); color:#94a3b8; font-weight:700;">contact.unsclass@gmail.com</span>
+          </li>
+          <li class="at-footer-text-info">
+            <span data-lang="en">Phone number:</span><span data-lang="fr">Téléphone :</span><span data-lang="ar">رقم الهاتف:</span><br />
+            <span style="font-family:var(--font-mono, monospace); color:#94a3b8; font-weight:700;">0656806365</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Developer Credit Bar [1] -->
+    <div class="at-footer-bottom">
+      <div class="at-footer-copyright">
+        <!-- Self-updating Copyright Year [1] -->
+        <span data-lang="en">&copy; <span id="current-year-placeholder">2026</span> AcadTrack ERP. All rights reserved.</span>
+        <span data-lang="fr">&copy; <span id="current-year-placeholder-fr">2026</span> AcadTrack ERP. Tous droits réservés.</span>
+        <span data-lang="ar">&copy; <span id="current-year-placeholder-ar">2026</span> AcadTrack . جميع الحقوق محفوظة لـ</span>
+      </div>
+      <div class="at-footer-developer">
+        <!-- LinkedIn Credit link [1] -->
+        <span data-lang="en">Developed by <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank">Mr. Uns MAHMOUDI</a></span>
+        <span data-lang="fr">Développé par <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank">M. Uns MAHMOUDI</a></span>
+        <span data-lang="ar">تم التطوير بواسطة <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank"> يونس محمودي</a></span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+//<![CDATA[
+  document.addEventListener('DOMContentLoaded', function() {
+    // Run instant language alignment listener on load
+    const initLang = localStorage.getItem('acadtrack-lang') || 'en';
+    setLanguage(initLang);
+
+    // Auto-update copyright year dynamically [1]
+    const year = new Date().getFullYear();
+    const placeholders = ['current-year-placeholder', 'current-year-placeholder-fr', 'current-year-placeholder-ar'];
+    placeholders.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = year;
+    });
+  });
+
+  function setLanguage(lang) {
+    localStorage.setItem('acadtrack-lang', lang);
+    document.documentElement.lang = lang;
+    const isRTL = lang === 'ar';
+    const section = document.getElementById('atFooterSection');
+    if (section) {
+      section.dir = isRTL ? 'rtl' : 'ltr';
+      if (isRTL) section.classList.add('lang-ar');
+      else section.classList.remove('lang-ar');
+    }
+
+    document.querySelectorAll('.at-footer-section [data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+    });
+  }
+//]]>
+</script>
+</div></div>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

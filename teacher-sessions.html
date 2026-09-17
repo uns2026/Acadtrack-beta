@@ -1,0 +1,3481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Sessions - AcadTrack</title>
+<meta name="description" content="Manage your teaching sessions and attendance."/>
+<meta name="author" content="AcadTrack"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="canonical" href="/teacher-sessions"/>
+<meta property="og:title" content="Sessions - AcadTrack"/>
+<meta property="og:description" content="Manage your teaching sessions and attendance."/>
+<meta property="og:url" content="/teacher-sessions"/>
+<meta property="og:site_name" content="AcadTrack"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Sessions - AcadTrack"/>
+<meta name="twitter:description" content="Manage your teaching sessions and attendance."/>
+<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs"/>
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/theme.css"/>
+</head>
+
+<body class="">
+<a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-section section" id="header"><div class="widget Header" id="Header1"><a class="brand" href="/"><img alt="AcadTrack" src="https://blogger.googleusercontent.com/img/a/AVvXsEjfb3hTK_5-KuAMC_-HyWcBMXgZ9_Dw8zHjRFglKpiAYsD4jGC1gw0trwqFGaEwAVHCL_vDyTNnOU07UeHKyEA9jm97O7ONOmoc0PZzcoxzR_B_446Rwiivb1xFS3XnhOdlHsTBQhaDIa0Gx955SWUu1wNtBoMPjztnVKdjegXIj6DFanwp2ziOO6ppezs" loading="eager"/></a></div></div>
+
+      <div class="nav-desktop-section section" id="desktop-navigation"><div class="widget HTML" id="HTML21"><nav class="nav-desktop" aria-label="Main navigation">
+<style>
+.nav-desktop { display: none; }
+@media (min-width: 1070px) { 
+  .nav-desktop { display: flex; align-items: center; gap: var(--space-lg); flex-shrink: 0; } 
+}
+.nav-link { font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); position: relative; padding: 0.25rem 0; cursor: pointer; }
+.nav-link:hover { color: var(--text); } 
+.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: var(--primary); transition: width var(--transition); } 
+.nav-link:hover::after { width: 100%; }
+.nav-btn-saas { background-color: var(--primary); color: white !important; padding: 0.5rem 1rem; border-radius: var(--radius-sm); font-weight: 600; font-size: 0.8125rem; transition: background var(--transition); }
+.nav-btn-saas:hover { background-color: var(--primary-hover); }
+
+/* Desktop Navigation Demo Dropdown Style System */
+.nav-item-demo { position: relative; display: inline-block; }
+.demo-role-dropdown-desktop {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  width: 340px;
+  background: var(--card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+.nav-item-demo.active .demo-role-dropdown-desktop {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.demo-role-dropdown-desktop::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: var(--card);
+  border-top: 1px solid var(--border-light);
+  border-left: 1px solid var(--border-light);
+}
+.demo-role-header { padding: 0.5rem 1rem; font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; color: var(--text-light); border-bottom: 1px solid var(--border-light); margin-bottom: 0.25rem; letter-spacing: 0.05em; }
+.demo-role-option { display: flex; flex-direction: column; gap: 2px; padding: 0.75rem 1rem; transition: background 0.2s; cursor: pointer; }
+.demo-role-option:hover { background-color: var(--bg-warm); }
+.demo-role-option.active { background-color: var(--bg-cool); border-left: 4px solid var(--primary); }
+.demo-role-title { font-weight: 700; font-size: 0.8125rem; color: var(--text); display: flex; align-items: center; gap: 0.5rem; }
+.demo-role-desc { font-size: 0.6875rem; color: var(--text-secondary); margin-left: 1.5rem; }
+.exit-demo-option { display: none; border-top: 1px solid var(--border-light); margin-top: 0.25rem; padding-top: 0.75rem; }
+.exit-demo-option.visible { display: flex !important; }
+.nav-item-demo.active #demoChevron {
+  transform: rotate(180deg);
+}
+</style>
+
+<a class="nav-link" href="/"><span data-lang="en">Home</span><span data-lang="fr">Accueil</span><span data-lang="ar">الرئيسية</span></a>
+<a class="nav-link" href="/features"><span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+<a class="nav-link" href="/about"><span data-lang="en">About</span><span data-lang="fr">À propos</span><span data-lang="ar">حول</span></a>
+<a class="nav-link" href="/contact"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span><span data-lang="ar">اتصل بنا</span></a>
+
+<!-- Integrated Main Header Demo Selector Dropdown -->
+<div class="nav-item-demo" id="demoNavContainer">
+  <a class="nav-link" href="#" id="demoBtnDesktop" onclick="return false;" style="display: flex; align-items: center; gap: 4px;">
+    <i class="fa-solid fa-flask" id="demoActiveIcon" style="font-size: 0.8125rem;" style="font-family: 'Cairo', sans-serif;"></i>
+    <span id="demoActiveLabel" style="font-family: 'Cairo', sans-serif;">
+      <span id="demoActiveLabelMobile" >العرض</span>
+    </span>
+    <i class="fa-solid fa-chevron-down" id="demoChevron" style="font-size: 0.75rem; transition: transform 0.2s;"></i>
+  </a>
+  <div class="demo-role-dropdown-desktop" id="demoRoleDropdownDesktop">
+    <div class="demo-role-header">
+      <span data-lang="en">Select Demo Profile</span>
+      <span data-lang="fr">Sélectionner un Profil Démo</span>
+      <span data-lang="ar">اختر ملف العرض</span>
+    </div>
+    <div class="demo-role-option" data-demo-role="student" onclick="selectSaaSRole('student')">
+      <span class="demo-role-title"><i class="fa-solid fa-graduation-cap" style="color:var(--primary)"></i> <span data-lang="en">Psychology Student</span><span data-lang="fr">Étudiant en Psychologie</span><span data-lang="ar">طالب علم النفس</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="fr">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="ar">عماد عزيزي (سنة 3) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="teacher" onclick="selectSaaSRole('teacher')">
+      <span class="demo-role-title"><i class="fa-solid fa-chalkboard-user" style="color:#10b981"></i> <span data-lang="en">Psychology Professor</span><span data-lang="fr">Enseignant en Psychologie</span><span data-lang="ar">أستاذ علم النفس</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="fr">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="ar">أ.د. زكية شنة (بروفيسور) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="admin" onclick="selectSaaSRole('admin')">
+      <span class="demo-role-title"><i class="fa-solid fa-user-tie" style="color:#f59e0b"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="fr">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="ar">د. عمار شوشان (أستاذ محاضر أ) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" data-demo-role="platform-admin" onclick="selectSaaSRole('platform-admin')">
+      <span class="demo-role-title"><i class="fa-solid fa-server" style="color:#6366f1"></i> <span data-lang="en">Platform Super Admin</span><span data-lang="fr">Super Admin Plateforme</span><span data-lang="ar">مدير النظام</span></span>
+      <span class="demo-role-desc">
+        <span data-lang="en">Mr. Uns MAHMOUDI • Developer</span>
+        <span data-lang="fr">M. Uns MAHMOUDI • Développeur</span>
+        <span data-lang="ar">أ. يونس محمودي • مطور البرمجية</span>
+      </span>
+    </div>
+    <div class="demo-role-option exit-demo-option" onclick="selectSaaSRole('guest')">
+      <span class="demo-role-title" style="color:#ef4444;"><i class="fa-solid fa-circle-xmark"></i> <span data-lang="en">Exit Demo Mode</span><span data-lang="fr">Quitter le Mode Démo</span><span data-lang="ar">الخروج من وضع العرض</span></span>
+      <span class="demo-role-desc" data-lang="en">Reset to original guest state</span>
+      <span class="demo-role-desc" data-lang="fr">Réinitialiser à l'état invité</span>
+      <span class="demo-role-desc" data-lang="ar">إعادة تعيين إلى وضع الزائر</span>
+    </div>
+  </div>
+</div>
+
+<a class="nav-link only-logged-out" href="/login" style="margin-left: 1rem;"><span data-lang="en">Login</span><span data-lang="fr">Connexion</span><span data-lang="ar">تسجيل الدخول</span></a>
+<a class="nav-btn-saas only-logged-out" href="/signup"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+</nav></div></div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </button>
+
+      <div class="header-actions">
+        <div class="header-notif-section section" id="header-notifications"><div class="widget HTML" id="HTML34"><div class="notif-toggle only-logged-into-header">
+<style>
+.notif-toggle { display: block; position: relative; }
+
+.notif-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.notif-btn:hover {
+  background-color: var(--bg-warm);
+  border-color: var(--text-light);
+}
+
+.notif-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.125rem;
+  height: 1.125rem;
+  padding: 0 4px;
+  border-radius: 9999px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  border: 2px solid var(--bg);
+}
+
+.notif-dropdown {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  right: 0;
+  width: 320px;
+  background-color: var(--card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.notif-dropdown.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.notif-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 14px;
+  width: 12px;
+  height: 12px;
+  background: var(--card);
+  border-top: 1px solid var(--border-light);
+  border-left: 1px solid var(--border-light);
+  transform: rotate(45deg);
+}
+
+.notif-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-light);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.notif-body {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.notif-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  transition: background 0.2s, opacity 0.2s;
+  text-align: left;
+}
+
+.notif-item:hover {
+  background-color: var(--bg-warm);
+}
+
+.notif-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--bg-cool);
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.notif-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.notif-item-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.notif-item-time {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.mark-read-btn {
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: opacity 0.2s;
+}
+
+.mark-read-btn.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.notif-item.read {
+  opacity: 0.65;
+}
+
+@media (max-width: 1070px) {
+  .notif-toggle.only-logged-into-header {
+    display: none !important;
+  }
+}
+</style>
+
+<div class="notif-toggle only-logged-into-header">
+  <button class="notif-btn" id="notifBtnDesktop" aria-label="Notifications">
+    <i class="fa-solid fa-bell"></i>
+    <span class="notif-badge" id="notifCountBadge">3</span>
+  </button>
+
+  <div class="notif-dropdown" id="notifDropdownDesktop">
+    <div class="notif-header">
+      <span>Notifications</span>
+      <span class="mark-read-btn" id="markAllReadBtn">Mark all read</span>
+    </div>
+
+    <div class="notif-body">
+
+      <!-- Guest -->
+      <div class="state-guest">
+        <div class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              Welcome to AcadTrack!
+            </span>
+
+            <span data-lang="en">
+              Select a demo role from the "Demo" menu to view dynamic academic notifications.
+            </span>
+
+            <span class="notif-item-title" data-lang="fr">
+              Bienvenue sur AcadTrack!
+            </span>
+
+            <span data-lang="fr">
+              Sélectionnez un rôle démo dans le menu "Démo" pour afficher les notifications académiques dynamiques.
+            </span>
+
+            <span class="notif-item-title" data-lang="ar">
+              مرحبًا بك في AcadTrack!
+            </span>
+
+            <span data-lang="ar">
+              اختر دورًا تجريبيًا من قائمة "العرض" لمشاهدة الإشعارات الأكاديمية التفاعلية.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student -->
+      <div class="state-student">
+
+        <a href="#results" class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              New Grade Published
+            </span>
+
+            <span data-lang="en">
+              Your Clinical Psychology result has been released.
+            </span>
+
+            <span class="notif-item-time">
+              10m ago
+            </span>
+          </div>
+        </a>
+
+        <a href="#attendance" class="notif-item">
+          <div class="notif-item-icon" style="color:#ef4444;">
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title" data-lang="en">
+              Absence Alert
+            </span>
+
+            <span data-lang="en">
+              An absence has been recorded in Research Methodology.
+            </span>
+
+            <span class="notif-item-time">
+              2h ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Teacher -->
+      <div class="state-teacher">
+
+        <a href="#submissions" class="notif-item">
+          <div class="notif-item-icon">
+            <i class="fa-solid fa-file-arrow-up"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title">
+              New Assignment Submission
+            </span>
+
+            <span>
+              Student Imad AZIZI submitted his Clinical Psychology report.
+            </span>
+
+            <span class="notif-item-time">
+              5m ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Admin -->
+      <div class="state-admin state-platform-admin">
+
+        <a href="#approvals" class="notif-item">
+          <div class="notif-item-icon" style="color:var(--primary);">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+
+          <div class="notif-item-content">
+            <span class="notif-item-title">
+              New Instructor Verification
+            </span>
+
+            <span>
+              Pr. Zakia CHENNA submitted subscription verification data.
+            </span>
+
+            <span class="notif-item-time">
+              30m ago
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+
+  const notifBtn = document.getElementById('notifBtnDesktop');
+  const notifDropdown = document.getElementById('notifDropdownDesktop');
+  const notifBadge = document.getElementById('notifCountBadge');
+  const markAllReadBtn = document.getElementById('markAllReadBtn');
+
+  const STORAGE_KEY = 'acadtrack_notifications_read';
+
+  // Toggle dropdown
+  function toggleDropdown(e) {
+    e.stopPropagation();
+    notifDropdown.classList.toggle('active');
+  }
+
+  // Apply read state UI
+  function applyReadState() {
+
+    const isRead = localStorage.getItem(STORAGE_KEY) === 'true';
+
+    if (isRead) {
+
+      // Hide badge
+      if (notifBadge) {
+        notifBadge.style.display = 'none';
+      }
+
+      // Fade notifications
+      document.querySelectorAll('.notif-item').forEach(item => {
+        item.classList.add('read');
+      });
+
+      // Disable button
+      if (markAllReadBtn) {
+        markAllReadBtn.textContent = 'All read';
+        markAllReadBtn.classList.add('disabled');
+      }
+
+    } else {
+
+      if (notifBadge) {
+        notifBadge.style.display = 'inline-flex';
+      }
+
+      document.querySelectorAll('.notif-item').forEach(item => {
+        item.classList.remove('read');
+      });
+
+      if (markAllReadBtn) {
+        markAllReadBtn.textContent = 'Mark all read';
+        markAllReadBtn.classList.remove('disabled');
+      }
+    }
+  }
+
+  // Mark notifications as read
+  function markAllAsRead() {
+
+    localStorage.setItem(STORAGE_KEY, 'true');
+
+    applyReadState();
+  }
+
+  // Open / Close
+  if (notifBtn) {
+    notifBtn.addEventListener('click', toggleDropdown);
+  }
+
+  // Mark read click
+  if (markAllReadBtn) {
+    markAllReadBtn.addEventListener('click', markAllAsRead);
+  }
+
+  // Close outside click
+  document.addEventListener('click', function (e) {
+
+    if (
+      notifDropdown &&
+      !notifDropdown.contains(e.target) &&
+      !notifBtn.contains(e.target)
+    ) {
+      notifDropdown.classList.remove('active');
+    }
+  });
+
+  // Prevent dropdown click close
+  notifDropdown.addEventListener('click', function (e) {
+    e.stopPropagation();
+  });
+
+  // Restore saved state
+  applyReadState();
+
+})();
+</script>
+</div></div></div>
+
+        <div class="header-lang-section section" id="header-language"><div class="widget HTML" id="HTML33"><div class="lang-toggle lang-desktop-only">
+<style>
+.lang-toggle { position: relative; }
+.lang-btn { display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; background: none; border: 1px solid var(--border); border-radius: 9999px; cursor: pointer; overflow: hidden; transition: background 0.2s; }
+.lang-btn:hover { background-color: var(--bg-warm); border-color: var(--text-light); }
+.lang-btn img { width: 2.25rem; height: 2.25rem; border-radius: 50%; object-fit: cover; }
+.lang-dropdown { position: absolute; top: calc(100% + 0.75rem); right: 0; width: 180px; background: var(--card); border: 1px solid var(--border-light); border-radius: var(--radius); box-shadow: var(--shadow-lg); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.2s ease; z-index: 100; overflow: hidden; }
+.lang-dropdown::before { content: ''; position: absolute; top: -6px; right: 10px; width: 12px; height: 12px; background: var(--card); border-top: 1px solid var(--border-light); border-left: 1px solid var(--border-light); transform: rotate(45deg); }
+.lang-dropdown.active { opacity: 1; visibility: visible; transform: translateY(0); }
+.lang-option { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; color: var(--text-secondary); font-size: 0.875rem; font-weight: 500; transition: background 0.2s; text-align: left; }
+.lang-option:hover { background-color: var(--bg-warm); color: var(--primary); } .lang-option img { width: 1.25rem; height: 1.25rem; border-radius: 50%; object-fit: cover; }
+@media (min-width: 1070px) { .lang-mobile-only { display: none !important; } }
+@media (max-width: 1070px) { .lang-desktop-only { display: none !important; } }
+</style>
+
+<!-- Default Language Configuration: change this value to 'en', 'fr', or 'ar' to set your default language portal-wide -->
+<span id="defaultLangConfig" style="display:none;">ar</span>
+
+<button class="lang-btn" id="langToggleDesktop" aria-label="Change Language">
+  <img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN" id="activeFlagDesktop" class="active-lang-flag"/>
+</button>
+<div class="lang-dropdown" id="langDropdownDesktop">
+  <a href="#" onclick="setLanguage('en'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN"/> <span data-lang="en">English</span><span data-lang="fr">Anglais</span><span data-lang="ar">الإنجليزية</span></a>
+  <a href="#" onclick="setLanguage('fr'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/fr.svg" alt="FR"/> <span data-lang="en">French</span><span data-lang="fr">Français</span><span data-lang="ar">الفرنسية</span></a>
+  <a href="#" onclick="setLanguage('ar'); return false;" class="lang-option"><img src="https://kapowaz.github.io/circle-flags/flags/dz.svg" alt="AR"/> <span data-lang="en">Arabic</span><span data-lang="fr">Arabe</span><span data-lang="ar">العربية</span></a>
+</div>
+
+<script>
+  function setLanguage(lang) {
+    applyLanguage(lang);
+  }
+  function registerLangToggler() {
+    var langToggleDesktop = document.getElementById('langToggleDesktop');
+    var langDropdownDesktop = document.getElementById('langDropdownDesktop');
+    if (langToggleDesktop && langDropdownDesktop) {
+      langToggleDesktop.removeEventListener('click', handleLangClick);
+      langToggleDesktop.addEventListener('click', handleLangClick);
+    }
+  }
+  window.addEventListener('load', registerLangToggler);
+  document.addEventListener('DOMSubtreeModified', registerLangToggler);
+</script>
+</div></div></div>
+
+        <button class="user-toggle" id="userToggle" aria-label="User menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+      </div>
+
+      <div class="desktop-user-menu-section section" id="desktop-user-menu"><div class="widget HTML" id="HTML23"><div class="user-dropdown" id="userDropdown">
+<style>
+  .user-dropdown { 
+    position: absolute; 
+    top: calc(100% + 0.75rem); 
+    right: 0; 
+    width: 260px; 
+    background-color: var(--card); 
+    border: 1px solid var(--border-light); 
+    border-radius: var(--radius); 
+    box-shadow: var(--shadow-lg); 
+    padding: var(--space-md); 
+    opacity: 0; 
+    visibility: hidden; 
+    transform: translateY(-10px); 
+    transition: all 0.2s ease; 
+    z-index: 100; 
+    /* Dynamic viewport height constraint to support smaller screens */
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  .user-dropdown::-webkit-scrollbar { width: 6px; }
+  .user-dropdown::-webkit-scrollbar-track { background: var(--bg-warm); }
+  .user-dropdown::-webkit-scrollbar-thumb { background-color: var(--border); border-radius: 999px; }
+
+  .user-dropdown::before { content: ''; position: absolute; top: -6px; right: 10px; width: 12px; height: 12px; background-color: var(--card); border-top: 1px solid var(--border-light); border-left: 1px solid var(--border-light); transform: rotate(45deg); }
+  .user-dropdown.active { opacity: 1; visibility: visible; transform: translateY(0); }
+  @media (max-width: 767px) { .user-dropdown { display: none !important; } }
+  .user-profile-header { margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+  .user-greeting { font-size: 0.875rem; color: var(--text-secondary); } 
+  .user-name { font-size: 1.125rem; font-weight: 700; color: var(--text); margin-top: 0.25rem; }
+  .user-profile-actions { display: flex; gap: var(--space-xs); margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+  .btn-sm { padding: 0.5rem 1rem; font-size: 0.8125rem; flex: 1; justify-content: center; border-radius: 0.5rem; } 
+  .btn-outline { background-color: transparent; color: var(--primary); border: 1px solid var(--primary); } 
+  .btn-outline:hover { background-color: var(--primary); color: white; }
+  .user-profile-nav { display: flex; flex-direction: column; gap: var(--space-xs); } 
+  .user-profile-nav a { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) 0; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); transition: color var(--transition); } 
+  .user-profile-nav a i { width: 1.25rem; text-align: center; }
+  .user-profile-nav a:hover { color: var(--primary); }
+  .saas-subtext { font-size: 0.75rem; font-weight: 600; color: var(--primary); text-transform: uppercase; margin-top: 2px; letter-spacing: 0.05em; }
+
+  /* New custom styling targeting the logout buttons */
+  .user-profile-nav a[href="#logout"] {
+    background-color: #dc2626 !important;
+    color: #ffffff !important;
+    border: 1px solid #dc2626 !important;
+    transition: all 0.2s ease !important;
+  }
+  .user-profile-nav a[href="#logout"]:hover {
+    background-color: #ffffff !important;
+    color: #dc2626 !important;
+    border: 1px solid #dc2626 !important;
+  }
+</style>
+
+<!-- 1. GUEST DROP DOWN -->
+<div class="state-guest">
+  <div class="user-profile-header">
+    <div class="user-name">
+      <span data-lang="en">Welcome to AcadTrack</span>
+      <span data-lang="fr">Bienvenue sur AcadTrack</span>
+      <span data-lang="ar">مرحبًا بك في AcadTrack</span>
+    </div>
+    <div class="user-greeting">
+      <span data-lang="en">Login to access your dashboard</span>
+      <span data-lang="fr">Connectez-vous pour accéder au tableau de bord</span>
+      <span data-lang="ar">سجل الدخول للوصول إلى لوحة التحكم</span>
+    </div>
+  </div>
+  <div class="user-profile-actions" style="flex-direction: column; gap: 0.5rem;">
+    <a href="/login" class="btn btn-sm" style="width:100%;"><i class="fa-solid fa-right-to-bracket"></i> <span data-lang="en">Login</span><span data-lang="fr">Connexion</span><span data-lang="ar">تسجيل الدخول</span></a>
+    <a href="/signup" class="btn btn-sm btn-outline" style="width:100%;"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+    <a href="#googlesignup" class="btn btn-sm btn-outline" style="width:100%;"><i class="fa-brands fa-google"></i> <span data-lang="en">Continue with Google</span><span data-lang="fr">Continuer avec Google</span><span data-lang="ar">المتابعة باستخدام Google</span></a>
+  </div>
+  <div class="saas-subtext" style="margin-bottom: 0.5rem;">
+    <span data-lang="en">Quick Access</span>
+    <span data-lang="fr">Accès rapide</span>
+    <span data-lang="ar">وصول سريع</span>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/features"><i class="fa-solid fa-star"></i> <span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+    <a href="/about"><i class="fa-solid fa-circle-info"></i> <span data-lang="en">About Platform</span><span data-lang="fr">À propos de la plateforme</span><span data-lang="ar">حول المنصة</span></a>
+    <a href="/help-center"><i class="fa-solid fa-question-circle"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+  </nav>
+</div>
+
+<!-- 2. STUDENT DROP DOWN -->
+<div class="state-student">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name studentName">
+      <span data-lang="en">Imad AZIZI</span>
+      <span data-lang="fr">Imad AZIZI</span>
+      <span data-lang="ar">عماد عزيزي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-graduation-cap"></i> <span data-lang="en">Student</span><span data-lang="fr">Étudiant</span><span data-lang="ar">طالب</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/student-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/student-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/student-modules"><i class="fa-solid fa-book"></i> <span data-lang="en">Modules</span><span data-lang="fr">Modules</span><span data-lang="ar">المواد الدراسية</span></a>
+    <a href="/student-schedule"><i class="fa-solid fa-calendar-days"></i> <span data-lang="en">Schedule</span><span data-lang="fr">Emploi du temps</span><span data-lang="ar">جدول الحصص</span></a>
+    <a href="/student-grades"><i class="fa-solid fa-square-poll-vertical"></i> <span data-lang="en">Grades &amp; Results</span><span data-lang="fr">Notes &amp; Résultats</span><span data-lang="ar">النقاط والنتائج</span></a>
+    <a href="/student-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/student-reports"><i class="fa-solid fa-chart-pie"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="/student-settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 3. TEACHER DROP DOWN -->
+<div class="state-teacher">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Pr. Zakia CHENNA</span>
+      <span data-lang="fr">Pr. Zakia CHENNA</span>
+      <span data-lang="ar">أ.د. زكية شنة</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-chalkboard-user"></i> <span data-lang="en">Professor</span><span data-lang="fr">Enseignant</span><span data-lang="ar">أستاذ</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/teacher-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/teacher-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/teacher-sessions"><i class="fa-solid fa-clock"></i> <span data-lang="en">My Sessions</span><span data-lang="fr">Mes Sessions</span><span data-lang="ar">حصصي الدراسية</span></a>
+    <a href="/teacher-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/teacher-reports"><i class="fa-solid fa-chart-bar"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="#settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="#appearance"><i class="fa-solid fa-palette"></i> <span data-lang="en">Appearance</span><span data-lang="fr">Apparence</span><span data-lang="ar">المظهر</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 4. ADMINISTRATION DROP DOWN -->
+<div class="state-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="fr">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="ar">د. عمار شوشان</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-user-tie"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/dept-admin-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/dept-admin-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/dept-admin-analytics"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/dept-admin-users"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/dept-admin-departments"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/dept-admin-reports"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/dept-admin-monitoring"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/dept-admin-activity-logs"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/dept-admin-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/dept-admin-settings"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 5. PLATFORM ADMIN DROP DOWN -->
+<div class="state-platform-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Mr. Uns MAHMOUDI</span>
+      <span data-lang="fr">M. Uns MAHMOUDI</span>
+      <span data-lang="ar">أ. أنس محمودي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-server"></i> <span data-lang="en">Platform Admin</span><span data-lang="fr">Admin Plateforme</span><span data-lang="ar">مدير النظام</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/platform-admin-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="#profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/dept-admin-analytics"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/dept-admin-users"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/dept-admin-departments"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/dept-admin-reports"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/dept-admin-monitoring"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/dept-admin-activity-logs"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/dept-admin-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/dept-admin-settings"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+</div></div></div>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+
+  <div class="mobile-nav-section section" id="mobile-navigation"><div class="widget HTML" id="HTML22"><nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+<style>
+.mobile-nav { position: fixed; inset: var(--header-height) 0 0 0; background-color: var(--bg); padding: var(--space-lg); flex-direction: column; gap: 0; z-index: 40; border-top: 1px solid var(--border-light); transform: translateX(-100%); opacity: 0; visibility: hidden; transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s 0.35s; overflow-y: auto; }
+.mobile-nav.active { transform: translateX(0); opacity: 1; visibility: visible; transition: transform 0.35s ease, opacity 0.35s ease, visibility 0s 0s; display: flex; }
+.mobile-nav a { font-size: 1.125rem; font-weight: 500; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light); color: var(--text); transform: translateX(-20px); opacity: 0; transition: color var(--transition), transform 0.35s ease, opacity 0.35s ease; }
+.mobile-nav.active a { transform: translateX(0); opacity: 1; } 
+.mobile-nav.active a:nth-child(1) { transition-delay: 0.08s; } 
+.mobile-nav.active a:nth-child(2) { transition-delay: 0.14s; } 
+.mobile-nav.active a:nth-child(3) { transition-delay: 0.2s; } 
+.mobile-nav.active a:nth-child(4) { transition-delay: 0.26s; }
+.mobile-nav a:hover { color: var(--primary); }
+</style>
+<a href="/"><span data-lang="en">Home</span><span data-lang="fr">Accueil</span><span data-lang="ar">الرئيسية</span></a>
+<a href="#features"><span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+<a href="/about"><span data-lang="en">About</span><span data-lang="fr">À propos</span><span data-lang="ar">حول</span></a>
+<a href="/contact"><span data-lang="en">Contact</span><span data-lang="fr">Contact</span><span data-lang="ar">اتصل بنا</span></a>
+
+<!-- Mobile Navigation Language Selector Accordion (Mobile View Only) -->
+<div style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-light);">
+  <div class="menu-accordion-header">
+    <span style="font-size:1.125rem;font-weight:500;color:var(--text);display:flex;align-items:center;gap:var(--space-sm);">
+      <i class="fa-solid fa-globe" style="width: 1.25rem;"></i> 
+      <span data-lang="en">Language</span><span data-lang="fr">Langue</span><span data-lang="ar">اللغة</span>
+    </span>
+    <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+  </div>
+  <div class="menu-accordion-content" id="langAccordMobile" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+    <a href="#" onclick="setLanguage('en'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/us.svg" alt="EN" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>English</span>
+    </a>
+    <a href="#" onclick="setLanguage('fr'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/fr.svg" alt="FR" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>Français</span>
+    </a>
+    <a href="#" onclick="setLanguage('ar'); return false;" class="lang-option" style="font-size:1rem; padding: 0.5rem 0; display:flex; align-items:center; gap:0.5rem; border:none; transform: none; opacity: 1;">
+      <img src="https://kapowaz.github.io/circle-flags/flags/dz.svg" alt="AR" style="width:1.25rem;height:1.25rem;border-radius:50%;"/> <span>العربية</span>
+    </a>
+  </div>
+</div>
+
+<!-- Mobile Navigation Demo Selector Accordion -->
+<div style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-light);">
+  <div class="menu-accordion-header">
+    <span style="font-size:1.125rem;font-weight:500;color:var(--text);display:flex;align-items:center;gap:var(--space-sm);">
+      <i class="fa-solid fa-flask" id="demoActiveIconMobile" style="width: 1.25rem;"></i> 
+      <span id="demoActiveLabelMobile"  style="font-family: 'Cairo', sans-serif;">
+       <span id="demoActiveLabelMobile" style="font-family: 'Cairo', sans-serif;">العرض</span>
+      </span>
+    </span>
+    <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+  </div>
+  <div class="menu-accordion-content" id="demoAccordMobile" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+    <div class="demo-role-option" onclick="selectSaaSRole('student')" id="demoOptMobileStudent" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-graduation-cap" style="color:var(--primary); margin-right: 8px;"></i> <span data-lang="en">Psychology Student</span><span data-lang="fr">Étudiant en Psychologie</span><span data-lang="ar">طالب علم النفس</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="fr">Imad AZIZI (L3) • Univ. Batna 1</span>
+        <span data-lang="ar">عماد عزيزي (سنة 3) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('teacher')" id="demoOptMobileTeacher" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-chalkboard-user" style="color:#10b981; margin-right: 8px;"></i> <span data-lang="en">Psychology Professor</span><span data-lang="fr">Enseignant en Psychologie</span><span data-lang="ar">أستاذ علم النفس</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="fr">Pr. Zakia CHENNA (Pr) • Univ. Batna 1</span>
+        <span data-lang="ar">أ.د. زكية شنة (بروفيسور) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('admin')" id="demoOptMobileAdmin" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-user-tie" style="color:#f59e0b; margin-right: 8px;"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="fr">Dr. Ammar CHOUCHANE (MCA) • Univ. Batna 1</span>
+        <span data-lang="ar">د. عمار شوشان (أستاذ محاضر أ) • جامعة باتنة 1</span>
+      </span>
+    </div>
+    <div class="demo-role-option" onclick="selectSaaSRole('platform-admin')" id="demoOptMobilePlatform" style="padding: 0.5rem 0; border: none;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700;"><i class="fa-solid fa-server" style="color:#6366f1; margin-right: 8px;"></i> <span data-lang="en">Platform Super Admin</span><span data-lang="fr">Super Admin Plateforme</span><span data-lang="ar">مدير النظام</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;">
+        <span data-lang="en">Mr. Uns MAHMOUDI • Developer</span>
+        <span data-lang="fr">M. Uns MAHMOUDI • Développeur</span>
+        <span data-lang="ar">أ. يونس محمودي • مطور البرمجية</span>
+      </span>
+    </div>
+    <div class="demo-role-option exit-demo-option" onclick="selectSaaSRole('guest')" id="demoOptMobileExit" style="padding: 0.5rem 0; border-top:1px solid var(--border-light); margin-top:0.5rem;">
+      <span class="demo-role-title" style="font-size:0.95rem; font-weight:700; color:#ef4444;"><i class="fa-solid fa-circle-xmark" style="margin-right: 8px;"></i> <span data-lang="en">Exit Demo Mode</span><span data-lang="fr">Quitter le Mode Démo</span><span data-lang="ar">الخروج من وضع العرض</span></span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="en">Reset to original guest state</span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="fr">Réinitialiser à l'état invité</span>
+      <span class="demo-role-desc" style="display:block; font-size:0.75rem; color:var(--text-secondary); margin-left: 1.5rem;" data-lang="ar">إعادة تعيين إلى وضع الزائر</span>
+    </div>
+  </div>
+</div>
+</nav></div></div>
+
+  <div class="user-sidebar-overlay" id="userSidebarOverlay"></div>
+
+  <div class="mobile-user-sidebar-section section" id="mobile-user-sidebar"><div class="widget HTML" id="HTML24"><aside class="user-sidebar" id="userSidebar">
+<style>
+.user-sidebar { display: none; }
+@media (max-width: 767px) { 
+  .user-sidebar { display: flex; flex-direction: column; position: fixed; top: var(--header-height); right: 0; bottom: 0; width: 300px; max-width: 85vw; background-color: var(--bg); z-index: 45; box-shadow: -4px 0 15px rgba(0,0,0,0.1); transform: translateX(100%); transition: transform 0.35s ease; overflow-y: auto; padding: var(--space-lg); } 
+  .user-sidebar.active { transform: translateX(0); } 
+}
+.user-profile-header { margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+.user-greeting { font-size: 0.875rem; color: var(--text-secondary); } 
+.user-name { font-size: 1.125rem; font-weight: 700; color: var(--text); margin-top: 0.25rem; }
+.user-profile-actions { display: flex; gap: var(--space-xs); margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border-light); }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.8125rem; flex: 1; justify-content: center; border-radius: 0.5rem; } 
+.btn-outline { background-color: transparent; color: var(--primary); border: 1px solid var(--primary); } 
+.btn-outline:hover { background-color: var(--primary); color: white; }
+.user-profile-nav { display: flex; flex-direction: column; gap: var(--space-xs); } 
+.user-profile-nav a { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) 0; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); transition: color var(--transition); } 
+.user-profile-nav a i { width: 1.25rem; text-align: center; }
+.user-profile-nav a:hover { color: var(--primary); }
+.saas-subtext { font-size: 0.75rem; font-weight: 600; color: var(--primary); text-transform: uppercase; margin-top: 2px; letter-spacing: 0.05em; }
+
+/* New custom styling targeting the logout buttons */
+.user-profile-nav a[href="#logout"] {
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border: 1px solid #dc2626 !important;
+  transition: all 0.2s ease !important;
+}
+.user-profile-nav a[href="#logout"]:hover {
+  background-color: #ffffff !important;
+  color: #dc2626 !important;
+  border: 1px solid #dc2626 !important;
+}
+</style>
+
+<!-- 1. GUEST USER SIDEBAR -->
+<div class="state-guest">
+  <div class="user-profile-header">
+    <div class="user-name">Welcome to AcadTrack</div>
+    <div class="user-greeting">Login to access your dashboard</div>
+  </div>
+  <div class="user-profile-actions" style="flex-direction: column; gap: 0.5rem;">
+    <a href="/login" class="btn btn-sm" style="width:100%;"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+    <a href="/signup" class="btn btn-sm btn-outline" style="width:100%;"><span data-lang="en">Request Access</span><span data-lang="fr">Demander un accès</span><span data-lang="ar">طلب انضمام</span></a>
+    <a href="#googlesignup" class="btn btn-sm btn-outline" style="width:100%;"><i class="fa-brands fa-google"></i> Google Sign up</a>
+  </div>
+  <div class="saas-subtext" style="margin-bottom: 0.5rem;">Quick Access</div>
+  <nav class="user-profile-nav">
+    <a href="/features"><i class="fa-solid fa-star"></i> <span data-lang="en">Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">المميزات</span></a>
+    <a href="/about"><i class="fa-solid fa-circle-info"></i> <span data-lang="en">About Platform</span><span data-lang="fr">À propos de la plateforme</span><span data-lang="ar">حول المنصة</span></a>
+    <a href="/help-center"><i class="fa-solid fa-question-circle"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+  </nav>
+</div>
+
+<!-- 2. STUDENT USER SIDEBAR -->
+<div class="state-student">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Imad AZIZI</span>
+      <span data-lang="fr">Imad AZIZI</span>
+      <span data-lang="ar">عماد عزيزي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-graduation-cap"></i> <span data-lang="en">Student</span><span data-lang="fr">Étudiant</span><span data-lang="ar">طالب</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/student-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/student-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/student-modules"><i class="fa-solid fa-book"></i> <span data-lang="en">Modules</span><span data-lang="fr">Modules</span><span data-lang="ar">المواد الدراسية</span></a>
+    <a href="/student-schedule"><i class="fa-solid fa-calendar-days"></i> <span data-lang="en">Schedule</span><span data-lang="fr">Emploi du temps</span><span data-lang="ar">جدول الحصص</span></a>
+    <a href="/student-grades"><i class="fa-solid fa-square-poll-vertical"></i> <span data-lang="en">Grades &amp; Results</span><span data-lang="fr">Notes &amp; Résultats</span><span data-lang="ar">النقاط والنتائج</span></a>
+    
+    <!-- Mobile Notification Bell integration inside the User Sidebar Menu -->
+    <div style="padding: 0.25rem 0;">
+      <div class="menu-accordion-header">
+        <span style="font-size:0.875rem;font-weight:500;color:var(--text-secondary);display:flex;align-items:center;gap:var(--space-sm);"><i class="fa-solid fa-bell"></i> <span data-lang="en">Notifications</span><span data-lang="fr">Notifications</span><span data-lang="ar">الإشعارات</span> <span style="background:#ef4444;color:white;font-size:0.65rem;font-weight:700;padding:2px 6px;border-radius:99px;margin-left:4px;">2</span></span>
+        <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+      </div>
+      <div class="menu-accordion-content" id="notifAccordStudent" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+        <a href="/student-grades" style="font-size:0.8125rem;"><i class="fa-solid fa-graduation-cap"></i> Database systems result released</a>
+        <a href="#absences" style="font-size:0.8125rem;color:#ef4444;"><i class="fa-solid fa-triangle-exclamation"></i> Network security absence logged</a>
+      </div>
+    </div>
+
+    <a href="/student-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/student-reports"><i class="fa-solid fa-chart-pie"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="/student-settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 3. TEACHER USER SIDEBAR -->
+<div class="state-teacher">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Pr. Zakia CHENNA</span>
+      <span data-lang="fr">Pr. Zakia CHENNA</span>
+      <span data-lang="ar">أ.د. زكية شنة</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-chalkboard-user"></i> <span data-lang="en">Professor</span><span data-lang="fr">Enseignant</span><span data-lang="ar">أستاذ</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/teacher-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/teacher-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/teacher-sessions"><i class="fa-solid fa-clock"></i> <span data-lang="en">My Sessions</span><span data-lang="fr">Mes Sessions</span><span data-lang="ar">حصصي الدراسية</span></a>
+
+    <!-- Mobile Notification Bell integration inside the User Sidebar Menu -->
+    <div style="padding: 0.25rem 0;">
+      <div class="menu-accordion-header">
+        <span style="font-size:0.875rem;font-weight:500;color:var(--text-secondary);display:flex;align-items:center;gap:var(--space-sm);"><i class="fa-solid fa-bell"></i> <span data-lang="en">Notifications</span><span data-lang="fr">Notifications</span><span data-lang="ar">الإشعارات</span> <span style="background:#ef4444;color:white;font-size:0.65rem;font-weight:700;padding:2px 6px;border-radius:99px;margin-left:4px;">2</span></span>
+        <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;color:var(--text-light);"></i>
+      </div>
+      <div class="menu-accordion-content" id="notifAccordTeacher" style="display: none; padding-left:1.5rem; margin-top:0.5rem;">
+        <a href="#grades" style="font-size:0.8125rem;"><i class="fa-solid fa-file-arrow-up"></i> Ahmed submitted Web Dev assignment</a>
+        <a href="#schedule" style="font-size:0.8125rem;"><i class="fa-solid fa-clock"></i> TP starts in 1 hour</a>
+      </div>
+    </div>
+
+    <a href="/teacher-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/teacher-reports"><i class="fa-solid fa-chart-bar"></i> <span data-lang="en">Reports</span><span data-lang="fr">Rapports</span><span data-lang="ar">التقارير</span></a>
+    <a href="#settings"><i class="fa-solid fa-gear"></i> <span data-lang="en">Settings</span><span data-lang="fr">Paramètres</span><span data-lang="ar">الإعدادات</span></a>
+    <a href="#appearance"><i class="fa-solid fa-palette"></i> <span data-lang="en">Appearance</span><span data-lang="fr">Apparence</span><span data-lang="ar">المظهر</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 4. ADMINISTRATION USER SIDEBAR -->
+<div class="state-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="fr">Dr. Ammar CHOUCHANE</span>
+      <span data-lang="ar">د. عمار شوشان</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-user-tie"></i> <span data-lang="en">Department Head</span><span data-lang="fr">Chef de Département</span><span data-lang="ar">رئيس القسم</span> • <span data-lang="en">Psychology Dept</span><span data-lang="fr">Dépt Psychologie</span><span data-lang="ar">قسم علم النفس</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/dept-admin-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="/dept-admin-profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/dept-admin-analytics"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/dept-admin-users"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/dept-admin-departments"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/dept-admin-reports"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/dept-admin-monitoring"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/dept-admin-activity-logs"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/dept-admin-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/dept-admin-settings"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+
+<!-- 5. PLATFORM ADMIN USER SIDEBAR -->
+<div class="state-platform-admin">
+  <div class="user-profile-header">
+    <div class="user-greeting">
+      <span class="saasGreeting">Good Morning</span>,
+    </div>
+    <div class="user-name">
+      <span data-lang="en">Mr. Uns MAHMOUDI</span>
+      <span data-lang="fr">M. Uns MAHMOUDI</span>
+      <span data-lang="ar">أ. أنس محمودي</span>
+    </div>
+    <div class="saas-subtext"><i class="fa-solid fa-server"></i> <span data-lang="en">Platform Admin</span><span data-lang="fr">Admin Plateforme</span><span data-lang="ar">مدير النظام</span></div>
+  </div>
+  <nav class="user-profile-nav">
+    <a href="/platform-admin-dashboard"><i class="fa-solid fa-gauge"></i> <span data-lang="en">Dashboard</span><span data-lang="fr">Tableau de bord</span><span data-lang="ar">لوحة التحكم</span></a>
+    <a href="#profile"><i class="fa-solid fa-user"></i> <span data-lang="en">My Profile</span><span data-lang="fr">Mon Profil</span><span data-lang="ar">ملفي الشخصي</span></a>
+    <a href="/dept-admin-analytics"><i class="fa-solid fa-chart-line"></i> <span data-lang="en">Analytics</span><span data-lang="fr">Analytiques</span><span data-lang="ar">التحليلات</span></a>
+    <a href="/dept-admin-users"><i class="fa-solid fa-users-gear"></i> <span data-lang="en">User Management</span><span data-lang="fr">Gestion des Utilisateurs</span><span data-lang="ar">إدارة المستخدمين</span></a>
+    <a href="/dept-admin-departments"><i class="fa-solid fa-building"></i> <span data-lang="en">Department Management</span><span data-lang="fr">Gestion du Département</span><span data-lang="ar">إدارة القسم</span></a>
+    <a href="/dept-admin-reports"><i class="fa-solid fa-file-invoice"></i> <span data-lang="en">Reports Center</span><span data-lang="fr">Centre de Rapports</span><span data-lang="ar">مركز التقارير</span></a>
+    <a href="/dept-admin-monitoring"><i class="fa-solid fa-shield-halved"></i> <span data-lang="en">System Monitoring</span><span data-lang="fr">Supervision Système</span><span data-lang="ar">مراقبة النظام</span></a>
+    <a href="/dept-admin-activity-logs"><i class="fa-solid fa-list-check"></i> <span data-lang="en">Activity Logs</span><span data-lang="fr">Journaux d'Activité</span><span data-lang="ar">سجلات النشاط</span></a>
+    <a href="/dept-admin-messages"><i class="fa-solid fa-envelope"></i> <span data-lang="en">Messages</span><span data-lang="fr">Messages</span><span data-lang="ar">الرسائل</span></a>
+    <a href="/dept-admin-settings"><i class="fa-solid fa-lock"></i> <span data-lang="en">Security Settings</span><span data-lang="fr">Paramètres de Sécurité</span><span data-lang="ar">إعدادات الأمان</span></a>
+    <a href="/help-center"><i class="fa-solid fa-circle-question"></i> <span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a>
+    <a href="#logout" onclick="logoutUser(); return false;" class="btn btn-sm btn-outline" style="margin-top: 1rem;"><i class="fa-solid fa-sign-out"></i> <span data-lang="en">Logout</span><span data-lang="fr">Déconnexion</span><span data-lang="ar">تسجيل الخروج</span></a>
+  </nav>
+</div>
+</aside></div></div>
+
+
+  <main id="main-content" class="site-main">
+    <div class="container layout">
+      <div class="content">
+        <div class="widget Blog" id="Blog1">
+          <article class="article">
+            <header class="article__header">
+              <h1 class="article__title">Sessions</h1>
+            </header>
+            <div class="article__content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>My Sessions &amp; Attendance Hub — AcadTrack</title>
+
+  <!-- Google Fonts & Icon Libraries -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Leaflet Map Stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- SaaS UI Stylesheet -->
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text: #0f172a;
+      --text-secondary: #475569;
+      --text-light: #94a3b8;
+      --bg: #ffffff;
+      --bg-cool: #f8fafc;
+      --bg-warm: #f1f5f9;
+      --border: #cbd5e1;
+      --border-light: #e2e8f0;
+      --card: #ffffff;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.05);
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg-cool);
+      -webkit-font-smoothing: antialiased;
+    }
+    input, button, select, textarea { font: inherit; color: inherit; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== EXPLICIT LAYOUT OVERRIDE ===== */
+    .article__header {
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--border-light);
+      display: none;
+    }
+    .layout {
+      display: contents;
+      gap: var(--space-xl);
+    }
+    .article {
+      max-width: -webkit-fill-available;
+      margin: -27px auto;
+    }
+
+    /* Hide Blogger Default wrappers */
+    .sidebar, .page-title, .sidebar-widget { display: none !important; }
+    .layout { grid-template-columns: 1fr !important; }
+    .site-main { display: block !important; padding: 0 !important; }
+
+    /* Layout Wrapper */
+    .saas-container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 32px 28px;
+    }
+    @media (max-width: 1023px) {
+      .saas-container { padding: 20px 16px; }
+    }
+
+    /* Page Header */
+    .saas-header {
+          margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: var(--space-lg);
+      padding-bottom: var(--space-sm);
+      border-bottom: 1.5px solid var(--border-light);
+    }
+    .saas-header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.03em;
+    }
+
+    /* ===== MULTI-TAB NAVIGATION (HORIZONTALLY SCROLLABLE ON MOBILE) ===== */
+    .saas-tabs {
+      display: flex;
+      gap: 4px;
+      border-bottom: 2px solid var(--border-light);
+      margin-bottom: var(--space-lg);
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .saas-tabs::-webkit-scrollbar {
+      display: none;
+    }
+    .saas-tab {
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    .saas-tab:hover {
+      color: var(--text);
+      background-color: var(--bg-warm);
+      border-radius: 8px 8px 0 0;
+    }
+    .saas-tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      font-weight: 800;
+    }
+
+    .tab-content-panel { display: none; }
+    .tab-content-panel.active { display: block; animation: panelFadeIn 0.35s ease forwards; }
+    @keyframes panelFadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ===== STATS CARDS ===== */
+    .stats-grid { display: grid; gap: 16px; grid-template-columns: repeat(1, 1fr); margin-bottom: var(--space-lg); }
+    @media (min-width: 480px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+    .stat-card { background: var(--card); border: 1.5px solid var(--border-light); border-radius: var(--radius); padding: var(--space-md); display: flex; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm); }
+    .stat-card-title { font-size: 11px; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; }
+    .stat-card-value { font-size: 24px; font-weight: 800; color: var(--text); margin-top: 4px; }
+    .stat-card-icon { width: 44px; height: 44px; border-radius: 12px; background-color: var(--bg-cool); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 18px; }
+
+    /* ===== FORMS, CARDS & MODALS ===== */
+    .form-card { background: var(--card); border: 1.5px solid var(--border-light); border-radius: var(--radius); padding: var(--space-md); box-shadow: var(--shadow-sm); margin-bottom: var(--space-md); text-align: left; }
+    .form-title { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: var(--space-md); display: flex; align-items: center; gap: 8px; border-bottom: 1px dashed var(--border-light); padding-bottom: 10px; }
+    .form-grid { display: grid; gap: var(--space-sm); grid-template-columns: 1fr; }
+    @media (min-width: 640px) { .form-grid.grid-col-2 { grid-template-columns: repeat(2, 1fr); } .form-grid.grid-col-3 { grid-template-columns: repeat(3, 1fr); } .form-grid.grid-col-4 { grid-template-columns: repeat(4, 1fr); } }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-label { font-size: 12px; font-weight: 600; color: var(--text-secondary); }
+    .form-input { width: 100%; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-size: 14px; background-color: var(--bg); transition: all 0.2s; color: var(--text); }
+    .form-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+
+    /* Overpass Modals */
+    .modal-overlay { position: fixed; inset: 0; background: rgba(15,23,42,0.5); backdrop-filter: blur(4px); z-index: 99999; display: none; align-items: center; justify-content: center; opacity: 0; transition: all 0.25s ease; }
+    .modal-overlay.active { display: flex; opacity: 1; }
+    .modal-container { background: #ffffff; border-radius: 16px; width: 90%; max-width: 580px; box-shadow: 0 25px 50px rgba(0,0,0,0.25); transform: scale(0.95); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); overflow: hidden; }
+    .modal-overlay.active .modal-container { transform: scale(1); }
+    .modal-header { padding: 16px 24px; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between; }
+    .modal-title { font-size: 16px; font-weight: 800; color: var(--text); }
+    .modal-close { background: var(--bg-cool); border: none; width: 32px; height: 32px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text-secondary); transition: 0.2s; }
+    .modal-close:hover { background: var(--bg-warm); color: var(--text); }
+    .modal-body { padding: 24px; }
+
+    /* ===== TABLES ===== */
+    .table-card { white-space: nowrap; background: var(--card); border: 1.5px solid var(--border-light); border-radius: var(--radius); box-shadow: var(--shadow-sm); overflow: hidden; margin-bottom: var(--space-md); max-width: 100%; width: 100%; }
+    .table-responsive { width: 100%; overflow-x: auto; scrollbar-width: thin; -webkit-overflow-scrolling: touch; display: block; }
+    .saas-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13.5px; min-width: 650px; }
+    .saas-table th { background-color: var(--bg-cool); padding: 12px 18px; font-weight: 700; color: var(--text-secondary); border-bottom: 1.5px solid var(--border-light); }
+    .saas-table td { padding: 14px 18px; border-bottom: 1px solid var(--border-light); color: var(--text); vertical-align: middle; }
+    .saas-table tr:last-child td { border-bottom: none; }
+    .saas-table tr:hover td { background-color: var(--bg-cool); }
+
+    /* ===== BUTTONS ===== */
+    .btn-saas { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 18px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid transparent; transition: all 0.2s ease; font-family: inherit; }
+    .btn-saas-primary { background-color: var(--primary); color: white !important; }
+    .btn-saas-primary:hover { background-color: var(--primary-hover); }
+    .btn-saas-secondary { background-color: var(--bg-cool); color: var(--text-secondary); border-color: var(--border); }
+    .btn-saas-secondary:hover { background-color: var(--bg-warm); color: var(--text); }
+    .btn-saas-danger { background-color: #fee2e2; color: #b91c1c !important; border-color: #fca5a5; }
+    .btn-saas-danger:hover { background-color: #fca5a5; }
+    .btn-icon-only { width: 34px; height: 34px; padding: 0; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; }
+
+    /* Badges */
+    .badge { font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.04em; display: inline-block; }
+    .badge-td { background: #eff6ff; color: #1d4ed8; }
+    .badge-cours { background: #f5f3ff; color: #7c3aed; }
+    .badge-tp { background: #ecfdf5; color: #047857; }
+
+    /* ===== ATTENDANCE WORKSPACE ===== */
+    .att-toolbar { display: flex; gap: 12px; margin-bottom: var(--space-md); flex-wrap: wrap; align-items: center; justify-content: space-between; }
+    .att-action-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: var(--space-md); border-bottom: 1.5px solid var(--border-light); padding-bottom: 12px; }
+    .att-action-tab { padding: 8px 16px; border: 1.5px solid #border-light; background: var(--card); color: var(--text-secondary); font-size: 27px; font-weight: 700; cursor: pointer; border-radius: 10px; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px; }
+    .att-action-tab:hover { background: var(--bg-cool); color: var(--text); }
+    .att-action-tab.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+    .attendance-chip-group { display: flex; gap: 8px; justify-content: center; margin: 16px 0; }
+    .attendance-chip { padding: 8px 20px; font-size: 13px; font-weight: 800; border-radius: 8px; cursor: pointer; border: 1.5px solid var(--border); background: var(--card); color: var(--text-secondary); transition: all 0.2s ease; }
+    .attendance-chip:hover { background-color: var(--bg-cool); }
+    .attendance-chip.present.active { background: #ecfdf5; color: #047857; border-color: #a7f3d0; box-shadow: 0 4px 12px rgba(16,185,129,0.15); }
+    .attendance-chip.absent.active { background: #fef2f2; color: #b91c1c; border-color: #fecaca; box-shadow: 0 4px 12px rgba(220,38,38,0.15); }
+    .attendance-chip.late.active { background: #fffbeb; color: #b45309; border-color: #fde68a; box-shadow: 0 4px 12px rgba(245,158,11,0.15); }
+
+    .att-subpanel { display: none; }
+    .att-subpanel.active { display: block; animation: attFadeIn 0.3s ease forwards; }
+    @keyframes attFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Single student Carousel card */
+    .carousel-profile-card { background: var(--card); border: 1.5px solid var(--border-light); border-radius: 16px; padding: 24px; text-align: center; box-shadow: var(--shadow); position: relative; width: 100%; transition: transform 0.2s; }
+    .carousel-profile-card:hover { transform: translateY(-2px); }
+
+    /* QR Generator */
+    .qr-wrapper { border: 2.5px dashed var(--primary); border-radius: var(--radius); padding: var(--space-lg); text-align: center; max-width: 250px; margin: 0 auto; background: #eff6ff; box-shadow: 0 4px 12px rgba(37,99,235,0.08); }
+    #qr-fullscreen-overlay { display: none; position: fixed; inset: 0; background: #ffffff; z-index: 999999; flex-direction: column; align-items: center; justify-content: center; gap: 24px; }
+
+    /* GPS map Leaflet container */
+    .gps-container { display: grid; gap: 16px; grid-template-columns: 1fr; }
+    @media (min-width: 768px) { .gps-container { grid-template-columns: 1.5fr 1fr; } }
+    .gps-status-card { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 16px; display: flex; align-items: center; gap: 12px; text-align: left; }
+    .gps-indicator-ring { width: 12px; height: 12px; border-radius: 50%; background: var(--primary); animation: attBlink 1s infinite alternate; }
+    @keyframes attBlink { from { opacity: 0.3; } to { opacity: 1; } }
+    #leaflet-satellite-map { width: 100%; height: 750px; border-radius: 12px; border: 1.5px solid var(--border); position: relative; z-index: 10; margin-top: 16px; }
+
+    /* NFC Card Scanner Simulator */
+    .scanner-box { border: 2px dashed #0d9488; border-radius: var(--radius); padding: var(--space-lg); text-align: center; max-width: 320px; margin: 0 auto; background: #f0fdfa; box-shadow: 0 4px 12px rgba(13,148,136,0.08); }
+    .scan-success-flash { animation: scanFlash 0.4s ease-out; }
+    @keyframes scanFlash { 0% { background-color: #ecfdf5; } 100% { background-color: #ffffff; } }
+
+    /* Modals & Toast */
+    .std-modal-overlay { position: fixed; inset: 0; background: rgba(15,23,42,0.5); backdrop-filter: blur(4px); z-index: 99999; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.25s ease; }
+    .std-modal-overlay.active { margin-top: -15px; opacity: 1; visibility: visible; }
+    .std-modal-box { background: #ffffff; border-radius: 16px; width: 90%; max-width: 420px; box-shadow: 0 25px 50px rgba(0,0,0,0.25); padding: 24px; transform: scale(0.95); transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
+    .std-modal-overlay.active .std-modal-box { transform: scale(1); }
+    .std-modal-title { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+    .std-modal-title i { color: #dc2626; font-size: 20px; }
+    .std-modal-text { font-size: 14px; color: var(--text-secondary); margin-bottom: 24px; line-height: 1.55; }
+    .std-modal-actions { display: flex; justify-content: flex-end; gap: 10px; }
+
+    /* Dynamic Toast Notification (TOP-LEFT on LTR to prevent overlaying the Demo trigger) */
+    .toast-notification-container {
+      position: fixed;
+      top: 80px;
+      left: 20px; /* Positions on the left side */
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 1000000;
+      max-width: 340px;
+      width: calc(100% - 40px);
+      pointer-events: none;
+    }
+    .saas-toast-alert {
+      background: #ffffff;
+      border: 1.5px solid var(--border-light);
+      border-left: 4px solid #10b981;
+      border-radius: 10px;
+      padding: 12px 16px;
+      box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transform: translateX(-120%); /* Slides from the left */
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0;
+      pointer-events: auto;
+    }
+    .saas-toast-alert.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .saas-toast-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #ecfdf5;
+      color: #10b981;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .saas-toast-body { display: flex; flex-direction: column; gap: 2px; text-align: left; }
+    .saas-toast-title { font-size: 13px; font-weight: 800; color: var(--text); }
+    .saas-toast-desc { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
+
+    /* ===== RTL ARABIC VIEW ALIGNMENTS ===== */
+    .lang-ar .saas-header, .lang-ar .form-card, .lang-ar .form-group, .lang-ar .saas-table, .lang-ar .cal-day-cell { direction: rtl; text-align: right; }
+    .lang-ar .saas-table th, .lang-ar .saas-table td { text-align: right; }
+    .lang-ar .att-action-tabs { flex-direction: row-reverse; }
+    .lang-ar .att-action-tab { flex-direction: row-reverse; }
+    .lang-ar .attendance-chip-group { flex-direction: row-reverse; }
+    .lang-ar .gps-container { direction: rtl; }
+    .lang-ar .gps-status-card { flex-direction: row-reverse; text-align: right; }
+    .lang-ar .carousel-profile-card { text-align: center; }
+    .lang-ar .btn-saas-primary i { transform: scaleX(-1); }
+    
+    /* Flip Toast alerts to the top-right in Arabic */
+    .lang-ar .toast-notification-container { left: auto; right: 20px; }
+    .lang-ar .saas-toast-alert { border-left: none; border-right: 4px solid #10b981; transform: translateX(120%); flex-direction: row-reverse; }
+    .lang-ar .saas-toast-alert.active { transform: translateX(0); }
+    .lang-ar .saas-toast-body { text-align: right; }
+  </style>
+</head>
+<body>
+
+<!-- Global Toast Notification Portal -->
+<div class="toast-notification-container" id="toastPortalContainer"></div>
+
+<div class="saas-container">
+  
+  <header class="saas-header">
+    <h1>
+      <span data-lang="en">My Sessions &amp; Attendance </span>
+      <span data-lang="fr">Gestion de Séances &amp; Présences</span>
+      <span data-lang="ar">بوابة إدارة الحصص وتسجيل الحضور</span>
+    </h1>
+    <!-- Dynamic Simulated Automated Check-in demo switch -->
+    <button class="btn-saas btn-saas-primary" id="btn-launch-demo" onclick="launchAttendanceDemo()" style="background:#7c3aed; border-color:#7c3aed; box-shadow:0 4px 12px rgba(124,58,237,0.2);">
+      <i class="fa-solid fa-play"></i>
+      <span data-lang="en">Launch Demo</span>
+      <span data-lang="fr">Démarrer Démo</span>
+      <span data-lang="ar">بدء المحاكاة</span>
+    </button>
+  </header>
+
+  <!-- Navigation Tab Menu bar (Scrollable on mobile) -->
+  <div class="saas-tabs">
+    <div class="saas-tab active" id="tabLinkSess" onclick="switchMainTab('sessions')">
+      <i class="fa-solid fa-calendar-check"></i>
+      <span data-lang="en">My Sessions</span><span data-lang="fr">Mes Séances</span><span data-lang="ar">حصصي المبرمجة</span>
+    </div>
+    <div class="saas-tab" id="tabLinkAtt" onclick="switchMainTab('attendance')">
+      <i class="fa-solid fa-clipboard-user"></i>
+      <span data-lang="en">Live Attendance Desk</span><span data-lang="fr">Guichet de Présence</span><span data-lang="ar">تسجيل حضور الفوج المختار</span>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- TAB PANEL 1: SESSIONS DIRECTORY -->
+  <!-- ========================================== -->
+  <div class="tab-content-panel active" id="panel-sessions">
+    <!-- Real-Time Stats Grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div>
+          <div class="stat-card-title"><span data-lang="en">Total Sessions</span><span data-lang="fr">Total Séances</span><span data-lang="ar">إجمالي الحصص</span></div>
+          <div class="stat-card-value" id="sess-stat-total">0</div>
+        </div>
+        <div class="stat-card-icon" style="background:#eff6ff; color:#2563eb;"><i class="fa-solid fa-clock"></i></div>
+      </div>
+      <div class="stat-card">
+        <div>
+          <div class="stat-card-title"><span data-lang="en">Completed Sessions</span><span data-lang="fr">Séances Mises</span><span data-lang="ar">الحصص المكتملة</span></div>
+          <div class="stat-card-value" id="sess-stat-completed">0</div>
+        </div>
+        <div class="stat-card-icon" style="background:#ecfdf5; color:#10b981;"><i class="fa-solid fa-circle-check"></i></div>
+      </div>
+      <div class="stat-card">
+        <div>
+          <div class="stat-card-title"><span data-lang="en">Upcoming Sessions</span><span data-lang="fr">Séances À Venir</span><span data-lang="ar">الحصص المتبقية</span></div>
+          <div class="stat-card-value" id="sess-stat-upcoming">0</div>
+        </div>
+        <div class="stat-card-icon" style="background:#fef3c7; color:#d97706;"><i class="fa-solid fa-hourglass-half"></i></div>
+      </div>
+      <div class="stat-card">
+        <div>
+          <div class="stat-card-title"><span data-lang="en">TD sessions</span><span data-lang="fr">Séances TD</span><span data-lang="ar">أعمال موجهة (TD)</span></div>
+          <div class="stat-card-value" id="sess-stat-td">0</div>
+        </div>
+        <div class="stat-card-icon" style="background:#f5f3ff; color:#7c3aed;"><i class="fa-solid fa-school"></i></div>
+      </div>
+    </div>
+
+    <!-- Toolbar Filters -->
+    <div class="form-card" style="margin-bottom: var(--space-md);">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: var(--space-md); flex-wrap:wrap; gap:10px;">
+        <div class="form-title" style="margin:0; border:none; padding:0;"><i class="fa-solid fa-filter" style="color:var(--primary);"></i> <span data-lang="en">Filter Directory</span><span data-lang="fr">Filtrer</span><span data-lang="ar">خيارات التصفية والفرز</span></div>
+        <button class="btn-saas btn-saas-primary" onclick="openScheduleSessionModal()"><i class="fa-solid fa-circle-plus"></i> <span data-lang="en">Schedule Session</span><span data-lang="fr">Programmer</span><span data-lang="ar">جدولة حصة</span></button>
+      </div>
+      
+      <div class="form-grid" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));">
+        <div class="form-group">
+          <label class="form-label">Module</label>
+          <select class="form-input" id="filter-session-module" onchange="setSessionFilter('module', this.value)"></select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Type</label>
+          <select class="form-input" id="filter-session-type" onchange="setSessionFilter('type', this.value)"></select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Status</label>
+          <select class="form-input" id="filter-session-status" onchange="setSessionFilter('status', this.value)">
+            <!-- Options populated dynamically by JS on load -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Sort By</label>
+          <select class="form-input" id="filter-session-sort" onchange="setSessionFilter('sortBy', this.value)">
+            <option value="date-asc">Date (Soonest)</option>
+            <option value="date-desc">Date (Latest)</option>
+          </select>
+        </div>
+        <div class="form-group" style="justify-content: flex-end;">
+          <button class="btn-saas btn-saas-secondary" onclick="resetSessionFilters()"><i class="fa-solid fa-rotate-right"></i> Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Roster Sessions Table -->
+    <div class="table-card">
+      <div class="table-responsive">
+        <table class="saas-table" id="sessions-table">
+          <thead>
+            <tr>
+              <th>Module</th>
+              <th>Group</th>
+              <th>Type</th>
+              <th>Date &amp; Time</th>
+              <th>Room</th>
+              <th style="text-align:center;">Attendance Action</th>
+              <th style="text-align:center;">Actions</th>
+            </tr>
+          </thead>
+          <tbody><!-- Injected dynamically --></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- TAB PANEL 2: LIVE ATTENDANCE DESK -->
+  <!-- ========================================== -->
+  <div class="tab-content-panel" id="panel-attendance">
+    
+    <!-- Active Selected Session Context Display -->
+    <div class="form-card" style="margin-bottom: var(--space-md);">
+      <div class="form-title"><i class="fa-solid fa-filter" style="color:var(--primary);"></i> <span data-lang="en">Selected Session Parameters</span><span data-lang="fr">Contexte Sélectionné</span><span data-lang="ar">مؤشرات الحصة المحددة حالياً</span></div>
+      <div class="form-grid grid-col-2" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+        <div class="form-group">
+          <label class="form-label">Module</label>
+          <select class="form-input" id="att-select-session" onchange="handleRosterFilterChange()"></select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Group</label>
+          <select class="form-input" id="att-select-group" onchange="handleRosterFilterChange()"></select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Date</label>
+          <input class="form-input" id="att-select-date" type="date" value="2026-05-25" onchange="handleRosterFilterChange()" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Workspace Stats Grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div>
+          <div class="stat-card-title"><span data-lang="en">Present today</span><span data-lang="fr">Présents</span><span data-lang="ar">الحاضرون اليوم</span></div>
+          <div class="stat-card-value" id="att-stat-present">0</div>
+        </div>
+        <div class="stat-card-icon" style="background:#ecfdf5; color:#10b981;"><i class="fa-solid fa-user-check"></i></div>
+      </div>
+      <div class="stat-card">
+        <div>
+          <div class="stat-card-title"><span data-lang="en">Absent today</span><span data-lang="fr">Absents</span><span data-lang="ar">الغائبون اليوم</span></div>
+          <div class="stat-card-value" id="att-stat-absent">0</div>
+        </div>
+        <div class="stat-card-icon" style="background:#fef2f2; color:#ef4444;"><i class="fa-solid fa-user-xmark"></i></div>
+      </div>
+      <div class="stat-card">
+        <div>
+          <div class="stat-card-title"><span data-lang="en">Late arrivals</span><span data-lang="fr">Arrivées tardives</span><span data-lang="ar">حالات التأخير</span></div>
+          <div class="stat-card-value" id="att-stat-late">0</div>
+        </div>
+        <div class="stat-card-icon" style="background:#fffbeb; color:#d97706;"><i class="fa-solid fa-clock"></i></div>
+      </div>
+      <div class="stat-card">
+        <div>
+          <div class="stat-card-title"><span data-lang="en">Cohort Attendance rate</span><span data-lang="fr">Taux général</span><span data-lang="ar">نسبة حضور الفوج</span></div>
+          <div class="stat-card-value" id="att-stat-rate">100%</div>
+        </div>
+        <div class="stat-card-icon" style="background:#f5f3ff; color:#7c3aed;"><i class="fa-solid fa-percent"></i></div>
+      </div>
+    </div>
+
+    <!-- Active Methods Sub-Tabs -->
+   <div class="att-action-tabs" style="
+
+    gap: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+">
+      <button class="att-action-tab active" id="btn-sub-manual" onclick="switchAttSubpanel('manual')"><i class="fa-solid fa-file-pen"></i> <span data-lang="en">Manual Roll Carousel</span><span data-lang="fr">Appel Manuel</span><span data-lang="ar">التحضير اليدوي الفردي</span></button>
+      <button class="att-action-tab" id="btn-sub-qr" onclick="switchAttSubpanel('qr')"><i class="fa-solid fa-qrcode"></i> <span data-lang="en">QR Check-In</span><span data-lang="fr">Scanner QR</span><span data-lang="ar">تسجيل حضور بالـ QR</span></button>
+      <button class="att-action-tab" id="btn-sub-gps" onclick="switchAttSubpanel('gps')"><i class="fa-solid fa-location-crosshairs"></i> <span data-lang="en">GPS Verification</span><span data-lang="fr">Balise GPS</span><span data-lang="ar">تحقق الموقع الجغرافي</span></button>
+      <button class="att-action-tab" id="btn-sub-card" onclick="switchAttSubpanel('card')"><i class="fa-solid fa-id-card"></i> <span data-lang="en">NFC Card Scan</span><span data-lang="fr">Scan Carte NFC</span><span data-lang="ar">ماسح بطاقة الطالب</span></button>
+    </div>
+
+    <!-- SUBPANEL 1: SINGLE STUDENT CARD CAROUSEL -->
+    <div class="att-subpanel active" id="subpanel-manual">
+      <div style="display:flex; flex-direction:column; align-items:center; gap:var(--space-md); margin:0 auto; max-width:480px; width:100%;">
+        <div class="carousel-profile-card" id="manual-student-carousel-card">
+          <div id="carousel-student-content"></div>
+        </div>
+        <div style="display:flex; justify-content:space-between; width:100%; gap:10px;">
+          <button class="btn-saas btn-saas-secondary" onclick="navigateCarousel(-1)" id="btn-carousel-prev" style="flex:1;"><i class="fa-solid fa-chevron-left"></i> <span data-lang="en">Prev</span><span data-lang="fr">Précédent</span><span data-lang="ar">السابق</span></button>
+          <button class="btn-saas btn-saas-primary" onclick="submitCarouselAttendance()" style="flex:1.2;"><i class="fa-solid fa-floppy-disk"></i> <span data-lang="en">Submit Sheet</span><span data-lang="fr">Soumettre</span><span data-lang="ar">حفظ الكشف</span></button>
+          <button class="btn-saas btn-saas-secondary" onclick="navigateCarousel(1)" id="btn-carousel-next" style="flex:1;"><span data-lang="en">Next</span><span data-lang="fr">Suivant</span><span data-lang="ar">التالي</span> <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUBPANEL 2: REAL QR CODE GENERATOR WITH FULLSCREEN MODE -->
+    <div class="att-subpanel" id="subpanel-qr" style="text-align: center;">
+      <div class="form-card">
+        <div class="form-title" style="justify-content: center;"><i class="fa-solid fa-qrcode" style="color:var(--primary);"></i> <span data-lang="en">Secure Dynamic QR Attendance Portal</span><span data-lang="fr">Générateur QR Code</span><span data-lang="ar">مولد الـ QR الآمن لتسجيل الحضور</span></div>
+        <div style="padding: var(--space-md) 0;">
+          <div class="qr-wrapper" id="qrSandboxFrame" style="padding: 16px; border:2.5px dashed #2563eb;">
+            <!-- Dynamically Generated Real QR Code Image -->
+            <img id="qr-real-img" src="" alt="Session QR" style="width: 180px; height: 180px; border-radius: 8px; margin-bottom: 8px; display: inline-block;" />
+            <div style="font-size: 11px; font-weight:700; color:#475569;" id="qrBypassTimer">Valid for 01:00:00</div>
+          </div>
+          <div style="font-size: 12.5px; font-weight: 700; color: var(--text-secondary); margin-top: 12px;" id="qr-sess-label-display">منهجية وتقنيات البحث - L3 Psychologie Clinique</div>
+          <div style="display:flex; gap:10px; justify-content:center; margin-top: 20px;">
+            <button class="btn-saas btn-saas-secondary" onclick="toggleQRFullscreen(true)"><i class="fa-solid fa-expand"></i> <span data-lang="en">Full Screen</span><span data-lang="fr">Plein Écran</span><span data-lang="ar">شاشة كاملة</span></button>
+            <button class="btn-saas btn-saas-primary" onclick="rotateSecureQR()"><i class="fa-solid fa-arrows-rotate"></i> <span data-lang="en">Rotate Code</span><span data-lang="fr">Générer Nouveau</span><span data-lang="ar">توليد رمز جديد</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUBPANEL 3: GPS GEOLOCATION VERIFIER (LEAFLET SATELLITE MAP) -->
+    <div class="att-subpanel" id="subpanel-gps">
+      <div class="gps-container">
+        <div class="form-card">
+          <div class="form-title"><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> GPS Geo-fencing Sandbox</div>
+          <div class="gps-status-card" style="margin-bottom: 20px;">
+            <div class="gps-indicator-ring"></div>
+            <div>
+              <div style="font-size: 13.5px; font-weight:800; color:#1e3a8a;">SaaS Geo-fence Sandbox Active</div>
+              <div style="font-size: 11.5px; color:#475569; margin-top:2px;">Batna 1 University Psychology Building • Salle 101</div>
+            </div>
+          </div>
+          
+          <form class="form-grid grid-col-2" id="gps-checker-form" onsubmit="event.preventDefault(); simulateGPSStudentCheckIn();">
+            <div class="form-group">
+              <label class="form-label">Student ID</label>
+              <select class="form-input" id="gps-input-student">
+                <!-- Options dynamic -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Allowed Radius Boundary (Meters)</label>
+              <input type="number" class="form-input" id="gps-input-radius" value="50" min="5" max="500" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mock Student Latitude</label>
+              <input type="text" class="form-input" id="gps-input-lat" value="35.542385" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mock Student Longitude</label>
+              <input type="text" class="form-input" id="gps-input-lon" value="6.153325" />
+            </div>
+            <div style="grid-column: span 2; text-align: right; margin-top: 10px;">
+              <button class="btn-saas btn-saas-primary" type="submit"><i class="fa-solid fa-location-crosshairs"></i> Verify Geolocation Check-In</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-card" style="display:flex; flex-direction:column; justify-content:center; text-align:center;">
+          <div style="font-size: 40px; color:#2563eb; margin-bottom:12px;"><i class="fa-solid fa-earth-africa"></i></div>
+          <div style="font-size:15px; font-weight:800; color:#0f172a;">Batna 1 Psychology Building</div>
+          <div style="font-family:var(--font-mono); font-size:13px; color:#475569; margin-top:4px;">35°32'32.4"N 6°09'11.9"E</div>
+          <p style="font-size: 11.5px; color:#64748b; margin-top:12px; line-height: 1.45;">
+            Simulation Helpers:<br>
+            • Inside 50m radius: 35.542385, 6.153325<br>
+            • Outside 50m radius: 35.545212, 6.156102
+          </p>
+        </div>
+      </div>
+
+      <!-- Leaflet Satellite Map Frame (Dynamic highlighting) -->
+      <div id="leaflet-satellite-map"></div>
+    </div>
+
+    <!-- SUBPANEL 4: NFC/BARCODE STUDENT CARD SCANNER -->
+    <div class="att-subpanel" id="subpanel-card" style="text-align: center;">
+      <div class="form-card" id="scannerGlowCard">
+        <div class="form-title" style="justify-content: center;"><i class="fa-solid fa-id-card" style="color:#0d9488;"></i> Card Scan simulation Console</div>
+        <div style="padding: var(--space-md) 0;">
+          <div class="scanner-box">
+            <i class="fa-solid fa-barcode" style="font-size: 6rem; color:#0d9488; animation: barcodeScan 2.5s infinite ease-in-out alternate;"></i>
+            <div style="font-size: 11px; font-weight:700; color:#475569; margin-top: 16px;">NFC Reader Status: Ready to Scan</div>
+          </div>
+
+          <form class="form-grid" style="max-width:320px; margin: 24px auto 0; grid-template-columns: 1fr auto;" onsubmit="event.preventDefault(); simulateCardSwipe();">
+            <select class="form-input" id="card-swipe-id">
+              <!-- Options dynamic -->
+            </select>
+            <button class="btn-saas btn-saas-primary" type="submit" style="background:#0d9488;"><i class="fa-solid fa-id-card"></i> Scan Card</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- SCHEDULE NEW SESSION MODAL OVERLAY -->
+<div id="schedule-session-modal" class="std-modal-overlay" onclick="if(event.target===this)closeScheduleSessionModal()">
+  <div class="modal-container">
+    <div class="modal-header">
+      <div class="modal-title" id="session-form-title">
+        <i class="fa-solid fa-calendar-plus" style="color:var(--primary);"></i>
+        <span data-lang="en">Schedule New Session</span><span data-lang="fr">Programmer une Séance</span><span data-lang="ar">جدولة حصة جديدة</span>
+      </div>
+      <button class="modal-close" onclick="closeScheduleSessionModal()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal-body">
+      <form id="session-form-fields" onsubmit="event.preventDefault(); saveSessionFromForm();">
+        <div class="form-grid grid-col-2">
+          <div class="form-group">
+            <label class="form-label">Module *</label>
+            <select class="form-input" id="sess-input-module" required></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Group *</label>
+            <select class="form-input" id="sess-input-group" required></select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span data-lang="en">Session Type</span><span data-lang="fr">Type</span><span data-lang="ar">نوع الحصة</span> *</label>
+            <select class="form-input" id="sess-input-type" required>
+              <option value="TD">TD</option>
+              <option value="Cours">Cours</option>
+              <option value="TP">TP</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span data-lang="en">Classroom / Room</span><span data-lang="fr">Salle</span><span data-lang="ar">القاعة</span> *</label>
+            <input type="text" class="form-input" id="sess-input-room" placeholder="Ex: Salle 101" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Date *</label>
+            <input type="date" class="form-input" id="sess-input-date" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label"><span data-lang="en">Start Time</span><span data-lang="fr">Heure</span><span data-lang="ar">توقيت البدء</span> *</label>
+            <input type="time" class="form-input" id="sess-input-time" required />
+          </div>
+        </div>
+        <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px; border-top:1px solid var(--border-light); padding-top:15px;">
+          <button type="button" class="btn-saas btn-saas-secondary" onclick="closeScheduleSessionModal()"><span data-lang="en">Cancel</span><span data-lang="fr">Annuler</span><span data-lang="ar">إلغاء</span></button>
+          <button type="submit" class="btn-saas btn-saas-primary"><i class="fa-solid fa-floppy-disk"></i> <span data-lang="en">Save Session</span><span data-lang="fr">Programmer</span><span data-lang="ar">حفظ الحصة</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- SESSIONS DELETE CONFIRMATION MODAL OVERLAY -->
+<div class="std-modal-overlay" id="sess-delete-modal" onclick="if(event.target===this)closeSessDeleteModal()">
+  <div class="std-modal-box">
+    <div class="std-modal-title">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <span data-lang="en">Delete Scheduled Session?</span>
+      <span data-lang="fr">Supprimer la Séance ?</span>
+      <span data-lang="ar">حذف الحصة المجدولة؟</span>
+    </div>
+    <div class="std-modal-text" id="sess-delete-text"></div>
+    <div class="std-modal-actions">
+      <button class="btn-saas btn-saas-secondary" onclick="closeSessDeleteModal()">
+        <span data-lang="en">Cancel</span><span data-lang="fr">Annuler</span><span data-lang="ar">إلغاء</span>
+      </button>
+      <button class="btn-saas btn-saas-danger" id="sess-delete-btn">
+        <i class="fa-solid fa-trash"></i>
+        <span data-lang="en">Delete</span><span data-lang="fr">Supprimer</span><span data-lang="ar">حذف</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Dynamic Fullscreen QR Overlay Container -->
+<div id="qr-fullscreen-overlay" style="display:none; position:fixed; inset:0; background:#ffffff; z-index:999999; flex-direction:column; align-items:center; justify-content:center; gap:24px;">
+  <button onclick="toggleQRFullscreen(false)" style="position:absolute; top:20px; right:20px; border:1px solid #cbd5e1; background:#f1f5f9; border-radius:50%; width:44px; height:44px; cursor:pointer; font-size:18px; color:#334155; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 10px rgba(0,0,0,0.1);"><i class="fa-solid fa-xmark"></i></button>
+  <h2 style="font-size:26px; font-weight:800; color:#0f172a; text-align:center; margin:0;" id="qr-fs-title">Syllabus QR Code</h2>
+  <img id="qr-fs-img" src="" alt="QR" style="width:340px; height:340px; border:4px solid #2563eb; border-radius:16px; padding:12px; background:#fff; box-shadow:0 10px 30px rgba(0,0,0,0.15);" />
+  <div style="font-size:16px; font-weight:800; color:#475569;" id="qr-fs-timer">Valid for 01:00:00</div>
+</div>
+
+<!-- Student Verification Toast Notifier -->
+<div class="std-modal-overlay" id="att-toast-overlay">
+  <div class="std-modal-box" style="max-width:320px; text-align:center; padding: 20px;">
+    <div style="font-size: 40px; color:#10b981; margin-bottom:10px;" id="att-toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div style="font-size:16px; font-weight:800; color:#0f172a;" id="att-toast-title">Scan Successful</div>
+    <div style="font-size:13px; color:#475569; margin-top:6px;" id="att-toast-desc">Student registered.</div>
+  </div>
+</div>
+
+<!-- JS Leaflet Map, osmtogeojson & QR script dependencies -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/osmtogeojson@3.0.0-beta.5/osmtogeojson.js"></script>
+
+<script>
+//<![CDATA[
+  // Dynamic psychology department profiles seed databases
+  const defaultStudents = [
+    { id: "202312001", firstName: "Imad", lastName: "AZIZI", group: "L3 Psychologie Clinique", email: "imad.azizi@univ-batna.dz", phone: "0659144039", attendanceRate: "87.5%", gpa: "14.50" },
+    { id: "202312002", firstName: "Amina", lastName: "BENALIA", group: "L3 Psychologie Clinique", email: "amina.b@univ-batna.dz", phone: "0554123456", attendanceRate: "92.0%", gpa: "13.80" },
+    { id: "202312003", firstName: "Youcef", lastName: "OUALI", group: "L3 Psychologie Clinique", email: "youcef.o@univ-batna.dz", phone: "0772123456", attendanceRate: "73.0%", gpa: "11.20" },
+    { id: "202312004", firstName: "Meriem", lastName: "KHERBOUCHE", group: "L3 Psychologie Clinique", email: "meriem.k@univ-batna.dz", phone: "0663456789", attendanceRate: "88.0%", gpa: "15.10" },
+    { id: "202312005", firstName: "Sofiane", lastName: "HADJ", group: "L3 Psychologie Clinique", email: "sofiane.h@univ-batna.dz", phone: "0655123456", attendanceRate: "85.0%", gpa: "12.50" },
+    { id: "202312006", firstName: "Farida", lastName: "LAKHDAR", group: "L3 Psychologie Clinique", email: "farida.l@univ-batna.dz", phone: "0550123456", attendanceRate: "90.0%", gpa: "14.20" },
+    { id: "202312007", firstName: "Khaled", lastName: "BENMEDDOUR", group: "L3 Psychologie Clinique", email: "khaled.b@univ-batna.dz", phone: "0771123456", attendanceRate: "65.5%", gpa: "9.80" },
+    { id: "202312008", firstName: "Ryad", lastName: "CHERIF", group: "L3 Psychologie Clinique", email: "ryad.c@univ-batna.dz", phone: "0660123456", attendanceRate: "89.0%", gpa: "13.40" },
+    { id: "202312009", firstName: "Karima", lastName: "BOUAZIZ", group: "L3 Psychologie Clinique", email: "karima.b@univ-batna.dz", phone: "0551123456", attendanceRate: "93.5%", gpa: "15.60" },
+    { id: "202312010", firstName: "Samir", lastName: "MEHRA", group: "L3 Psychologie Clinique", email: "samir.m@univ-batna.dz", phone: "0773123456", attendanceRate: "78.0%", gpa: "10.50" },
+    { id: "202312011", firstName: "Houda", lastName: "SAIDI", group: "L3 Psychologie Clinique", email: "houda.s@univ-batna.dz", phone: "0665123456", attendanceRate: "86.0%", gpa: "12.80" },
+    { id: "202312012", firstName: "Tarek", lastName: "CHENNA", group: "L3 Psychologie Clinique", email: "tarek.c@univ-batna.dz", phone: "0552123456", attendanceRate: "81.0%", gpa: "11.50" },
+    { id: "202312013", firstName: "Amel", lastName: "MAHMOUDI", group: "L3 Psychologie Clinique", email: "amel.m@univ-batna.dz", phone: "0774123456", attendanceRate: "95.0%", gpa: "16.10" },
+    { id: "202312014", firstName: "Salim", lastName: "MAIDI", group: "L3 Psychologie Clinique", email: "salim.m@univ-batna.dz", phone: "0666123456", attendanceRate: "84.5%", gpa: "12.30" },
+    { id: "202312015", firstName: "Lamia", lastName: "ZEKRI", group: "L3 Psychologie Clinique", email: "lamia.z@univ-batna.dz", phone: "0553123456", attendanceRate: "88.0%", gpa: "13.20" }
+  ];
+
+  const defaultModules = [
+    { code: "PSY-311", name: "منهجية وتقنيات البحث", semester: "S2", academicYear: "2025/2026" },
+    { code: "PSY-312", name: "علم النفس المرضي", semester: "S2", academicYear: "2025/2026" },
+    { code: "PSY-313", name: "نظريات التعلم", semester: "S2", academicYear: "2025/2026" },
+    { code: "PSY-314", name: "مشكلات نفسية اجتماعية", semester: "S2", academicYear: "2025/2026" },
+    { code: "PSY-315", name: "علم النفس التنظيم والعمل", semester: "S2", academicYear: "2025/2026" }
+  ];
+
+  const defaultGroups = [
+    { name: "L3 Psychologie Clinique", academicYear: "2025/2026", major: "Psychologie Clinique", studentsCount: 15 }
+  ];
+
+  const defaultSessions = [
+    { id: "sess_01", module: "منهجية وتقنيات البحث", group: "L3 Psychologie Clinique", type: "Cours", date: "2026-05-25", time: "08:30", room: "Amphi B" },
+    { id: "sess_02", module: "علم النفس المرضي", group: "L3 Psychologie Clinique", type: "TD", date: "2026-05-25", time: "10:15", room: "Salle 101" },
+    { id: "sess_03", module: "نظريات التعلم", group: "L3 Psychologie Clinique", type: "TD", date: "2026-05-26", time: "13:00", room: "Salle 102" }
+  ];
+
+  // Dynamic database helper utilities
+  window.getData = function(key) {
+    try { return JSON.parse(localStorage.getItem(key)) || []; } catch (e) { return []; }
+  };
+  window.saveData = function(key, data) {
+    localStorage.setItem(key, JSON.stringify(data));
+  };
+
+  // Seed databases on load if empty
+  function seedDatabase() {
+    if (!localStorage.getItem('students')) localStorage.setItem('students', JSON.stringify(defaultStudents));
+    if (!localStorage.getItem('modules')) localStorage.setItem('modules', JSON.stringify(defaultModules));
+    if (!localStorage.getItem('groups')) localStorage.setItem('groups', JSON.stringify(defaultGroups));
+    if (!localStorage.getItem('sessions')) localStorage.setItem('sessions', JSON.stringify(defaultSessions));
+    if (!localStorage.getItem('attendance')) localStorage.setItem('attendance', JSON.stringify([]));
+  }
+
+  // State
+  let activeTab = 'sessions';
+  let activeSubpanel = 'manual';
+  
+  let sessionsCache = [];
+  let studentsCache = [];
+  let attendanceCache = [];
+
+  let activeSessFilter = { query: '', module: 'All', type: 'All', status: 'All', sortBy: 'date-asc' };
+  let deleteTargetId = null;
+
+  // Local manual roll carousel variables
+  let currentCarouselIndex = 0;
+  let carouselAttendanceDraft = {}; // Temp drafting cache mapping studentId -> status (P / A / L)
+  let activeCohortStudents = [];
+
+  // Psychology Building Target Coordinates (Exact Batna 1 Faculty location)
+  const targetGPS = [35.542333, 6.153306];
+  let leafletMapInstance = null;
+  let qrTimerInterval = null;
+
+  const statusOptionTranslations = {
+    en: { All: "All", Upcoming: "Upcoming", Completed: "Completed" },
+    fr: { All: "Tous", Upcoming: "À venir", Completed: "Terminées" },
+    ar: { All: "الكل", Upcoming: "قادمة", Completed: "مكتملة" }
+  };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    seedDatabase();
+    
+    // Auto-detect and set default language from workspace configuration
+    const initLang = localStorage.getItem('acadtrack-lang') || 'en';
+    setLanguage(initLang);
+
+    // Initial load datasets
+    loadSaaSDatabases();
+    populateFormDropdowns();
+    renderRosterSessionsTable();
+    updateSessionStats();
+  });
+
+  function setLanguage(lang) {
+    localStorage.setItem('acadtrack-lang', lang);
+    document.documentElement.lang = lang;
+    const isRTL = lang === 'ar';
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+    });
+    translateStatusFilterOptions(lang);
+  }
+
+  function translateStatusFilterOptions(lang) {
+    const select = document.getElementById('filter-session-status');
+    if (!select) return;
+    const t = statusOptionTranslations[lang] || statusOptionTranslations['en'];
+    
+    // Check if select options exist
+    if (select.options.length < 3) {
+      select.innerHTML = `
+        <option value="All">${t.All}</option>
+        <option value="Upcoming">${t.Upcoming}</option>
+        <option value="Completed">${t.Completed}</option>
+      `;
+    } else {
+      select.options[0].text = t.All;
+      select.options[1].text = t.Upcoming;
+      select.options[2].text = t.Completed;
+    }
+  }
+
+  function loadSaaSDatabases() {
+    sessionsCache = window.getData('sessions');
+    studentsCache = window.getData('students');
+    attendanceCache = window.getData('attendance');
+  }
+
+  function populateFormDropdowns() {
+    const modules = window.getData('modules');
+    const groups = window.getData('groups');
+
+    const modInput = document.getElementById('sess-input-module');
+    if (modInput) modInput.innerHTML = modules.map(m => `<option value="${m.name}">${m.name}</option>`).join('');
+
+    const grpInput = document.getElementById('sess-input-group');
+    if (grpInput) grpInput.innerHTML = groups.map(g => `<option value="${g.name}">${g.name}</option>`).join('');
+
+    // Dynamic Filter toolbar dropdowns
+    const modFilter = document.getElementById('filter-session-module');
+    if (modFilter) {
+      modFilter.innerHTML = `<option value="All">All / Tous / الكل</option>` + modules.map(m => `<option value="${m.name}">${m.name}</option>`).join('');
+    }
+    const typeFilter = document.getElementById('filter-session-type');
+    if (typeFilter) {
+      typeFilter.innerHTML = `
+        <option value="All">All / Tous / الكل</option>
+        <option value="TD">TD</option>
+        <option value="Cours">Cours</option>
+        <option value="TP">TP</option>
+      `;
+    }
+    const lang = localStorage.getItem('acadtrack-lang') || 'en';
+    translateStatusFilterOptions(lang);
+  }
+
+  // Toggle Tab viewports (Sessions vs Live Attendance)
+  function switchMainTab(tab) {
+    activeTab = tab;
+    document.getElementById('tabLinkSess').classList.toggle('active', tab === 'sessions');
+    document.getElementById('tabLinkAtt').classList.toggle('active', tab === 'attendance');
+
+    document.getElementById('panel-sessions').style.display = tab === 'sessions' ? 'block' : 'none';
+    document.getElementById('panel-attendance').style.display = tab === 'attendance' ? 'block' : 'none';
+
+    if (tab === 'sessions') {
+      loadSaaSDatabases();
+      renderRosterSessionsTable();
+      updateSessionStats();
+    } else {
+      loadSaaSDatabases();
+      populateAttendanceContextFilters();
+      handleRosterFilterChange();
+    }
+  }
+
+  // ==========================================
+  // MODULE 1: SESSIONS DIRECTORY PLANNER (CRUD)
+  // ==========================================
+  function updateSessionStats() {
+    const todayStr = '2026-05-25'; // Simulated clock baseline
+    const completed = sessionsCache.filter(s => s.date < todayStr).length;
+    const upcoming = sessionsCache.filter(s => s.date >= todayStr).length;
+    const tdCount = sessionsCache.filter(s => s.type === 'TD').length;
+
+    const setText = (id, val) => { const el = document.getElementById(id); if(el) el.textContent = val; };
+    setText('sess-stat-total', sessionsCache.length);
+    setText('sess-stat-completed', completed);
+    setText('sess-stat-upcoming', upcoming);
+    setText('sess-stat-td', tdCount);
+  }
+
+  function renderRosterSessionsTable() {
+    const tbody = document.querySelector('#sessions-table tbody');
+    if (!tbody) return;
+
+    const query = activeSessFilter.query.toLowerCase().trim();
+    const todayStr = '2026-05-25';
+
+    let filtered = sessionsCache.filter(s => {
+      const matchesQuery = !query || s.module.toLowerCase().includes(query) || s.group.toLowerCase().includes(query) || s.room.toLowerCase().includes(query);
+      const matchesModule = activeSessFilter.module === 'All' || s.module === activeSessFilter.module;
+      const matchesType = activeSessFilter.type === 'All' || s.type === activeSessFilter.type;
+      
+      let matchesStatus = true;
+      if (activeSessFilter.status === 'Upcoming') {
+        matchesStatus = s.date >= todayStr;
+      } else if (activeSessFilter.status === 'Completed') {
+        matchesStatus = s.date < todayStr;
+      }
+      
+      return matchesQuery && matchesModule && matchesType && matchesStatus;
+    });
+
+    // Execute Sort
+    filtered.sort((a, b) => {
+      const dateTimeA = new Date(`${a.date}T${a.time}`);
+      const dateTimeB = new Date(`${b.date}T${b.time}`);
+      return activeSessFilter.sortBy === 'date-asc' ? dateTimeA - dateTimeB : dateTimeB - dateTimeA;
+    });
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="7" style="text-align:center;color:var(--text-light);"><span data-lang="en">No planned sessions found</span><span data-lang="fr">Aucune séance planifiée</span><span data-lang="ar">لا توجد حصص مجدولة</span></td></tr>`;
+      translateSaaSElements(tbody);
+      return;
+    }
+
+    tbody.innerHTML = filtered.map(sess => {
+      const typeClass = sess.type.toLowerCase();
+      const isPast = sess.date < todayStr;
+      
+      const attendanceActionBtn = !isPast ? `
+        <button class="btn-saas btn-saas-primary" onclick="startRosterQuickRollCall('${escapeHtml(sess.module)}', '${escapeHtml(sess.group)}', '${sess.date}')">
+          <i class="fa-solid fa-clipboard-user"></i> <span data-lang="en">Take Attendance</span><span data-lang="fr">Faire l'Appel</span><span data-lang="ar">بدء تسجيل الحضور</span>
+        </button>
+      ` : `
+        <button class="btn-saas btn-saas-secondary" onclick="startRosterQuickRollCall('${escapeHtml(sess.module)}', '${escapeHtml(sess.group)}', '${sess.date}')" style="background:#ecfdf5; color:#047857; border-color:#a7f3d0;">
+          <i class="fa-solid fa-user-check"></i> <span data-lang="en">Edit Sheet</span><span data-lang="fr">Modifier Fiche</span><span data-lang="ar">تعديل كشف الغياب</span>
+        </button>
+      `;
+
+      return `
+        <tr>
+          <td style="font-weight:700; color:var(--text);">${escapeHtml(sess.module)}</td>
+          <td>${escapeHtml(sess.group)}</td>
+          <td><span class="badge badge-${typeClass}">${sess.type}</span></td>
+          <td>${sess.date} @ ${sess.time}</td>
+          <td>${escapeHtml(sess.room)}</td>
+          <td style="text-align:center;">${attendanceActionBtn}</td>
+          <td class="action-col" style="text-align:center; display: flex; gap: 4px; justify-content: center;">
+            <button class="btn-saas btn-saas-secondary btn-icon-only" onclick="editSessionNode('${sess.id}')" title="Edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-saas btn-saas-danger btn-icon-only" onclick="promptDeleteSessionNode('${sess.id}')" title="Delete"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+    translateSaaSElements(tbody);
+  }
+
+  window.openScheduleSessionModal = function() {
+    editingId = null;
+    resetSessionForm();
+    const modal = document.getElementById('schedule-session-modal');
+    if (modal) modal.classList.add('active');
+    translateSaaSElements(modal);
+  };
+
+  window.closeScheduleSessionModal = function() {
+    const modal = document.getElementById('schedule-session-modal');
+    if (modal) modal.classList.remove('active');
+  };
+
+  function saveSessionFromForm() {
+    const getVal = id => { const el = document.getElementById(id); return el ? el.value.trim() : ''; };
+
+    const module = getVal('sess-input-module');
+    const group = getVal('sess-input-group');
+    const type = getVal('sess-input-type');
+    const room = getVal('sess-input-room');
+    const date = getVal('sess-input-date');
+    const time = getVal('sess-input-time');
+
+    if (!module || !group || !type || !room || !date || !time) return;
+
+    const payload = { id: editingId || 'sess_' + Date.now(), module, group, type, date, time, room };
+
+    if (editingId) {
+      const idx = sessionsCache.findIndex(s => s.id === editingId);
+      if (idx !== -1) sessionsCache[idx] = payload;
+    } else {
+      sessionsCache.push(payload);
+    }
+
+    window.saveData('sessions', sessionsCache);
+    loadSaaSDatabases();
+    renderRosterSessionsTable();
+    updateSessionStats();
+    closeScheduleSessionModal();
+  }
+
+  function editSessionNode(id) {
+    editingId = id;
+    const sess = sessionsCache.find(s => s.id === id);
+    if (!sess) return;
+
+    populateFormDropdowns();
+
+    document.getElementById('sess-input-module').value = sess.module;
+    document.getElementById('sess-input-group').value = sess.group;
+    document.getElementById('sess-input-type').value = sess.type;
+    document.getElementById('sess-input-room').value = sess.room;
+    document.getElementById('sess-input-date').value = sess.date;
+    document.getElementById('sess-input-time').value = sess.time;
+
+    document.getElementById('session-form-title').innerHTML = `<i class="fa-solid fa-calendar-minus"></i> <span data-lang="en">Edit Session Parameters</span><span data-lang="fr">Modifier Séance</span><span data-lang="ar">تعديل معلمات الحصة</span>`;
+    
+    const modal = document.getElementById('schedule-session-modal');
+    if (modal) modal.classList.add('active');
+    translateSaaSElements(modal);
+  }
+
+  function promptDeleteSessionNode(id) {
+    deleteTargetId = id;
+    const sess = sessionsCache.find(s => s.id === id);
+    const textEl = document.getElementById('sess-delete-text');
+    const modal = document.getElementById('sess-delete-modal');
+    if (textEl && sess) {
+      textEl.innerHTML = `<span data-lang="en">You are about to cancel and delete the scheduled session for <strong style="color:#0f172a;">${escapeHtml(sess.module)} (${sess.type})</strong> with group <strong>${escapeHtml(sess.group)}</strong>. This cannot be undone.</span>
+      <span data-lang="fr">Vous allez supprimer la séance de <strong style="color:#0f172a;">${escapeHtml(sess.module)} (${sess.type})</strong>.</span>
+      <span data-lang="ar">أنت على وشك إلغاء وحذف الحصة المجدولة لمقياس <strong style="color:#0f172a;">${escapeHtml(sess.module)} (${sess.type})</strong> مع فوج <strong>${escapeHtml(sess.group)}</strong>. لا يمكن التراجع عن هذا الإجراء.</span>`;
+    }
+    if (modal) modal.classList.add('active');
+    translateSaaSElements(modal);
+  }
+
+  function closeSessDeleteModal() {
+    const modal = document.getElementById('sess-delete-modal');
+    if (modal) modal.classList.remove('active');
+    deleteTargetId = null;
+  }
+
+  // Execute actual deletion
+  document.getElementById('sess-delete-btn').addEventListener('click', function() {
+    if (!deleteTargetId) return;
+    sessionsCache = sessionsCache.filter(s => s.id !== deleteTargetId);
+    window.saveData('sessions', sessionsCache);
+    loadSaaSDatabases();
+    renderRosterSessionsTable();
+    updateSessionStats();
+    closeSessDeleteModal();
+  });
+
+  function setSessionFilter(key, value) {
+    activeSessFilter[key] = value;
+    renderRosterSessionsTable();
+  }
+
+  function resetSessionFilters() {
+    activeSessFilter = { query: '', module: 'All', type: 'All', status: 'All', sortBy: 'date-asc' };
+    document.getElementById('session-search').value = '';
+    document.getElementById('filter-session-module').value = 'All';
+    document.getElementById('filter-session-type').value = 'All';
+    document.getElementById('filter-session-status').value = 'All';
+    document.getElementById('filter-session-sort').value = 'date-asc';
+    renderRosterSessionsTable();
+  }
+
+  // ==========================================
+  // MODULE 2: LIVE ATTENDANCE DESK OPERATIONS
+  // ==========================================
+  function startRosterQuickRollCall(module, group, date) {
+    switchMainTab('attendance');
+    
+    document.getElementById('att-select-session').value = module;
+    document.getElementById('att-select-group').value = group;
+    document.getElementById('att-select-date').value = date;
+
+    handleRosterFilterChange();
+  }
+
+  function populateAttendanceContextFilters() {
+    const modules = window.getData('modules');
+    const groups = window.getData('groups');
+
+    const sessSelect = document.getElementById('att-select-session');
+    if (sessSelect) sessSelect.innerHTML = modules.map(m => `<option value="${m.name}">${m.name}</option>`).join('');
+
+    const grpSelect = document.getElementById('att-select-group');
+    if (grpSelect) grpSelect.innerHTML = groups.map(g => `<option value="${g.name}">${g.name}</option>`).join('');
+    
+    populateAttendanceStudentDropdowns();
+  }
+
+  function populateAttendanceStudentDropdowns() {
+    const gpsSelect = document.getElementById('gps-input-student');
+    const cardSelect = document.getElementById('card-swipe-id');
+    const selectHTML = studentsCache.map(s => `<option value="${s.id}">${s.lastName} ${s.firstName} (${s.id})</option>`).join('');
+    if (gpsSelect) gpsSelect.innerHTML = selectHTML;
+    if (cardSelect) cardSelect.innerHTML = selectHTML;
+  }
+
+  window.handleRosterFilterChange = function() {
+    const targetGroup = document.getElementById('att-select-group').value;
+    activeCohortStudents = studentsCache.filter(s => s.group === targetGroup);
+
+    currentCarouselIndex = 0;
+    carouselAttendanceDraft = {};
+
+    const module = document.getElementById('att-select-session').value;
+    const date = document.getElementById('att-select-date').value;
+
+    activeCohortStudents.forEach(std => {
+      const logged = attendanceCache.find(a => a.studentId === std.id && a.date === date && a.module === module);
+      if (logged) carouselAttendanceDraft[std.id] = logged.status;
+    });
+
+    renderCarouselCard();
+    updateAttendanceDashboardMetrics();
+
+    if (activeSubpanel === 'qr') rotateSecureQR();
+    if (activeSubpanel === 'gps') initSatelliteMap();
+  };
+
+  // Single student carousel renderer
+  function renderCarouselCard() {
+    const container = document.getElementById('subpanel-manual');
+    if (!container) return;
+
+    if (activeCohortStudents.length === 0) {
+      container.innerHTML = `
+        <div style="text-align:center; padding: 40px 20px; color:var(--text-light); width:100%;">
+          <i class="fa-solid fa-users-slash" style="font-size:32px; margin-bottom:10px;"></i>
+          <div style="font-weight:700;"><span data-lang="en">No registered students found in this group</span><span data-lang="fr">Aucun étudiant inscrit</span><span data-lang="ar">لا يوجد طلبة مسجلين في هذا الفوج</span></div>
+        </div>
+      `;
+      translateSaaSElements(container);
+      return;
+    }
+
+    container.innerHTML = `
+      <div style="display:flex; flex-direction:column; align-items:center; gap:var(--space-md); margin: 0 auto; max-width: 480px; width: 100%;">
+        <div class="carousel-profile-card" id="manual-student-carousel-card">
+          <div id="carousel-student-content"></div>
+        </div>
+       <div style="width: 100%;text-align-last: center;margin-bottom: 25px;">
+          <button class="btn-saas btn-saas-secondary" onclick="navigateCarousel(-1)" id="btn-carousel-prev" style="flex:1;"><i class="fa-solid fa-chevron-left"></i> <span data-lang="en">Prev</span><span data-lang="fr">Précédent</span><span data-lang="ar">السابق</span></button>
+          <button class="btn-saas btn-saas-primary" onclick="submitCarouselAttendance()" style="flex:1.2;"><i class="fa-solid fa-floppy-disk"></i> <span data-lang="en">Submit Sheet</span><span data-lang="fr">Soumettre</span><span data-lang="ar">حفظ الكشف</span></button>
+          <button class="btn-saas btn-saas-secondary" onclick="navigateCarousel(1)" id="btn-carousel-next" style="flex:1;"><span data-lang="en">Next</span><span data-lang="fr">Suivant</span><span data-lang="ar">التالي</span> <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    `;
+
+    updateCarouselCardContent();
+    translateSaaSElements(container);
+  }
+
+  function updateCarouselCardContent() {
+    const container = document.getElementById('carousel-student-content');
+    if (!container || activeCohortStudents.length === 0) return;
+
+    const std = activeCohortStudents[currentCarouselIndex];
+    const draftStatus = carouselAttendanceDraft[std.id] || '';
+
+    const isP = draftStatus === 'P' ? 'active' : '';
+    const isA = draftStatus === 'A' ? 'active' : '';
+    const isL = draftStatus === 'L' ? 'active' : '';
+
+    const module = document.getElementById('att-select-session').value;
+    const date = document.getElementById('att-select-date').value;
+    const hasPastLog = attendanceCache.some(a => a.studentId === std.id && a.date === date && a.module === module);
+
+    container.innerHTML = `
+      <div style="font-size: 11px; font-weight:800; color:#94a3b8; text-transform: uppercase;">
+        <span data-lang="en">Student</span><span data-lang="fr">Étudiant</span><span data-lang="ar">الطالب</span> ${currentCarouselIndex + 1} / ${activeCohortStudents.length}
+      </div>
+      <div id="carousel-edit-badge" style="display:${hasPastLog ? 'inline-block' : 'none'}; font-size:10px; font-weight:700; color:#10b981; background:#ecfdf5; padding:2px 8px; border-radius:4px; margin-top:4px;">
+        <i class="fa-solid fa-pen-to-square"></i> <span data-lang="en">Editing Saved Sheet</span><span data-lang="fr">Modification Fiche</span><span data-lang="ar">تعديل كشف حضور محفوظ</span>
+      </div>
+      <div style="width: 4.5rem; height: 4.5rem; border-radius: 50%; background:#eff6ff; color:#2563eb; display:inline-flex; align-items:center; justify-content:center; font-size:1.75rem; margin:15px 0 10px 0;"><i class="fa-solid fa-user"></i></div>
+      <h3 style="font-size: 1.25rem; font-weight: 800; color:var(--text); margin-bottom:2px;">${escapeHtml(std.lastName)} ${escapeHtml(std.firstName)}</h3>
+      <p style="font-size: 12px; color:var(--text-secondary); font-family:var(--font-mono); margin-bottom:15px;">ID: ${std.id}</p>
+      
+      <div class="attendance-chip-group">
+        <button class="attendance-chip present ${isP}" onclick="markCarouselStatus('P')">P</button>
+        <button class="attendance-chip absent ${isA}" onclick="markCarouselStatus('A')">A</button>
+        <button class="attendance-chip late ${isL}" onclick="markCarouselStatus('L')">L</button>
+      </div>
+    `;
+
+    document.getElementById('btn-carousel-prev').disabled = currentCarouselIndex === 0;
+    document.getElementById('btn-carousel-next').disabled = currentCarouselIndex === activeCohortStudents.length - 1;
+
+    translateSaaSElements(container);
+  }
+
+  window.markCarouselStatus = function(status) {
+    const std = activeCohortStudents[currentCarouselIndex];
+    if (std) {
+      carouselAttendanceDraft[std.id] = status;
+      updateCarouselCardContent();
+    }
+  };
+
+  window.navigateCarousel = function(dir) {
+    const target = currentCarouselIndex + dir;
+    if (target >= 0 && target < activeCohortStudents.length) {
+      currentCarouselIndex = target;
+      updateCarouselCardContent();
+    }
+  };
+
+  window.submitCarouselAttendance = function() {
+    const module = document.getElementById('att-select-session').value;
+    const date = document.getElementById('att-select-date').value;
+
+    activeCohortStudents.forEach(std => {
+      const status = carouselAttendanceDraft[std.id];
+      if (status) {
+        const idx = attendanceCache.findIndex(a => a.studentId === std.id && a.date === date && a.module === module);
+        const node = { studentId: std.id, status, date, module, method: 'Manual', timestamp: new Date().toISOString() };
+        if (idx !== -1) attendanceCache[idx] = node;
+        else attendanceCache.push(node);
+      }
+    });
+
+    window.saveData('attendance', attendanceCache);
+    loadSaaSDatabases();
+    updateAttendanceDashboardMetrics();
+    renderCarouselCard();
+
+    triggerToastNotification(
+      '<i class="fa-solid fa-circle-check"></i>',
+      'Attendance Saved',
+      'Attendance sheet submitted successfully.',
+      '#10b981'
+    );
+  };
+
+  function updateAttendanceDashboardMetrics() {
+    const date = document.getElementById('att-select-date').value;
+    const module = document.getElementById('att-select-session').value;
+
+    const todayRecords = attendanceCache.filter(a => a.date === date && a.module === module);
+    
+    const present = todayRecords.filter(a => a.status === 'P').length;
+    const absent = todayRecords.filter(a => a.status === 'A').length;
+    const late = todayRecords.filter(a => a.status === 'L').length;
+
+    const totalActive = activeCohortStudents.length;
+    const rate = totalActive > 0 ? (((totalActive - absent) / totalActive) * 100).toFixed(1) + "%" : "100%";
+
+    const setText = (id, val) => { const el = document.getElementById(id); if(el) el.textContent = val; };
+    setText('att-stat-present', present);
+    setText('att-stat-absent', absent);
+    setText('att-stat-late', late);
+    setText('att-stat-rate', rate);
+  }
+
+  window.switchAttSubpanel = function(panel) {
+    activeSubpanel = panel;
+    document.querySelectorAll('.att-action-tab').forEach(tab => tab.classList.remove('active'));
+    document.querySelectorAll('.att-subpanel').forEach(p => p.classList.remove('active'));
+
+    const activeBtn = document.getElementById(`btn-sub-${panel}`);
+    const activePan = document.getElementById(`subpanel-${panel}`);
+
+    if (activeBtn) activeBtn.classList.add('active');
+    if (activePan) activePan.classList.add('active');
+
+    clearInterval(qrTimerInterval);
+
+    if (panel === 'qr') rotateSecureQR();
+    if (panel === 'gps') initSatelliteMap();
+
+    translateSaaSElements(activePan);
+  };
+
+  // ==========================================
+  // QR GENERATOR WITH EXPIRED TIMER & FULLSCREEN
+  // ==========================================
+  window.rotateSecureQR = function() {
+    clearInterval(qrTimerInterval);
+    let secLeft = 3600; // Real 1 hour
+    const timer = document.getElementById('qrBypassTimer');
+    const qrFrame = document.getElementById('qrSandboxFrame');
+    const qrImg = document.getElementById('qr-real-img');
+
+    const activeSess = document.getElementById('att-select-session').value;
+    const activeGroup = document.getElementById('att-select-group').value;
+    document.getElementById('qr-sess-label-display').textContent = `${activeSess} - ${activeGroup}`;
+
+    const uniquePayload = `Session:${activeSess}|Grp:${activeGroup}|Time:${Date.now()}`;
+    const qrAPIUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(uniquePayload)}`;
+    if (qrImg) qrImg.src = qrAPIUrl;
+
+    if (qrFrame) { qrFrame.style.opacity = '1'; qrFrame.style.borderColor = '#2563eb'; }
+
+    function updateTimerText() {
+      const hrs = String(Math.floor(secLeft / 3600)).padStart(2, '0');
+      const mins = String(Math.floor((secLeft % 3600) / 60)).padStart(2, '0');
+      const secs = String(secLeft % 60).padStart(2, '0');
+      const formatted = `Valid for ${hrs}:${mins}:${secs}`;
+      if (timer) timer.textContent = `Valid for ${hrs}:${mins}:${secs}`;
+      const fsTimer = document.getElementById('qr-fs-timer');
+      if (fsTimer) fsTimer.textContent = `Valid for ${hrs}:${mins}:${secs}`;
+    }
+    updateTimerText();
+
+    qrTimerInterval = setInterval(() => {
+      secLeft--;
+      updateTimerText();
+      if (secLeft <= 0) {
+        clearInterval(qrTimerInterval);
+        if (timer) timer.textContent = "QR Code Expired. Please regenerate.";
+        if (qrFrame) { qrFrame.style.opacity = '0.4'; qrFrame.style.borderColor = '#ef4444'; }
+      }
+    }, 1000);
+  };
+
+  window.toggleQRFullscreen = function(show) {
+    const overlay = document.getElementById('qr-fullscreen-overlay');
+    if (!overlay) return;
+
+    if (show) {
+      overlay.style.display = 'flex';
+      document.getElementById('qr-fs-img').src = document.getElementById('qr-real-img').src;
+      document.getElementById('qr-fs-title').textContent = document.getElementById('qr-sess-label-display').textContent;
+      
+      const docEl = document.documentElement;
+      if (docEl.requestFullscreen) docEl.requestFullscreen();
+      else if (docEl.webkitRequestFullscreen) docEl.webkitRequestFullscreen();
+    } else {
+      overlay.style.display = 'none';
+      if (document.exitFullscreen) document.exitFullscreen();
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    }
+  };
+
+  // ==========================================
+  // SATELLITE MAP GEOFENCING HIGHLIGHT ENGINE (Leaflet.js integration)
+  // ==========================================
+// Ensure map instance and movement interval are declared globally to persist across panels
+window.leafletMapInstance = window.leafletMapInstance || null;
+window.leafletMovementInterval = window.leafletMovementInterval || null;
+
+function initSatelliteMap() {
+  const mapContainer = document.getElementById('leaflet-satellite-map');
+  if (!mapContainer) return;
+
+  // Ensure Leaflet CSS is dynamically loaded if missing to prevent map grid styling errors
+  if (!document.getElementById('leaflet-core-css')) {
+    const link = document.createElement('link');
+    link.id = 'leaflet-core-css';
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    document.head.appendChild(link);
+  }
+
+  // Clear previous leaflet map instances cleanly
+  if (window.leafletMapInstance) {
+    window.leafletMapInstance.remove();
+    window.leafletMapInstance = null;
+  }
+
+  // Clear any active movement loops to prevent overlapping cycles
+  if (window.leafletMovementInterval) {
+    clearInterval(window.leafletMovementInterval);
+    window.leafletMovementInterval = null;
+  }
+
+  const targetGPS = [35.542333, 6.153306];
+
+  // ==========================================
+  // MAP INITIALIZATION
+  // ==========================================
+  window.leafletMapInstance = L.map("leaflet-satellite-map", {
+    zoomControl: true,
+    scrollWheelZoom: true,
+    dragging: true,
+    doubleClickZoom: true
+  }).setView(targetGPS, 19);
+
+  // Multi-stage map size validation cycles to completely fix broken gray squares
+  window.leafletMapInstance.invalidateSize();
+  [100, 300, 600].forEach(delay => {
+    setTimeout(() => {
+      if (window.leafletMapInstance) window.leafletMapInstance.invalidateSize();
+    }, delay);
+  });
+
+  // ==========================================
+  // MAP BASE LAYERS
+  // ==========================================
+  const googleSat = L.tileLayer(
+    "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+    { attribution: "&copy; Google Sat", maxZoom: 22 }
+  );
+
+  const googleHybrid = L.tileLayer(
+    "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+    { attribution: "&copy; Google Hybrid", maxZoom: 22 }
+  );
+
+  const osm = L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    { attribution: "&copy; OSM", maxZoom: 19 }
+  );
+
+  googleSat.addTo(window.leafletMapInstance);
+
+  // ==========================================
+  // MAP FULLSCREEN CONTROL
+  // ==========================================
+  const FullscreenControl = L.control({ position: "topright" });
+  FullscreenControl.onAdd = function () {
+    const div = L.DomUtil.create("div");
+    div.innerHTML = `
+      <button id="fsBtn"
+        style="padding:8px 10px;background:#111827;color:white;
+        border:none;border-radius:6px;cursor:pointer;">
+        ⛶ Fullscreen
+      </button>
+    `;
+    return div;
+  };
+  FullscreenControl.addTo(window.leafletMapInstance);
+
+  setTimeout(() => {
+    const btn = document.getElementById("fsBtn");
+    const mapEl = document.getElementById("leaflet-satellite-map");
+    if (btn && mapEl) {
+      btn.onclick = () => {
+        if (!document.fullscreenElement) {
+          mapEl.requestFullscreen();
+        } else {
+          document.exitFullscreen();
+        }
+        setTimeout(() => window.leafletMapInstance.invalidateSize(), 300);
+      };
+    }
+  }, 200);
+
+  // ==========================================
+  // LAYER CONTROL SWITCHER
+  // ==========================================
+  const layerControl = L.control({ position: "topright" });
+  layerControl.onAdd = function () {
+    const div = L.DomUtil.create("div");
+    div.innerHTML = `
+      <button id="layerBtn"
+        style="padding:8px;background:#1f2937;color:#fff;border:none;
+        border-radius:6px;cursor:pointer;margin-top:8px;">
+        🗺 Layers
+      </button>
+      <div id="layerBox"
+        style="display:none;background:#fff;padding:8px;margin-top:6px;
+        border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.2);position:relative;z-index:9999;">
+        <label><input type="radio" name="layer" id="sat" checked> Google Sat</label><br>
+        <label><input type="radio" name="layer" id="hyb"> Google Hybrid</label><br>
+        <label><input type="radio" name="layer" id="osm"> OpenStreetMap</label>
+      </div>
+    `;
+    return div;
+  };
+  layerControl.addTo(window.leafletMapInstance);
+
+  setTimeout(() => {
+    const btn = document.getElementById("layerBtn");
+    const box = document.getElementById("layerBox");
+    const sat = document.getElementById("sat");
+    const hyb = document.getElementById("hyb");
+    const osmLayerOpt = document.getElementById("osm");
+
+    if (btn && box) {
+      btn.onclick = (e) => {
+        e.stopPropagation();
+        box.style.display = box.style.display === "none" ? "block" : "none";
+      };
+    }
+
+    if (sat) sat.onclick = () => switchLayer(googleSat);
+    if (hyb) hyb.onclick = () => switchLayer(googleHybrid);
+    if (osmLayerOpt) osmLayerOpt.onclick = () => switchLayer(osm);
+  }, 200);
+
+  function switchLayer(layer) {
+    window.leafletMapInstance.eachLayer(l => {
+      if (l instanceof L.TileLayer) window.leafletMapInstance.removeLayer(l);
+    });
+    layer.addTo(window.leafletMapInstance);
+  }
+
+  // ==========================================
+  // GEOFENCE BOUNDARY (DEPARTMENT AREA)
+  // ==========================================
+  const radius = parseFloat(document.getElementById('gps-input-radius')?.value || '50');
+  const geofence = L.circle(targetGPS, {
+    radius,
+    color: "#2563eb",
+    fillColor: "#3b82f6",
+    fillOpacity: 0.15,
+    weight: 2
+  }).addTo(window.leafletMapInstance);
+
+  // ==========================================
+  // PATH GENERATION & ROAD MOVEMENT ENGINES
+  // ==========================================
+  const studentMarkers = new Map(); // id -> marker
+  const entryTimes = new Map();     // id -> timestamp
+
+  const databaseStudents = window.getData('students') || [];
+  const studentSelect = document.getElementById('gps-input-student');
+
+  // Helper: Interpolates linear pathways to create micro-waypoints for fluid motion
+  function interpolatePath(points, stepsPerSegment = 10) {
+    const interpolated = [];
+    for (let i = 0; i < points.length - 1; i++) {
+      const start = points[i];
+      const end = points[i + 1];
+      for (let step = 0; step < stepsPerSegment; step++) {
+        const pct = step / stepsPerSegment;
+        const lat = start[0] + (end[0] - start[0]) * pct;
+        const lon = start[1] + (end[1] - start[1]) * pct;
+        interpolated.push([lat, lon]);
+      }
+    }
+    interpolated.push(points[points.length - 1]);
+    return interpolated;
+  }
+
+  // Dedicated Inside Paths (Strictly within the 50m geofence radius)
+  const insidePaths = [
+    [[35.542330, 6.153300], [35.542380, 6.153320], [35.542410, 6.153280], [35.542350, 6.153250]],
+    [[35.542280, 6.153400], [35.542310, 6.153350], [35.542340, 6.153380], [35.542300, 6.153440]],
+    [[35.542350, 6.153100], [35.542380, 6.153150], [35.542400, 6.153120], [35.542360, 6.153080]],
+    [[35.542250, 6.153250], [35.542280, 6.153280], [35.542310, 6.153250], [35.542270, 6.153210]],
+    [[35.542380, 6.153450], [35.542410, 6.153410], [35.542440, 6.153460], [35.542400, 6.153500]],
+    [[35.542220, 6.153300], [35.542250, 6.153320], [35.542240, 6.153350], [35.542210, 6.153320]],
+    [[35.542420, 6.153250], [35.542450, 6.153280], [35.542440, 6.153310], [35.542410, 6.153280]],
+    [[35.542300, 6.153150], [35.542270, 6.153120], [35.542290, 6.153090], [35.542320, 6.153120]]
+  ];
+
+  // Fallback external campus paths (curved routes outside allowed boundary)
+  const fallbackPaths = [
+    [[35.542600, 6.152800], [35.542400, 6.153000], [35.542100, 6.153100], [35.541800, 6.153200]],
+    [[35.542200, 6.152500], [35.542300, 6.153100], [35.542400, 6.153500], [35.542500, 6.153900]],
+    [[35.542800, 6.153700], [35.542400, 6.153400], [35.542000, 6.153100], [35.541700, 6.152900]],
+    [[35.542900, 6.153100], [35.542700, 6.153300], [35.542500, 6.153400], [35.542100, 6.153500]],
+    [[35.541900, 6.152700], [35.542100, 6.153000], [35.542300, 6.153200], [35.542600, 6.153500]]
+  ];
+
+  let externalPaths = [...fallbackPaths];
+
+  // Fetch real roads surrounding Batna 1 Psychology Building via OpenStreetMap Overpass API
+  const overpassRoadsQuery = `
+    [out:json][timeout:15];
+    way["highway"](around:200, ${targetGPS[0]}, ${targetGPS[1]});
+    out geom;
+  `;
+
+  fetch("https://overpass-api.de/api/interpreter", {
+    method: "POST",
+    body: overpassRoadsQuery
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data && data.elements && data.elements.length > 0) {
+      const osmPaths = data.elements
+        .filter(el => el.geometry && el.geometry.length > 1)
+        .map(el => el.geometry.map(pt => [pt.lat, pt.lon]));
+      if (osmPaths.length > 0) {
+        externalPaths = osmPaths;
+      }
+    }
+    initializeStudentPaths();
+  })
+  .catch(() => {
+    initializeStudentPaths();
+  });
+
+  function initializeStudentPaths() {
+    let trackingPool = [...databaseStudents];
+
+    // If database contains fewer than 22 students, dynamically seed robust mock students to enrich map
+    const extraMockStudents = [
+      { id: "202312076", firstName: "Yacine", lastName: "BOUKHALFA", gender: "Male" },
+      { id: "202312077", firstName: "Sonia", lastName: "KADRI", gender: "Female" },
+      { id: "202312078", firstName: "Riad", lastName: "AMRANE", gender: "Male" },
+      { id: "202312079", firstName: "Nour", lastName: "KHERBOUCHE", gender: "Female" },
+      { id: "202312080", firstName: "Anis", lastName: "BENMEDDOUR", gender: "Male" },
+      { id: "202312081", firstName: "Meriem", lastName: "HAMADI", gender: "Female" },
+      { id: "202312082", firstName: "Tarek", lastName: "SAIDI", gender: "Male" },
+      { id: "202312083", firstName: "Fella", lastName: "BOUAZIZ", gender: "Female" }
+    ];
+
+    while (trackingPool.length < 22 && extraMockStudents.length > 0) {
+      const mock = extraMockStudents.shift();
+      trackingPool.push({
+        id: mock.id,
+        firstName: mock.firstName,
+        lastName: mock.lastName,
+        group: "L3 Psychologie Clinique",
+        gender: mock.gender,
+        attendanceRate: "90%",
+        gpa: "13.00"
+      });
+    }
+
+    if (studentSelect) {
+      studentSelect.innerHTML = trackingPool.map(s => 
+        `<option value="${s.id}">${s.lastName} ${s.firstName}</option>`
+      ).join('');
+    }
+
+    // Interpolate both inside geofence loops and external roads for natural walk frames
+    const detailedInsidePaths = insidePaths.map(path => interpolatePath(path, 10));
+    const detailedExternalPaths = externalPaths.map(path => interpolatePath(path, 10));
+
+    window.studentTrackingData = trackingPool.map((s, index) => {
+      let path;
+      // Force the first 8 students (at least 7 guaranteed inside) onto geofenced Plaza & Courtyard loops
+      if (index < 8) {
+        path = detailedInsidePaths[index % detailedInsidePaths.length];
+      } else {
+        path = detailedExternalPaths[index % detailedExternalPaths.length];
+      }
+      
+      const nodeIndex = Math.floor(Math.random() * path.length);
+      const startPos = path[nodeIndex];
+
+      return {
+        id: s.id,
+        name: `${s.lastName} ${s.firstName}`,
+        gender: s.gender || 'Male',
+        path: path,
+        currentNodeIndex: nodeIndex,
+        direction: Math.random() > 0.5 ? 1 : -1,
+        lat: startPos[0],
+        lon: startPos[1]
+      };
+    });
+
+    // Force first rendering instantly
+    updateStudentPositions();
+
+    if (window.studentTrackingData.length > 0) {
+      const first = window.studentTrackingData[0];
+      document.getElementById('gps-input-lat').value = first.lat.toFixed(6);
+      document.getElementById('gps-input-lon').value = first.lon.toFixed(6);
+    }
+
+    // Start movement loop ONLY after data arrays are fully compiled (fixes the race condition)
+    window.leafletMovementInterval = setInterval(() => {
+      if (!window.leafletMapInstance || !window.studentTrackingData || !window.studentTrackingData.length) {
+        clearInterval(window.leafletMovementInterval);
+        return;
+      }
+
+      window.studentTrackingData.forEach(s => {
+        if (!s.path || s.path.length <= 1) return;
+
+        // Move step-by-step along the road nodes
+        s.currentNodeIndex += s.direction;
+
+        // Reverse walk direction upon reaching either end of the road
+        if (s.currentNodeIndex >= s.path.length) {
+          s.currentNodeIndex = s.path.length - 2;
+          s.direction = -1;
+        } else if (s.currentNodeIndex < 0) {
+          s.currentNodeIndex = 1;
+          s.direction = 1;
+        }
+
+        const nextNode = s.path[s.currentNodeIndex];
+        s.lat = nextNode[0];
+        s.lon = nextNode[1];
+      });
+
+      updateStudentPositions();
+    }, 1500); // 1.5 seconds interval for active, natural tracking movement
+  }
+
+  function getDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371000;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c;
+  }
+
+  function updateStudentPositions() {
+    window.studentTrackingData.forEach(stu => {
+      const inside = getDistance(targetGPS[0], targetGPS[1], stu.lat, stu.lon) <= radius;
+
+      const isFemale = stu.gender === 'Female';
+      const markerColor = inside ? '#10b981' : '#ef4444'; // Green border if inside allowed boundary, Red if outside
+      const iconColor = isFemale ? '#db2777' : '#2563eb';   // Pink theme for female, Blue theme for male
+      
+      const iconHtml = `
+        <div style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 34px;
+          height: 34px;
+          background-color: #ffffff;
+          border: 3px solid ${markerColor};
+          border-radius: 50%;
+          box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+          transition: border-color 0.25s ease;
+        ">
+          <i class="fa-solid fa-user-graduate" style="color: ${iconColor}; font-size: 13px;"></i>
+        </div>
+      `;
+
+      const genderIcon = L.divIcon({
+        html: iconHtml,
+        className: '', // disable Leaflet default marker style wrapping
+        iconSize: [34, 34],
+        iconAnchor: [17, 17],
+        popupAnchor: [0, -17]
+      });
+
+      if (!studentMarkers.has(stu.id)) {
+        const marker = L.marker([stu.lat, stu.lon], { icon: genderIcon }).addTo(window.leafletMapInstance);
+        studentMarkers.set(stu.id, marker);
+      } else {
+        const marker = studentMarkers.get(stu.id);
+        marker.setLatLng([stu.lat, stu.lon]);
+        marker.setIcon(genderIcon);
+      }
+
+      const marker = studentMarkers.get(stu.id);
+      if (inside && !entryTimes.has(stu.id)) {
+        entryTimes.set(stu.id, new Date().toLocaleTimeString());
+      }
+
+      const timeText = entryTimes.get(stu.id) || "Outside";
+
+      marker.bindPopup(`
+        <div style="font-family: 'Cairo', sans-serif; text-align: start;">
+          <b style="font-size:13px; color:#0f172a;">${stu.name}</b><br>
+          <span style="font-size:11px; color:#64748b; line-height: 1.5;">
+            Gender: <b>${stu.gender}</b><br>
+            Status: <b style="color:${inside ? '#10b981' : '#ef4444'}">${inside ? "Inside Dept" : "Outside"}</b><br>
+            Check-In Time: <b>${timeText}</b>
+          </span>
+        </div>
+      `);
+    });
+  }
+
+  // ==========================================
+  // CENTER MARKER
+  // ==========================================
+  L.circleMarker(targetGPS, {
+    radius: 6,
+    color: "#ff0000",
+    fillColor: "#ff0000",
+    fillOpacity: 1
+  })
+    .addTo(window.leafletMapInstance)
+    .bindPopup("Department Center");
+
+  // ==========================================
+  // OVERPASS BUILDING OUTLINE (UNCHANGED)
+  // ==========================================
+  const overpassQuery = `
+    [out:json][timeout:15];
+    (
+      way["building"](around:25, ${targetGPS[0]}, ${targetGPS[1]});
+      relation["building"](around:25, ${targetGPS[0]}, ${targetGPS[1]});
+    );
+    out body; >; out skel qt;
+  `;
+
+  fetch("https://overpass-api.de/api/interpreter", {
+    method: "POST",
+    body: overpassQuery
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (typeof osmtogeojson !== 'function') return;
+      const geojson = osmtogeojson(data);
+      if (!geojson.features.length) return;
+
+      L.geoJSON(geojson.features[0], {
+        style: {
+          color: "#00ffff",
+          weight: 3,
+          fillOpacity: 0.25
+        }
+      }).addTo(window.leafletMapInstance);
+    })
+    .catch(() => {});
+}
+  // ==========================================
+  // BARCODE CARD SCANNER SIMULATOR
+  // ==========================================
+  window.simulateCardSwipe = function() {
+    const stdId = document.getElementById('card-swipe-id').value;
+    const studentObj = studentsCache.find(s => s.id === stdId);
+    if (!studentObj) return;
+
+    const card = document.getElementById('scannerGlowCard');
+    if (card) {
+      card.classList.add('scan-success-flash');
+      setTimeout(() => card.classList.remove('scan-success-flash'), 400);
+    }
+
+    registerAttendanceBypassToast(stdId, 'P', 'Card');
+  };
+
+  function registerAttendanceBypassToast(id, status, method) {
+    const module = document.getElementById('att-select-session').value;
+    const date = document.getElementById('att-select-date').value;
+
+    const idx = attendanceCache.findIndex(a => a.studentId === id && a.date === date && a.module === module);
+    const payload = { studentId: id, status, date, module, method: method, timestamp: new Date().toISOString() };
+
+    if (idx !== -1) attendanceCache[idx] = payload;
+    else attendanceCache.push(payload);
+
+    window.saveData('attendance', attendanceCache);
+    loadSaaSDatabases();
+    carouselAttendanceDraft[id] = status;
+
+    updateAttendanceDashboardMetrics();
+    renderCarouselCard();
+
+    const studentObj = studentsCache.find(s => s.id === id);
+    triggerToastNotification(
+      '<i class="fa-solid fa-circle-check"></i>',
+      'Verification Approved',
+      `${studentObj.firstName} ${studentObj.lastName} registered Present via ${method}.`,
+      '#10b981'
+    );
+  }
+
+  // ==========================================
+  // REAL-TIME ONGOING DEMO SIMULATION
+  // ==========================================
+  let activeDemoInterval = null;
+  window.launchAttendanceDemo = function() {
+    const currentLang = localStorage.getItem('acadtrack-lang') || 'en';
+    const stopLabel = { en: "Stop Demo", fr: "Arrêter Démo", ar: "إيقاف العرض" };
+    const launchLabel = { en: "Launch Demo", fr: "Démarrer Démo", ar: "بدء المحاكاة" };
+    const btn = document.getElementById('btn-launch-demo');
+
+    if (activeDemoInterval) {
+      clearInterval(activeDemoInterval);
+      activeDemoInterval = null;
+      if (btn) {
+        btn.innerHTML = `<i class="fa-solid fa-play"></i> <span data-lang="en">${launchLabel.en}</span><span data-lang="fr">${launchLabel.fr}</span><span data-lang="ar">${launchLabel.ar}</span>`;
+        btn.style.background = '#7c3aed'; btn.style.borderColor = '#7c3aed';
+      }
+      translateSaaSElements(btn);
+      return;
+    }
+
+    if (activeCohortStudents.length === 0) {
+      alert("Please select a group and session first.");
+      return;
+    }
+
+    if (btn) {
+      btn.innerHTML = `<i class="fa-solid fa-square-stop"></i> <span data-lang="en">${stopLabel.en}</span><span data-lang="fr">${stopLabel.fr}</span><span data-lang="ar">${stopLabel.ar}</span>`;
+      btn.style.background = '#dc2626'; btn.style.borderColor = '#dc2626';
+    }
+    translateSaaSElements(btn);
+
+    let queue = [...activeCohortStudents];
+    activeDemoInterval = setInterval(() => {
+      if (queue.length === 0) {
+        clearInterval(activeDemoInterval);
+        activeDemoInterval = null;
+        if (btn) {
+          btn.innerHTML = `<i class="fa-solid fa-play"></i> <span data-lang="en">${launchLabel.en}</span><span data-lang="fr">${launchLabel.fr}</span><span data-lang="ar">${launchLabel.ar}</span>`;
+          btn.style.background = '#7c3aed'; btn.style.borderColor = '#7c3aed';
+        }
+        translateSaaSElements(btn);
+        return;
+      }
+
+      const randIdx = Math.floor(Math.random() * queue.length);
+      const targetStudent = queue.splice(randIdx, 1)[0];
+      const methods = ['QR', 'NFC Card', 'GPS'];
+      const chosenMethod = methods[Math.floor(Math.random() * methods.length)];
+      const randStatus = Math.random() > 0.9 ? 'L' : 'P';
+      
+      const module = document.getElementById('att-select-session').value;
+      const date = document.getElementById('att-select-date').value;
+
+      const idx = attendanceCache.findIndex(a => a.studentId === targetStudent.id && a.date === date && a.module === module);
+      const payload = { studentId: targetStudent.id, status: randStatus, date, module, method: chosenMethod, timestamp: new Date().toISOString() };
+
+      if (idx !== -1) attendanceCache[idx] = payload;
+      else attendanceCache.push(payload);
+
+      window.saveData('attendance', attendanceCache);
+      loadSaaSDatabases();
+      carouselAttendanceDraft[targetStudent.id] = randStatus;
+
+      updateAttendanceDashboardMetrics();
+      if (currentCarouselIndex < activeCohortStudents.length) updateCarouselCardContent();
+
+      triggerTopRightToastNotification(targetStudent, randStatus, chosenMethod);
+    }, Math.floor(Math.random() * 2000) + 1500);
+  };
+
+  function triggerTopRightToastNotification(student, status, method) {
+    const container = document.getElementById('toastPortalContainer');
+    if (!container) return;
+
+    const currentLang = localStorage.getItem('acadtrack-lang') || 'en';
+    const toastId = 'toast_' + Date.now();
+
+    const statusLabels = { P: { en: "Present", fr: "Présent", ar: "حاضر" }, L: { en: "Late", fr: "En retard", ar: "متأخر" } };
+    const methodLabels = {
+      'QR': { en: 'QR Code', fr: 'Scanner QR', ar: 'تلقائياً عبر الـ QR' },
+      'NFC Card': { en: 'Student Card', fr: 'Carte NFC', ar: 'تلقائياً عبر بطاقة الطالب' },
+      'GPS': { en: 'GPS Geofence', fr: 'Vérification GPS', ar: 'تلقائياً عبر موقع الـ GPS' }
+    };
+
+    const title = statusLabels[status][currentLang];
+    const methodLabel = methodLabels[method][currentLang];
+
+    const bodyText = {
+      en: `${student.firstName} ${student.lastName} just checked-in.`,
+      fr: `${student.firstName} ${student.lastName} s'est signalé.`,
+      ar: `تم تسجيل دخول الطالب ${student.firstName} ${student.lastName} بنجاح.`
+    };
+
+    container.innerHTML += `
+      <div class="saas-toast-alert" id="${toastId}">
+        <div class="saas-toast-icon" style="background:${status === 'P' ? '#ecfdf5' : '#fffbeb'}; color:${status === 'P' ? '#10b981' : '#d97706'}">
+          <i class="fa-solid ${status === 'P' ? 'fa-check' : 'fa-clock'}"></i>
+        </div>
+        <div class="saas-toast-body">
+          <div class="saas-toast-title">${title} — <span style="font-weight:500; font-size:11px; color:#64748b;">${methodLabel}</span></div>
+          <div class="saas-toast-desc">${bodyText[currentLang]}</div>
+        </div>
+      </div>
+    `;
+
+    setTimeout(() => { const el = document.getElementById(toastId); if (el) el.classList.add('active'); }, 50);
+    setTimeout(() => { const el = document.getElementById(toastId); if (el) { el.classList.remove('active'); setTimeout(() => el.remove(), 350); } }, 4500);
+  }
+
+  function triggerToastNotification(iconHTML, title, description, color) {
+    const overlay = document.getElementById('att-toast-overlay');
+    const iconWrap = document.getElementById('att-toast-icon');
+    const titleEl = document.getElementById('att-toast-title');
+    const descEl = document.getElementById('att-toast-desc');
+
+    if (overlay && iconWrap && titleEl && descEl) {
+      iconWrap.innerHTML = iconHTML;
+      iconWrap.style.color = color;
+      titleEl.textContent = title;
+      descEl.textContent = description;
+
+      overlay.classList.add('active');
+      setTimeout(() => overlay.classList.remove('active'), 2500);
+    }
+  }
+
+  function renderTrendsSummaryTable() {
+    const tbody = document.getElementById('trends-risk-table-body');
+    if (!tbody) return;
+
+    const riskCohort = studentsCache.filter(s => {
+      const rate = parseFloat(s.attendanceRate || '100');
+      return rate < 80;
+    });
+
+    if (riskCohort.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="4" style="text-align:center;color:#94a3b8;"><span data-lang="en">All students are above the 80% warning threshold.</span><span data-lang="fr">Tous au-dessus de 80%.</span><span data-lang="ar">جميع الطلبة فوق حد الإنذار البالغ 80%</span></td></tr>`;
+      translateSaaSElements(tbody);
+      return;
+    }
+
+    tbody.innerHTML = riskCohort.map(std => `
+      <tr>
+        <td style="font-family:var(--font-mono);">${std.id}</td>
+        <td style="font-weight:700; color:#0f172a;">${escapeHtml(std.lastName)} ${escapeHtml(std.firstName)}</td>
+        <td>${std.group}</td>
+        <td style="font-weight:700; color:#dc2626;">${std.attendanceRate}</td>
+      </tr>
+    `).join('');
+
+    translateSaaSElements(tbody);
+  }
+
+  function translateSaaSElements(container) {
+    if (!container) return;
+    const currentLang = localStorage.getItem('acadtrack-lang') || 'en';
+    container.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === currentLang ? '' : 'none';
+    });
+  }
+
+  function escapeHtml(text) {
+    if (text == null) return '';
+    const div = document.createElement('div');
+    div.textContent = String(text);
+    return div.innerHTML;
+  }
+//]]>
+</script>
+
+</body>
+</html>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="sidebar"></aside>
+    </div>
+  </main>
+
+<div class="footer-area section" id="footer-area"><div class="widget HTML" id="HTML10">
+<style>
+  /* ===== NEBULA GRADIENT DARK FOOTER ===== */
+  .at-footer-section {
+    background: linear-gradient(135deg, #0f172a 0%, #111827 50%, #1e293b 100%); /* Deep rich slate gradient [1] */
+    padding: clamp(60px, 8vw, 80px) 1.5rem 30px 1.5rem;
+    color: #cbd5e1;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .at-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* 4-Column Responsive Grid [1] */
+  .at-footer-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 640px) {
+    .at-footer-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .at-footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
+  }
+
+  /* Column 1: Brand Info */
+  .at-footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  .at-footer-logo {
+    height: 48px; /* Slightly larger clean sizing */
+    width: auto;
+    max-width: 240px;
+    object-fit: contain;
+    align-self: flex-start;
+  }
+  .at-footer-tagline {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #94a3b8;
+    max-width: 260px;
+  }
+  .at-footer-socials {
+    display: flex;
+    gap: 12px;
+  }
+  .at-social-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 14px;
+    transition: all 0.25s ease;
+  }
+  .at-social-icon:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+  }
+
+  /* Link Columns */
+  .at-footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  .at-footer-col-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .at-footer-links-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .at-footer-link {
+    font-size: 13px;
+    color: #94a3b8;
+    transition: all 0.2s ease;
+    font-weight: 600;
+  }
+  .at-footer-link:hover {
+    color: #3b82f6;
+  }
+  .at-footer-text-info {
+    font-size: 13px;
+    color: #94a3b8;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  /* ===== BOTTOM CREDIT BAR ===== */
+  .at-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 600;
+  }
+  .at-footer-copyright {
+    text-align: left;
+  }
+  .at-footer-developer {
+    text-align: right;
+  }
+  .at-footer-developer a {
+    color: #3b82f6;
+    font-weight: 700;
+    transition: color 0.2s ease;
+  }
+  .at-footer-developer a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+  }
+
+  /* ===== SYMMETRICAL MOBILE CENTERED ALIGNMENTS ===== */
+  @media (max-width: 1023px) {
+    .at-footer-brand {
+      text-align: center !important;
+      align-items: center !important;
+    }
+    .at-footer-logo {
+      align-self: center !important;
+    }
+    .at-footer-socials {
+      justify-content: center !important;
+    }
+    .at-footer-col {
+      text-align: center !important;
+      align-items: center !important;
+    }
+    .at-footer-bottom {
+      justify-content: center !important;
+      text-align: center !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+    }
+    .at-footer-copyright, .at-footer-developer {
+      text-align: center !important;
+    }
+  }
+
+  /* ===== RTL ARABIC VIEW ALIGNMENTS ===== */
+  .lang-ar .at-footer-grid { direction: rtl; }
+  .lang-ar .at-footer-brand { text-align: right; }
+  .lang-ar .at-footer-logo { align-self: flex-start; }
+  .lang-ar .at-footer-socials { justify-content: flex-start; }
+  .lang-ar .at-footer-col { text-align: right; }
+  .lang-ar .at-footer-bottom { flex-direction: row-reverse; }
+  .lang-ar .at-footer-copyright { text-align: right; }
+  .lang-ar .at-footer-developer { text-align: left; }
+
+  @media (max-width: 1023px) {
+    .lang-ar .at-footer-logo { align-self: center !important; }
+    .lang-ar .at-footer-socials { justify-content: center !important; }
+    .lang-ar .at-footer-bottom { flex-direction: column !important; }
+  }
+</style>
+
+<footer class="at-footer-section" id="atFooterSection">
+  <div class="at-footer-container">
+    
+    <!-- 4-Column Grid [1] -->
+    <div class="at-footer-grid">
+      
+      <!-- Column 1: Brand & Logo (Centered on mobile) -->
+      <div class="at-footer-brand">
+        <!-- Upgraded Logo Image [1] -->
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgFl9vkym4Qn9Hkm1X7SKcOycx_AjXf0wwhquAHk2_ZFNvOUBffCHSRr_eqNGTReWEFJQLVtGtRh0PC5hN7g9ShPhfn_9ZQXQX4II7polk0rMVUVKqC0ejLf_Le0MFCP_MDPl1tXw6Pys03cX2e6LHIFeX8hD1SqEo6PKE1ifmdGhCoGGgJ3SUnxLadiuY" class="at-footer-logo" alt="AcadTrack Logo" />
+        <p class="at-footer-tagline">
+          <span data-lang="en">Unified academic management portal designed for Algerian LMD higher education institutions.</span>
+          <span data-lang="fr">Portail unifié de gestion académique conçu pour les universités algériennes LMD.</span>
+          <span data-lang="ar">بوابة موحدة وحلول رقمية متكاملة تضمن أمان وموثوقية التسيير الأكاديمي لمؤسسات التعليم العالي بالجزائر.</span>
+        </p>
+        <!-- Social Networks -->
+        <div class="at-footer-socials">
+          <a href="https://www.linkedin.com/in/uns-mahmoudi/" class="at-social-icon" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="at-social-icon" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="at-social-icon" title="Github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Platform Links -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Platform</span>
+          <span data-lang="fr">Plateforme</span>
+          <span data-lang="ar">المنصة</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="/features" class="at-footer-link"><span data-lang="en">Platform Features</span><span data-lang="fr">Fonctionnalités</span><span data-lang="ar">ميزات البوابة</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Documentation</span><span data-lang="fr">Documentation</span><span data-lang="ar">دليل الاستعمال</span></a></li>
+          <li><a href="/help-center" class="at-footer-link"><span data-lang="en">Help Center</span><span data-lang="fr">Centre d'aide</span><span data-lang="ar">مركز المساعدة</span></a></li>
+          <li><a href="/about" class="at-footer-link"><span data-lang="en">About Platform</span><span data-lang="fr">À Propos</span><span data-lang="ar">حول المنصة</span></a></li>
+          <li><a href="/exams-generator" class="at-footer-link"><span data-lang="en">Exams Generator</span><span data-lang="fr">générateur d'examens</span><span data-lang="ar">إنشاء الاختبارات بالذكاء الاصطناعي</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Trust & Security -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Trust &amp; Security</span>
+          <span data-lang="fr">Sécurité &amp; Confiance</span>
+          <span data-lang="ar">الأمان والموثوقية</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Privacy Policy</span><span data-lang="fr">Confidentialité</span><span data-lang="ar">سياسة الخصوصية</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Terms of Service</span><span data-lang="fr">Conditions d'Utilisation</span><span data-lang="ar">شروط الخدمة</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">Cookies Policy</span><span data-lang="fr">Cookies</span><span data-lang="ar">سياسة ملفات الارتباط</span></a></li>
+          <li><a href="#" class="at-footer-link"><span data-lang="en">SaaS Tutorials</span><span data-lang="fr">Tutoriels</span><span data-lang="ar">دروس تعليمية</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact us (Replaced University Portals) [1] -->
+      <div class="at-footer-col">
+        <div class="at-footer-col-title">
+          <span data-lang="en">Contact</span>
+          <span data-lang="fr">Contact</span>
+          <span data-lang="ar">الاتصال والطلب</span>
+        </div>
+        <ul class="at-footer-links-list">
+          <li><a href="#" class="at-footer-link" style="color:#ffffff;"><span data-lang="en">Contact us</span><span data-lang="fr">Contactez-nous</span><span data-lang="ar">اتصل بنا</span></a></li>
+          <li class="at-footer-text-info">
+            <span data-lang="en">Email:</span><span data-lang="fr">Email :</span><span data-lang="ar">البريد الإلكتروني:</span><br />
+            <span style="font-family:var(--font-mono, monospace); color:#94a3b8; font-weight:700;">contact.unsclass@gmail.com</span>
+          </li>
+          <li class="at-footer-text-info">
+            <span data-lang="en">Phone number:</span><span data-lang="fr">Téléphone :</span><span data-lang="ar">رقم الهاتف:</span><br />
+            <span style="font-family:var(--font-mono, monospace); color:#94a3b8; font-weight:700;">0656806365</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Developer Credit Bar [1] -->
+    <div class="at-footer-bottom">
+      <div class="at-footer-copyright">
+        <!-- Self-updating Copyright Year [1] -->
+        <span data-lang="en">&copy; <span id="current-year-placeholder">2026</span> AcadTrack ERP. All rights reserved.</span>
+        <span data-lang="fr">&copy; <span id="current-year-placeholder-fr">2026</span> AcadTrack ERP. Tous droits réservés.</span>
+        <span data-lang="ar">&copy; <span id="current-year-placeholder-ar">2026</span> AcadTrack . جميع الحقوق محفوظة لـ</span>
+      </div>
+      <div class="at-footer-developer">
+        <!-- LinkedIn Credit link [1] -->
+        <span data-lang="en">Developed by <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank">Mr. Uns MAHMOUDI</a></span>
+        <span data-lang="fr">Développé par <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank">M. Uns MAHMOUDI</a></span>
+        <span data-lang="ar">تم التطوير بواسطة <a href="https://www.linkedin.com/in/uns-mahmoudi/" target="_blank"> يونس محمودي</a></span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+//<![CDATA[
+  document.addEventListener('DOMContentLoaded', function() {
+    // Run instant language alignment listener on load
+    const initLang = localStorage.getItem('acadtrack-lang') || 'en';
+    setLanguage(initLang);
+
+    // Auto-update copyright year dynamically [1]
+    const year = new Date().getFullYear();
+    const placeholders = ['current-year-placeholder', 'current-year-placeholder-fr', 'current-year-placeholder-ar'];
+    placeholders.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = year;
+    });
+  });
+
+  function setLanguage(lang) {
+    localStorage.setItem('acadtrack-lang', lang);
+    document.documentElement.lang = lang;
+    const isRTL = lang === 'ar';
+    const section = document.getElementById('atFooterSection');
+    if (section) {
+      section.dir = isRTL ? 'rtl' : 'ltr';
+      if (isRTL) section.classList.add('lang-ar');
+      else section.classList.remove('lang-ar');
+    }
+
+    document.querySelectorAll('.at-footer-section [data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+    });
+  }
+//]]>
+</script>
+</div></div>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

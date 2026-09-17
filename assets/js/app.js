@@ -125,7 +125,7 @@
           'platform-admin': "/platform-admin-dashboard"
         };
         
-        if (window.location.pathname.includes('-dashboard') || window.location.pathname.includes('/p/')) {
+        if (window.location.pathname.includes('-dashboard')) {
           window.location.href = dashboardMap[role];
         }
       }
