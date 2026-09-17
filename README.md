@@ -329,3 +329,16 @@ python3 -m http.server 8080
 - الرخصة: تُحدَّد من قِبل مالك المشروع.
 
 </div>
+
+
+## 11. Documentation
+
+- [BLUEPRINT.md](./BLUEPRINT.md) — official platform blueprint: full description, audit, architecture, database schema, hosting, migration and production plan
+- [Cloudflare Pages Deployment Guide](./CLOUDFLARE_PAGES_DEPLOYMENT.md) — English and Arabic instructions for connecting GitHub to Cloudflare Pages, testing the project on the default `pages.dev` subdomain, and connecting `acadtrack.org` when the project is ready for production
+- In-app: `p/help-center.html`, `p/tutorials.html`, `p/platform-presentation.html`
+
+## ١١. الوثائق
+
+- [BLUEPRINT.md](./BLUEPRINT.md) — المخطط الرسمي للمنصة: الوصف الكامل، التقييم، المعمارية، قاعدة البيانات، الاستضافة، خطة الترحيل والإنتاج
+- [دليل النشر على Cloudflare Pages](./CLOUDFLARE_PAGES_DEPLOYMENT.md) — دليل باللغتين الإنجليزية والعربية لربط GitHub مع Cloudflare Pages، واختبار المشروع باستخدام نطاق `pages.dev` الافتراضي، ثم ربط `acadtrack.org` عند جاهزية المشروع للنشر الرسمي
+- داخل المنصة: `p/help-center.html` و`p/tutorials.html` و`p/platform-presentation.html`
